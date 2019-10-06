@@ -17,17 +17,35 @@
  ****************************************************************************/
 
 #define GIT_PATH  L"C:\\user\\spresense\\sdk\\bsp\\board\\collet\\include"
+//#define GIT_PATH  L"C:\\ProgramData\\Apple Computer\\iTunes\\adi"
 //#define GIT_PATH  L"C:\\Windows\\System32\\Hydrogen\\BakedPlugins\\Fx\\textures"
+
+#define FIND_DATA WIN32_FIND_DATA
 
 /****************************************************************************
  * Private types
  ****************************************************************************/
 
+typedef struct
+{
+  DWORD   ctime_hi;
+  DWORD   ctime_lo;
+  DWORD   mtime_hi;
+  DWORD   mtime_lo;
+  DWORD   dev;
+  DWORD   inode;
+  DWORD   mode;
+  DWORD   uid;
+  DWORD   guid;
+  DWORD   size;
+  BYTE    sha1[20];
+  TCHAR   path[MAX_PATH];
+}
+GIT_INDEX;
+
 /****************************************************************************
  * Private data
  ****************************************************************************/
-
-TCHAR git_path[ MAX_PATH ];
 
 /****************************************************************************
  * Private functions
@@ -36,10 +54,10 @@ TCHAR git_path[ MAX_PATH ];
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-BYTE get_byte( BYTE** pp_data )
+BYTE get_byte( const BYTE** pp_data )
 {
-  BYTE  data;
-  BYTE* bp = *pp_data;
+  BYTE        data;
+  const BYTE* bp = *pp_data;
 
   data = *bp;
 
@@ -55,18 +73,13 @@ BYTE get_byte( BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-WORD get_word( BYTE** pp_data )
+WORD get_word( const BYTE** pp_data )
 {
   WORD  data = 0;
-  BYTE* bp = *pp_data;
 
-  data |= *bp;
-  bp++;
+  data |= get_byte(pp_data);
   data <<= 8;
-  data |= *bp;
-  bp++;
-
-  *pp_data = bp;
+  data |= get_byte(pp_data);
 
   return data;
 }
@@ -76,24 +89,17 @@ WORD get_word( BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-DWORD get_dword( BYTE** pp_data )
+DWORD get_dword( const BYTE** pp_data )
 {
   DWORD data = 0;
-  BYTE* bp = *pp_data;
 
-  data |= *bp;
-  bp++;
+  data |= get_byte(pp_data);
   data <<= 8;
-  data |= *bp;
-  bp++;
+  data |= get_byte(pp_data);
   data <<= 8;
-  data |= *bp;
-  bp++;
+  data |= get_byte(pp_data);
   data <<= 8;
-  data |= *bp;
-  bp++;
-
-  *pp_data = bp;
+  data |= get_byte(pp_data);
 
   return data;
 }
@@ -103,11 +109,11 @@ DWORD get_dword( BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-BYTE *Header( BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
+const BYTE *Header( const BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
 {
-  BYTE* ret = NULL;
-  DWORD _version;
-  DWORD _total;
+  const BYTE  *ret = NULL;
+  DWORD        _version;
+  DWORD        _total;
 
   if ( get_byte( &bp ) != 'D' )
     {
@@ -141,8 +147,6 @@ BYTE *Header( BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
         }
 
       ret = bp;
-
-      _tprintf( L"ver=%d cnt=%d\n", _version, _total );
     }
 
   return ret;
@@ -153,91 +157,83 @@ BYTE *Header( BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-BYTE *Body( BYTE *bp )
+static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_INDEX *g_idx )
 {
-  DWORD         size;
-  WORD          len;
-  TCHAR         path[ MAX_PATH ];
-  TCHAR         temp[ MAX_PATH ] = { L'\0' };
-  int           i;
-  CHAR          cch[ MAX_PATH ];
-  BYTE          b;
-  BYTE*         top = bp;
-  struct _stat  st;
+  WORD         len;
+  TCHAR        path[ MAX_PATH ];
+  int          i;
+  CHAR         cc[ MAX_PATH ];
+  const BYTE  *top = bp;
 
   /* ctime  */
 
-  _tprintf( L"ctime = %08X\n", get_dword( &bp ) );
-  _tprintf( L"ctime = %08X\n", get_dword( &bp ) );
+  g_idx->ctime_hi = get_dword( &bp );
+  g_idx->ctime_lo = get_dword( &bp );
 
   /* mtime  */
 
-  _tprintf( L"mtime = %08X\n", get_dword( &bp ) );
-  _tprintf( L"mtime = %08X\n", get_dword( &bp ) );
+  g_idx->mtime_hi = get_dword( &bp );
+  g_idx->mtime_lo = get_dword( &bp );
 
   /* dev */
 
-  _tprintf( L"%08X\n", get_dword( &bp ) );
+  g_idx->dev = get_dword( &bp );
 
   /* inode */
 
-  _tprintf( L"%08X\n", get_dword( &bp ) );
+  g_idx->inode = get_dword( &bp );
 
   /* mode */
 
-  _tprintf( L"mode = %08X\n", get_dword( &bp ) );
+  g_idx->mode = get_dword( &bp );
 
   /* uid */
 
-  _tprintf( L"%08X\n", get_dword( &bp ) );
+  g_idx->uid = get_dword( &bp );
 
   /* guid */
 
-  _tprintf( L"%08X\n", get_dword( &bp ) );
+  g_idx->guid = get_dword( &bp );
 
-  /* size */
+  /* sha1 size */
 
-  size = get_dword( &bp );
+  get_dword( &bp );
 
-  for ( i = 0; i < 5; i++ )
+  /* sha1 */
+
+  for ( i = 0; i < 20; i++ )
     {
-      _tprintf( L"sha1:%02d:%08X\n", i, get_dword( &bp ) );
+      g_idx->sha1[i] = get_byte( &bp );
     }
+
+  /* path length */
 
   len = get_word( &bp );
 
-  _tprintf( L"len = %d\n", len );
+  /* path */
 
   for ( i = 0; i < len; i++ )
     {
-      b = get_byte( &bp );
-      path[ i ] = b;
-      cch [ i ] = b;
+      cc[ i ] = get_byte( &bp );
     }
-  path[ i ] = '\0';
-  cch[ i ] = '\0';
-  path[ i ] = get_byte( &bp );
 
-  _tprintf( L"path = %s\n", path );
-  printf( "ccch = %s\n", cch );
+  cc[ i ] = '\0';
+
+  /* path terminate */
+
+  get_byte( &bp );
+
+  /* path conv */
+
+  ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, path, MAX_PATH );
+
+  _tcscpy_s(g_idx->path, MAX_PATH, root);
+
+  PathAppend(g_idx->path, path);
+
+  /* next point */
 
   bp = ( BYTE* )( top + ( ( bp - top + 7 ) & ~7 ) );
-
-  _tprintf( L"bp = %p %p\n", top, bp );
-
-  size = ::MultiByteToWideChar( CP_UTF8, 0U, cch, -1, path, MAX_PATH );
-
-  _tprintf( L"2path = %s %d\n", path, size );
-
-  PathAppend( temp, git_path );
-  PathAppend( temp, path );
-
-  _tstat( temp, &st );
-
-  _tprintf(L"[%s]\n", temp);
-
-  _tprintf( L"temp %08X\n", ( DWORD )st.st_ctime );
-  _tprintf( L"temp %08X\n", ( DWORD )st.st_mtime );
 
   return bp;
 }
@@ -247,28 +243,80 @@ BYTE *Body( BYTE *bp )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-int _tmain( int argc, TCHAR **argv )
+static void debug_git_index( GIT_INDEX *g_idx )
 {
-  HANDLE        hFile;
-  DWORD         dwFileSize;
-  BYTE*         bp;
-  BYTE*         top;
-  DWORD         readFileSize;
-  DWORD         total;
-  DWORD         version;
-  DWORD         size;
-  WORD          len;
-  TCHAR         path[ MAX_PATH ];
-  int           i;
-  TCHAR*        cp;
+  /* ctime  */
 
-  _tcscpy_s( git_path, MAX_PATH, GIT_PATH );
+  _tprintf( L"ctime = %08X\n", g_idx->ctime_hi );
+  _tprintf( L"ctime = %08X\n", g_idx->ctime_lo );
+
+  /* mtime  */
+
+  _tprintf( L"mtime = %08X\n", g_idx->mtime_hi );
+  _tprintf( L"mtime = %08X\n", g_idx->mtime_lo );
+
+  /* dev */
+
+  _tprintf( L"%08X\n", g_idx->dev );
+
+  /* inode */
+
+  _tprintf( L"%08X\n", g_idx->inode );
+
+  /* mode */
+
+  _tprintf( L"mode = %08X\n", g_idx->mode );
+
+  /* uid */
+
+  _tprintf( L"%08X\n", g_idx->uid );
+
+  /* guid */
+
+  _tprintf( L"%08X\n", g_idx->guid );
+
+  /* sha1 */
+
+  _tprintf( L"sha1:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X\n",
+    g_idx->sha1[0],
+    g_idx->sha1[1],
+    g_idx->sha1[2],
+    g_idx->sha1[3],
+    g_idx->sha1[4],
+    g_idx->sha1[5],
+    g_idx->sha1[6],
+    g_idx->sha1[7],
+    g_idx->sha1[8],
+    g_idx->sha1[9],
+    g_idx->sha1[10],
+    g_idx->sha1[11],
+    g_idx->sha1[12],
+    g_idx->sha1[13],
+    g_idx->sha1[14],
+    g_idx->sha1[15],
+    g_idx->sha1[16],
+    g_idx->sha1[17],
+    g_idx->sha1[18],
+    g_idx->sha1[19]);
+
+  _tprintf(L"[%s]\n", g_idx->path);
+}
+// --------------------------------------------------------------------------
+
+
+// ==========================================================================
+// -- 
+// --------------------------------------------------------------------------
+static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
+{
+  TCHAR   path[ MAX_PATH ];
+  HANDLE  hFile = INVALID_HANDLE_VALUE;
+
+  _tcscpy_s(git_path, size, input);
 
   do
     {
       _stprintf( path, L"%s\\%s", git_path, L".git\\index" );
-
-      _tprintf( L"%s\n", path );
 
       hFile = CreateFile( path,
                           GENERIC_READ,
@@ -290,41 +338,190 @@ int _tmain( int argc, TCHAR **argv )
     }
   while ( 1 );
 
+  return hFile;
+}
+// --------------------------------------------------------------------------
 
-  _tprintf( L"top=%s\n", git_path );
+
+// ==========================================================================
+// -- 
+// --------------------------------------------------------------------------
+DWORD scan_git_index( const BYTE *bp, const TCHAR *git_path, dirent ***entry )
+{
+  DWORD         total = 0;
+  DWORD         version;
+  GIT_INDEX     g_idx;
+  struct _stat  st;
+  FIND_DATA     fd;
+
+  bp = Header( bp, &total, &version );
+
+  if ( !bp )
+    {
+      return 0;
+    }
+
+  for ( int i = 0; i < total; i++ )
+    {
+      bp = Body( bp, git_path, &g_idx );
+
+      _tstat( g_idx.path, &st );
+
+      if ((DWORD)st.st_mtime == g_idx.mtime_hi)
+        {
+          continue;
+        }
+
+      HANDLE  hFile = ::FindFirstFile( g_idx.path, &fd );
+
+      if (hFile == INVALID_HANDLE_VALUE)
+        {
+          continue;
+        }
+
+      /* Add file info */
+
+      
+    }
+
+  return total;
+}
+// --------------------------------------------------------------------------
+
+
+// ==========================================================================
+// -- 
+// --------------------------------------------------------------------------
+int scan_git_dir( const TCHAR dir[], dirent ***entry )
+{
+  HANDLE    hFile;
+  TCHAR     path[ MAX_PATH ];
+  DWORD     size_lo;
+  DWORD     size_hi;
+  DWORD     size_ot;
+  BYTE     *bp;
+  DWORD     total = 0;
+
+  hFile = open_git_index(dir, path, MAX_PATH);
+
+  if ( hFile == INVALID_HANDLE_VALUE )
+    {
+      return 0;
+    }
+
+  size_lo = GetFileSize(hFile, &size_hi);
+
+  if ( size_lo == INVALID_FILE_SIZE )
+    {
+      /* File size acquisition failure! */
+    }
+  else if ( size_hi > 0 )
+    {
+      /* File size is too large! */
+    }
+  else
+    {
+      bp = ( BYTE* )malloc( size_lo );
+
+      if ( bp )
+        {
+          if ( ReadFile( hFile, bp, size_lo, &size_ot, NULL ) )
+            {
+              total = scan_git_index(bp, path, entry);
+            }
+        }
+
+      free( bp );
+    }
+
+  CloseHandle( hFile );
+
+  return total;
+}
+// --------------------------------------------------------------------------
+
+
+// ==========================================================================
+// -- 
+// --------------------------------------------------------------------------
+int _tmain( int argc, TCHAR **argv )
+{
+  DWORD    total;
+  dirent **namelist;
+
+  total = scan_git_dir(GIT_PATH, &namelist);
+
+  _tprintf( L"%d\n", total );
+
+#if 0
+  HANDLE        hFile;
+  BYTE         *bp;
+  BYTE         *top;
+  DWORD         total;
+  DWORD         version;
+  DWORD         size;
+  WORD          len;
+  TCHAR         path[ MAX_PATH ];
+  int           i;
+  TCHAR*        cp;
+  DWORD         size_lo;
+  DWORD         size_hi;
+  DWORD         size_ot;
+  GIT_INDEX     g_idx;
+
+  _tcscpy_s( git_path, MAX_PATH, GIT_PATH );
+
+
+  _tprintf( L"Not git index path=\"%s\"\n", git_path );
+
+  hFile = open_git_index(GIT_PATH, git_path, MAX_PATH);
 
   if ( hFile != INVALID_HANDLE_VALUE )
     {
-      dwFileSize = GetFileSize(hFile, NULL);
+      _tprintf( L"top=%s %p\n", git_path, hFile );
 
-      if ( dwFileSize != ~0 )
+      size_lo = GetFileSize(hFile, &size_hi);
+
+      _tprintf(L"%d\n", size_lo);
+
+      if ( size_lo == INVALID_FILE_SIZE )
         {
-          _tprintf( L" FileSize = %u bytes\n", dwFileSize );
+          _tprintf( L"File size acquisition failure!\n" );
+        }
+      else if ( size_hi > 0 )
+        {
+          _tprintf( L"File size is too large!\n" );
+        }
+      else
+        {
+          _tprintf( L" FileSize = %u bytes\n", size_lo );
 
-          top = bp = ( BYTE* )malloc( dwFileSize );
+          top = bp = ( BYTE* )malloc( size_lo );
 
-          if ( bp )
+          if ( top )
             {
-              if ( ReadFile( hFile, bp, dwFileSize, &readFileSize, NULL ) )
+              if ( ReadFile( hFile, top, size_lo, &size_ot, NULL ) )
                 {
-                  bp = Header( bp, &total, &version );
-
+                  bp = Header( top, &total, &version );
+          
                   if ( bp )
                     {
                       for ( i = 0; i < total; i++ )
                         {
-                          bp = Body( bp );
+                          bp = Body( bp, git_path, &g_idx );
+
+                          debug_git_index(&g_idx);
                         }
                     }
                 }
 
               free( top );
             }
-
         }
 
       CloseHandle( hFile );
     }
+
 
   FILETIME  CreationTime;
   FILETIME  LastAccessTime;
@@ -364,6 +561,7 @@ int _tmain( int argc, TCHAR **argv )
 
   _tprintf( L"\nEND.\n" );
 
+#endif
   return 0;
 }
 // --------------------------------------------------------------------------
