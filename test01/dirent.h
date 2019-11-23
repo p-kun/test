@@ -19,7 +19,6 @@ typedef struct dirent
   DWORD           nFileSizeLow;
   DWORD           dwReserved0;
   DWORD           dwReserved1;
-  DWORD           cvs;
   DWORD           bookMark;
   DWORD           userData;
   HANDLE          hHandle;

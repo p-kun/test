@@ -25,12 +25,16 @@
 #define DENT_FLT_RECURSION	0x2
 #define DENT_FLT_CANCEL		  (-1)
 
-int  scandir( const TCHAR *,
-              dirent ***,
-              int ( * )( dirent* ) = NULL,
-              int ( * )( dirent* ) = NULL,
-              int ( * )( const dirent **, const dirent ** ) = NULL,
-              void * = NULL );
-void delete_scandir( dirent **top_namelist );
+typedef int (*SCAN_FILTER )(dirent *);
+typedef int (*SCAN_COMPARE)(const dirent **, const dirent **);
+
+int  scandir(const TCHAR*,
+             dirent***,
+             SCAN_FILTER  = NULL,
+             SCAN_FILTER  = NULL,
+             SCAN_COMPARE = NULL,
+             void*        = NULL);
+
+void delete_scandir(dirent **top_namelist);
 
 #endif // _SCANDIR_H_

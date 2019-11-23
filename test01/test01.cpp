@@ -9,6 +9,7 @@
 #include <shlwapi.h>
 #include "dirent.h"
 #include "scandir.h"
+#include "savedir.h"
 
 #pragma comment(lib, "shlwapi.lib")
 
@@ -43,9 +44,14 @@ typedef struct
 }
 GIT_INDEX;
 
+#define _STAT   struct _stat
+
 /****************************************************************************
  * Private data
  ****************************************************************************/
+
+static TCHAR  __git_path[MAX_PATH];
+static _STAT  __st;
 
 /****************************************************************************
  * Private functions
@@ -54,7 +60,7 @@ GIT_INDEX;
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-BYTE get_byte( const BYTE** pp_data )
+static BYTE get_byte( const BYTE** pp_data )
 {
   BYTE        data;
   const BYTE* bp = *pp_data;
@@ -73,7 +79,7 @@ BYTE get_byte( const BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-WORD get_word( const BYTE** pp_data )
+static WORD get_word( const BYTE** pp_data )
 {
   WORD  data = 0;
 
@@ -89,17 +95,13 @@ WORD get_word( const BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-DWORD get_dword( const BYTE** pp_data )
+static DWORD get_dword( const BYTE** pp_data )
 {
   DWORD data = 0;
 
-  data |= get_byte(pp_data);
-  data <<= 8;
-  data |= get_byte(pp_data);
-  data <<= 8;
-  data |= get_byte(pp_data);
-  data <<= 8;
-  data |= get_byte(pp_data);
+  data |= get_word( pp_data );
+  data <<= 16;
+  data |= get_word( pp_data );
 
   return data;
 }
@@ -109,12 +111,38 @@ DWORD get_dword( const BYTE** pp_data )
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-const BYTE *Header( const BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
+static const BYTE *Header( const BYTE *bp, int *total = NULL, DWORD *version = NULL )
 {
-  const BYTE  *ret = NULL;
-  DWORD        _version;
-  DWORD        _total;
+  const BYTE *ret = NULL;
+  DWORD       _version;
+  DWORD       _total;
+  DWORD       data;
 
+  if ((data = get_dword(&bp)) != 0x44495243 )   /* 0x43524944 */
+    {
+      /**/
+    }
+  else
+    {
+      _version = get_dword( &bp );
+      _total   = get_dword( &bp );
+
+      if ( version )
+        {
+          *version = _version;
+        }
+
+      if ( total )
+        {
+          *total = _total;
+        }
+
+      ret = bp;
+    }
+
+  _tprintf(L"%x\n", data);
+
+#if 0
   if ( get_byte( &bp ) != 'D' )
     {
       /**/
@@ -148,6 +176,7 @@ const BYTE *Header( const BYTE *bp, DWORD *total = NULL, DWORD *version = NULL )
 
       ret = bp;
     }
+#endif
 
   return ret;
 }
@@ -311,12 +340,25 @@ static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
 {
   TCHAR   path[ MAX_PATH ];
   HANDLE  hFile = INVALID_HANDLE_VALUE;
+  _STAT   st;
 
   _tcscpy_s(git_path, size, input);
 
   do
     {
-      _stprintf( path, L"%s\\%s", git_path, L".git\\index" );
+      _stprintf_s( path, MAX_PATH, L"%s\\%s", git_path, L".git\\index" );
+
+      _tstat(path, &st);
+
+      if (_tcsicmp(__git_path, path)   == 0
+       && memcmp(&__st, &st, sizeof(st)) == 0)
+        {
+          printf("same\n");
+          hFile = INVALID_HANDLE_VALUE;
+          break;
+        }
+
+      __st = st;
 
       hFile = CreateFile( path,
                           GENERIC_READ,
@@ -346,33 +388,33 @@ static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
 // ==========================================================================
 // -- 
 // --------------------------------------------------------------------------
-DWORD scan_git_index( const BYTE *bp, const TCHAR *git_path, dirent ***entry )
+static int scan_git_index(const BYTE *bp, const TCHAR *git_path, dirent ***entry)
 {
-  DWORD         total = 0;
-  DWORD         version;
-  GIT_INDEX     g_idx;
-  struct _stat  st;
-  FIND_DATA     fd;
+  int       total = 0;
+  DWORD     version;
+  GIT_INDEX g_idx;
+  _STAT     st;
+  FIND_DATA fd;
 
-  bp = Header( bp, &total, &version );
+  bp = Header(bp, &total, &version);
 
-  if ( !bp )
+  if (!bp)
     {
       return 0;
     }
 
-  for ( int i = 0; i < total; i++ )
+  for (int i = 0; i < total; i++)
     {
-      bp = Body( bp, git_path, &g_idx );
+      bp = Body(bp, git_path, &g_idx);
 
-      _tstat( g_idx.path, &st );
+      _tstat(g_idx.path, &st);
 
       if ((DWORD)st.st_mtime == g_idx.mtime_hi)
         {
           continue;
         }
 
-      HANDLE  hFile = ::FindFirstFile( g_idx.path, &fd );
+      HANDLE  hFile = ::FindFirstFile(g_idx.path, &fd);
 
       if (hFile == INVALID_HANDLE_VALUE)
         {
@@ -394,15 +436,17 @@ DWORD scan_git_index( const BYTE *bp, const TCHAR *git_path, dirent ***entry )
 // --------------------------------------------------------------------------
 int scan_git_dir( const TCHAR dir[], dirent ***entry )
 {
-  HANDLE    hFile;
-  TCHAR     path[ MAX_PATH ];
-  DWORD     size_lo;
-  DWORD     size_hi;
-  DWORD     size_ot;
-  BYTE     *bp;
-  DWORD     total = 0;
+  HANDLE  hFile;
+  TCHAR   path[ MAX_PATH ];
+  DWORD   size_lo;
+  DWORD   size_hi;
+  DWORD   size_ot;
+  BYTE   *bp;
+  int     total = 0;
 
   hFile = open_git_index(dir, path, MAX_PATH);
+
+  _tprintf(L"%s\n", path);
 
   if ( hFile == INVALID_HANDLE_VALUE )
     {
@@ -448,6 +492,10 @@ int _tmain( int argc, TCHAR **argv )
 {
   DWORD    total;
   dirent **namelist;
+
+  total = scan_git_dir(GIT_PATH, &namelist);
+
+  _tprintf( L"%d\n", total );
 
   total = scan_git_dir(GIT_PATH, &namelist);
 
