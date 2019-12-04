@@ -6,610 +6,461 @@
 #include <stdio.h>
 #include <TCHAR.h>
 #include <sys/stat.h>
+#include <time.h>
 #include <shlwapi.h>
 #include "dirent.h"
-#include "scandir.h"
 #include "savedir.h"
-
-#pragma comment(lib, "shlwapi.lib")
+#include "scandir.h"
+#include "xgit.h"
 
 /****************************************************************************
  * Pre-processor definitions
  ****************************************************************************/
 
-#define GIT_PATH  L"C:\\user\\spresense\\sdk\\bsp\\board\\collet\\include"
-//#define GIT_PATH  L"C:\\ProgramData\\Apple Computer\\iTunes\\adi"
-//#define GIT_PATH  L"C:\\Windows\\System32\\Hydrogen\\BakedPlugins\\Fx\\textures"
+#define GIT_PATH3   L"C:\\user\\test\\test0\\savedir.cpp"
+#define GIT_PATH0   L"C:\\user\\spresense\\sdk\\bsp\\board\\collet\\include"
+#define GIT_PATH1   L"C:\\ProgramData\\Apple Computer\\iTunes\\adi"
+#define GIT_PATH2   L"C:\\user\\spresense-arduino-compatible\\Arduino15\\packages\\SPRESENSE\\hardware\\spresense\\1.0.0\\libraries\\Audio\\examples\\application\\voice_effector"
 
-#define FIND_DATA WIN32_FIND_DATA
-
-/****************************************************************************
- * Private types
- ****************************************************************************/
-
-typedef struct
-{
-  DWORD   ctime_hi;
-  DWORD   ctime_lo;
-  DWORD   mtime_hi;
-  DWORD   mtime_lo;
-  DWORD   dev;
-  DWORD   inode;
-  DWORD   mode;
-  DWORD   uid;
-  DWORD   guid;
-  DWORD   size;
-  BYTE    sha1[20];
-  TCHAR   path[MAX_PATH];
-}
-GIT_INDEX;
-
-#define _STAT   struct _stat
-
-/****************************************************************************
- * Private data
- ****************************************************************************/
-
-static TCHAR  __git_path[MAX_PATH];
-static _STAT  __st;
+#define FIND_DATA   WIN32_FIND_DATA
 
 /****************************************************************************
  * Private functions
  ****************************************************************************/
 
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static BYTE get_byte( const BYTE** pp_data )
-{
-  BYTE        data;
-  const BYTE* bp = *pp_data;
-
-  data = *bp;
-
-  bp++;
-
-  *pp_data = bp;
-
-  return data;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static WORD get_word( const BYTE** pp_data )
-{
-  WORD  data = 0;
-
-  data |= get_byte(pp_data);
-  data <<= 8;
-  data |= get_byte(pp_data);
-
-  return data;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static DWORD get_dword( const BYTE** pp_data )
-{
-  DWORD data = 0;
-
-  data |= get_word( pp_data );
-  data <<= 16;
-  data |= get_word( pp_data );
-
-  return data;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static const BYTE *Header( const BYTE *bp, int *total = NULL, DWORD *version = NULL )
-{
-  const BYTE *ret = NULL;
-  DWORD       _version;
-  DWORD       _total;
-  DWORD       data;
-
-  if ((data = get_dword(&bp)) != 0x44495243 )   /* 0x43524944 */
-    {
-      /**/
-    }
-  else
-    {
-      _version = get_dword( &bp );
-      _total   = get_dword( &bp );
-
-      if ( version )
-        {
-          *version = _version;
-        }
-
-      if ( total )
-        {
-          *total = _total;
-        }
-
-      ret = bp;
-    }
-
-  _tprintf(L"%x\n", data);
-
 #if 0
-  if ( get_byte( &bp ) != 'D' )
-    {
-      /**/
-    }
-  else if ( get_byte( &bp ) != 'I' )
-    {
-      /**/
-    }
-  else if ( get_byte( &bp ) != 'R' )
-    {
-      /**/
-    }
-  else if ( get_byte( &bp ) != 'C' )
-    {
-      /**/
-    }
-  else
-    {
-      _version = get_dword( &bp );
-      _total   = get_dword( &bp );
+uint32_t totime(int year,
+                int month,
+                int day,
+                int hour,
+                int min,
+                int sec,
+                int dstflag )
+{
+        int tmpdays;
+        __time64_t tmptim;
+        struct tm tb;
+        int daylight = 0;
+        long dstbias = 0;
+        long timezone = 0;
+  localtime
 
-      if ( version )
-        {
-          *version = _version;
-        }
+  int   days[] = {
 
-      if ( total )
-        {
-          *total = _total;
-        }
+        yr -= 1900;
 
-      ret = bp;
-    }
+        _VALIDATE_RETURN_NOEXC(
+            ( ( mo >= 1 ) && ( mo <= 12 ) ),
+            EINVAL,
+            ( ( __time64_t )( -1 ) )
+        )
+        _VALIDATE_RETURN_NOEXC(
+            ( ( hr >= 0 ) && ( hr <= 23 ) ),
+            EINVAL,
+            ( ( __time64_t )( -1 ) )
+        )
+        _VALIDATE_RETURN_NOEXC(
+            ( ( mn >= 0 ) && ( mn <= 59 ) ),
+            EINVAL,
+            ( ( __time64_t )( -1 ) )
+        )
+        _VALIDATE_RETURN_NOEXC(
+            ( ( sc >= 0 ) && ( sc <= 59 ) ),
+            EINVAL,
+            ( ( __time64_t )( -1 ) )
+        )
+        _VALIDATE_RETURN_NOEXC(
+            ( ( dy >= 1 ) && (
+                (
+                    (_days[mo] - _days[mo - 1]) >= dy) ||               // Make sure that the # of days is in valid range for the month
+                    (_IS_LEAP_YEAR(yr) && mo == 2 && dy <= 29)  // Special case for Feb in a leap year
+                )
+            ),
+            EINVAL,
+            ( ( __time64_t )( -1 ) )
+        )
+
+        /*
+         * Compute the number of elapsed days in the current year.
+         */
+        tmpdays = dy + _days[mo - 1];
+        if ( _IS_LEAP_YEAR(yr) && (mo > 2) )
+            tmpdays++;
+
+        /*
+         * Compute the number of elapsed seconds since the Epoch. Note the
+         * computation of elapsed leap years would break down after 2100
+         * if such values were in range (fortunately, they aren't).
+         */
+        tmptim = /* 365 days for each year */
+                 (((__time64_t)yr - _BASE_YEAR) * 365
+
+                 /* one day for each elapsed leap year */
+                 + (__time64_t)_ELAPSED_LEAP_YEARS(yr)
+
+                 /* number of elapsed days in yr */
+                 + tmpdays)
+
+                 /* convert to hours and add in hr */
+                 * 24 + hr;
+
+        tmptim = /* convert to minutes and add in mn */
+                 (tmptim * 60 + mn)
+
+                 /* convert to seconds and add in sec */
+                 * 60 + sc;
+        /*
+         * Account for time zone.
+         */
+        __tzset();
+
+        _ERRCHECK(_get_daylight(&daylight));
+        _ERRCHECK(_get_dstbias(&dstbias));
+        _ERRCHECK(_get_timezone(&timezone));
+
+        tmptim += timezone;
+
+        /*
+         * Fill in enough fields of tb for _isindst(), then call it to
+         * determine DST.
+         */
+        tb.tm_yday = tmpdays;
+        tb.tm_year = yr;
+        tb.tm_mon  = mo - 1;
+        tb.tm_hour = hr;
+        tb.tm_min  = mn;
+        tb.tm_sec  = sc;
+        if ( (dstflag == 1) || ((dstflag == -1) && daylight &&
+                                _isindst(&tb)) )
+            tmptim += dstbias;
+        return(tmptim);
+}
 #endif
 
-  return ret;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_INDEX *g_idx )
+/* ------------------------------------------------------------------------ */
+static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
 {
-  WORD         len;
-  TCHAR        path[ MAX_PATH ];
-  int          i;
-  CHAR         cc[ MAX_PATH ];
-  const BYTE  *top = bp;
+  D_NODE       *d_node = (D_NODE *)param;
+  FIND_DATA     fd;
+  HANDLE        hFind;
+  struct _stat  st = {0};
+  TCHAR         c0 = L' ';
+  TCHAR         c1 = L' ';
+  struct tm     tm1;
+  struct tm     tm2;
 
-  /* ctime  */
+  _tstat(g_node->path, &st);
 
-  g_idx->ctime_hi = get_dword( &bp );
-  g_idx->ctime_lo = get_dword( &bp );
+  _localtime64_s(&tm1, &st.st_mtime);
+  _localtime32_s(&tm2, (const __time32_t *)&g_node->mtime_hi);
 
-  /* mtime  */
+/*
+  _tprintf(L"%d-%2d-%2d %02d:%02d:%02d(%d:%d:%d)\n%d-%2d-%2d %2d:%02d:%02d(%d:%d:%d)%s\n",
+           tm1.tm_year + 1900,
+           tm1.tm_mon,
+           tm1.tm_yday,
+           tm1.tm_hour,
+           tm1.tm_min,
+           tm1.tm_sec,
+           tm1.tm_mday,
+           tm1.tm_wday,
+           tm1.tm_isdst,
+           tm2.tm_year + 1900,
+           tm2.tm_mon,
+           tm2.tm_mday,
+           tm2.tm_hour,
+           tm2.tm_min,
+           tm2.tm_sec,
+           tm2.tm_yday,
+           tm2.tm_wday,
+           tm2.tm_isdst,
+           g_node->path);
+*/
+  _tprintf(L"%08X %08X %d.%02d.%02d %02d-%02d-%02d(%d:%d:%d)%s\n",
+           (DWORD)st.st_mtime, 
+           (DWORD)g_node->mtime_hi,
+           tm2.tm_year + 1900,
+           tm2.tm_mon,
+           tm2.tm_mday,
+           tm2.tm_hour,
+           tm2.tm_min,
+           tm2.tm_sec,
+           tm2.tm_yday,
+           tm2.tm_wday,
+           tm2.tm_isdst,
+           g_node->path);
 
-  g_idx->mtime_hi = get_dword( &bp );
-  g_idx->mtime_lo = get_dword( &bp );
+  d_node = savedir(d_node, g_node->path);
 
-  /* dev */
-
-  g_idx->dev = get_dword( &bp );
-
-  /* inode */
-
-  g_idx->inode = get_dword( &bp );
-
-  /* mode */
-
-  g_idx->mode = get_dword( &bp );
-
-  /* uid */
-
-  g_idx->uid = get_dword( &bp );
-
-  /* guid */
-
-  g_idx->guid = get_dword( &bp );
-
-  /* sha1 size */
-
-  get_dword( &bp );
-
-  /* sha1 */
-
-  for ( i = 0; i < 20; i++ )
+  if (d_node->subd)
     {
-      g_idx->sha1[i] = get_byte( &bp );
+//    _tprintf(L"SUB: %s\n", d_node->subd->d_name);
     }
 
-  /* path length */
-
-  len = get_word( &bp );
-
-  /* path */
-
-  for ( i = 0; i < len; i++ )
+  if (d_node->next)
     {
-      cc[ i ] = get_byte( &bp );
+//    _tprintf(L"NXT: %s %s\n", d_node->next->d_name, d_node->d_name);
     }
 
-  cc[ i ] = '\0';
+#ifdef _KERNELX
+  FILETIME    local;
+#endif
+  SYSTEMTIME  systi;
 
-  /* path terminate */
+  __time32_t  st_mtime;
 
-  get_byte( &bp );
+  hFind = FindFirstFile(g_node->path, &fd);
 
-  /* path conv */
-
-  ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, path, MAX_PATH );
-
-  _tcscpy_s(g_idx->path, MAX_PATH, root);
-
-  PathAppend(g_idx->path, path);
-
-  /* next point */
-
-  bp = ( BYTE* )( top + ( ( bp - top + 7 ) & ~7 ) );
-
-  return bp;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static void debug_git_index( GIT_INDEX *g_idx )
-{
-  /* ctime  */
-
-  _tprintf( L"ctime = %08X\n", g_idx->ctime_hi );
-  _tprintf( L"ctime = %08X\n", g_idx->ctime_lo );
-
-  /* mtime  */
-
-  _tprintf( L"mtime = %08X\n", g_idx->mtime_hi );
-  _tprintf( L"mtime = %08X\n", g_idx->mtime_lo );
-
-  /* dev */
-
-  _tprintf( L"%08X\n", g_idx->dev );
-
-  /* inode */
-
-  _tprintf( L"%08X\n", g_idx->inode );
-
-  /* mode */
-
-  _tprintf( L"mode = %08X\n", g_idx->mode );
-
-  /* uid */
-
-  _tprintf( L"%08X\n", g_idx->uid );
-
-  /* guid */
-
-  _tprintf( L"%08X\n", g_idx->guid );
-
-  /* sha1 */
-
-  _tprintf( L"sha1:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X\n",
-    g_idx->sha1[0],
-    g_idx->sha1[1],
-    g_idx->sha1[2],
-    g_idx->sha1[3],
-    g_idx->sha1[4],
-    g_idx->sha1[5],
-    g_idx->sha1[6],
-    g_idx->sha1[7],
-    g_idx->sha1[8],
-    g_idx->sha1[9],
-    g_idx->sha1[10],
-    g_idx->sha1[11],
-    g_idx->sha1[12],
-    g_idx->sha1[13],
-    g_idx->sha1[14],
-    g_idx->sha1[15],
-    g_idx->sha1[16],
-    g_idx->sha1[17],
-    g_idx->sha1[18],
-    g_idx->sha1[19]);
-
-  _tprintf(L"[%s]\n", g_idx->path);
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
-{
-  TCHAR   path[ MAX_PATH ];
-  HANDLE  hFile = INVALID_HANDLE_VALUE;
-  _STAT   st;
-
-  _tcscpy_s(git_path, size, input);
-
-  do
+  if (hFind != INVALID_HANDLE_VALUE)
     {
-      _stprintf_s( path, MAX_PATH, L"%s\\%s", git_path, L".git\\index" );
-
-      _tstat(path, &st);
-
-      if (_tcsicmp(__git_path, path)   == 0
-       && memcmp(&__st, &st, sizeof(st)) == 0)
+      if (fd.ftLastWriteTime.dwLowDateTime || fd.ftLastWriteTime.dwHighDateTime)
         {
-          printf("same\n");
-          hFile = INVALID_HANDLE_VALUE;
-          break;
-        }
-
-      __st = st;
-
-      hFile = CreateFile( path,
-                          GENERIC_READ,
-                          FILE_SHARE_READ,
-                          NULL,
-                          OPEN_EXISTING,
-                          FILE_ATTRIBUTE_NORMAL,
-                          NULL );
-
-      if ( hFile != INVALID_HANDLE_VALUE )
-        {
-          break;
-        }
-
-      if ( !PathRemoveFileSpec( git_path ) )
-        {
-          break;
-        }
-    }
-  while ( 1 );
-
-  return hFile;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-static int scan_git_index(const BYTE *bp, const TCHAR *git_path, dirent ***entry)
-{
-  int       total = 0;
-  DWORD     version;
-  GIT_INDEX g_idx;
-  _STAT     st;
-  FIND_DATA fd;
-
-  bp = Header(bp, &total, &version);
-
-  if (!bp)
-    {
-      return 0;
-    }
-
-  for (int i = 0; i < total; i++)
-    {
-      bp = Body(bp, git_path, &g_idx);
-
-      _tstat(g_idx.path, &st);
-
-      if ((DWORD)st.st_mtime == g_idx.mtime_hi)
-        {
-          continue;
-        }
-
-      HANDLE  hFile = ::FindFirstFile(g_idx.path, &fd);
-
-      if (hFile == INVALID_HANDLE_VALUE)
-        {
-          continue;
-        }
-
-      /* Add file info */
-
-      
-    }
-
-  return total;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-int scan_git_dir( const TCHAR dir[], dirent ***entry )
-{
-  HANDLE  hFile;
-  TCHAR   path[ MAX_PATH ];
-  DWORD   size_lo;
-  DWORD   size_hi;
-  DWORD   size_ot;
-  BYTE   *bp;
-  int     total = 0;
-
-  hFile = open_git_index(dir, path, MAX_PATH);
-
-  _tprintf(L"%s\n", path);
-
-  if ( hFile == INVALID_HANDLE_VALUE )
-    {
-      return 0;
-    }
-
-  size_lo = GetFileSize(hFile, &size_hi);
-
-  if ( size_lo == INVALID_FILE_SIZE )
-    {
-      /* File size acquisition failure! */
-    }
-  else if ( size_hi > 0 )
-    {
-      /* File size is too large! */
-    }
-  else
-    {
-      bp = ( BYTE* )malloc( size_lo );
-
-      if ( bp )
-        {
-          if ( ReadFile( hFile, bp, size_lo, &size_ot, NULL ) )
+#ifndef _KERNELX
+          if (!FileTimeToSystemTime(&fd.ftLastWriteTime, &systi)
+           || !SystemTimeToTzSpecificLocalTime(NULL, &systi, &systi))
+#else
+          if (!FileTimeToLocalFileTime(&fd.ftLastWriteTime, &local)
+           || !FileTimeToSystemTime(&local, &systi))
+#endif
             {
-              total = scan_git_index(bp, path, entry);
+              printf("AHO\n");
+              return;
             }
-        }
-
-      free( bp );
-    }
-
-  CloseHandle( hFile );
-
-  return total;
-}
-// --------------------------------------------------------------------------
-
-
-// ==========================================================================
-// -- 
-// --------------------------------------------------------------------------
-int _tmain( int argc, TCHAR **argv )
-{
-  DWORD    total;
-  dirent **namelist;
-
-  total = scan_git_dir(GIT_PATH, &namelist);
-
-  _tprintf( L"%d\n", total );
-
-  total = scan_git_dir(GIT_PATH, &namelist);
-
-  _tprintf( L"%d\n", total );
-
-#if 0
-  HANDLE        hFile;
-  BYTE         *bp;
-  BYTE         *top;
-  DWORD         total;
-  DWORD         version;
-  DWORD         size;
-  WORD          len;
-  TCHAR         path[ MAX_PATH ];
-  int           i;
-  TCHAR*        cp;
-  DWORD         size_lo;
-  DWORD         size_hi;
-  DWORD         size_ot;
-  GIT_INDEX     g_idx;
-
-  _tcscpy_s( git_path, MAX_PATH, GIT_PATH );
-
-
-  _tprintf( L"Not git index path=\"%s\"\n", git_path );
-
-  hFile = open_git_index(GIT_PATH, git_path, MAX_PATH);
-
-  if ( hFile != INVALID_HANDLE_VALUE )
-    {
-      _tprintf( L"top=%s %p\n", git_path, hFile );
-
-      size_lo = GetFileSize(hFile, &size_hi);
-
-      _tprintf(L"%d\n", size_lo);
-
-      if ( size_lo == INVALID_FILE_SIZE )
-        {
-          _tprintf( L"File size acquisition failure!\n" );
-        }
-      else if ( size_hi > 0 )
-        {
-          _tprintf( L"File size is too large!\n" );
+/*
+          st_mtime = __loctotime64_t(systi.wYear,
+                                     systi.wMonth,
+                                     systi.wDay,
+                                     systi.wHour,
+                                     systi.wMinute,
+                                     systi.wSecond,
+                                     -1 );
+*/
         }
       else
         {
-          _tprintf( L" FileSize = %u bytes\n", size_lo );
+          st_mtime = 0;
+        }
 
-          top = bp = ( BYTE* )malloc( size_lo );
 
-          if ( top )
+//    _tprintf(L"%s\n", g_node->path);
+//    _tprintf(L"%08X\n", fd.ftCreationTime.dwLowDateTime);
+      _tprintf(L"%X %X\n", st_mtime, g_node->mtime_hi);
+
+      if ((DWORD)st.st_mtime != g_node->mtime_hi)
+        {
+          c0 = L'*';
+        }
+      else
+        {
+          c0 = L' ';
+        }
+
+      if ((DWORD)st.st_ctime != g_node->ctime_hi)
+        {
+          c1 = L'*';
+        }
+      else
+        {
+          c1 = L' ';
+        }
+
+      if (c0 == L'*' || c1 == L'*')
+        {
+          d_node->git = 1;
+        }
+
+/*
+      if (c0 == L'*' || c1 == L'*')
+        {
+          _tprintf(L"%c%08X %08X %c%08X %08X %s\n", c0, (DWORD)st.st_mtime, g_node->mtime_hi, c1, (DWORD)st.st_mtime, g_node->mtime_hi, g_node->path);
+
+          if (d_node->next)
             {
-              if ( ReadFile( hFile, top, size_lo, &size_ot, NULL ) )
-                {
-                  bp = Header( top, &total, &version );
-          
-                  if ( bp )
-                    {
-                      for ( i = 0; i < total; i++ )
-                        {
-                          bp = Body( bp, git_path, &g_idx );
-
-                          debug_git_index(&g_idx);
-                        }
-                    }
-                }
-
-              free( top );
+              _tprintf(L"NXT: %s\n", d_node->next->d_name);
+              d_node->next->git = 1;
             }
         }
+*/
+//    _tprintf(L"%08X\n", g_node->ctime_lo);
+//    _tprintf(L"%08X\n", fd.ftCreationTime.dwHighDateTime);
 
-      CloseHandle( hFile );
+//    fd.ftLastAccessTime;
+//    fd.ftLastWriteTime;
+
+      FindClose(hFind);
     }
+/*
+  FILETIME  ctime;
+  FILETIME  atime;
+  FILETIME  mtime;
 
+  GetFileTime(
+    HANDLE              hFile,
+    LPFILETIME          lpCreationTime,
+    LPFILETIME          lpLastAccessTime,
+    LPFILETIME          lpLastWriteTime
+*/
 
-  FILETIME  CreationTime;
-  FILETIME  LastAccessTime;
-  FILETIME  LastWriteTime;
-  FILETIME  local;
+//_tprintf(L"%s %s\n", path, g_node->path);
+/*
+  struct _stat  st;
+  D_NODE       *p_node = savedir(g_node->path);
 
-  hFile = CreateFile( L"C:\\user\\Gottani\\README.md",
-                      GENERIC_READ,
-                      FILE_SHARE_READ,
-                      NULL,
-                      OPEN_EXISTING,
-                      FILE_ATTRIBUTE_NORMAL,
-                      NULL );
+  _tstat(g_node->path, &st);
 
-  if ( hFile != INVALID_HANDLE_VALUE )
-    {
-      if ( GetFileTime( hFile, &CreationTime, &LastAccessTime, &LastWriteTime ) )
-        {
-          _tprintf( L"README.md\n" );
-          _tprintf( L"%08X\n", CreationTime.dwHighDateTime );
-          _tprintf( L"%08X\n", CreationTime.dwLowDateTime );
-          _tprintf( L"%08X\n", LastAccessTime.dwHighDateTime );
-          _tprintf( L"%08X\n", LastAccessTime.dwLowDateTime );
-          _tprintf( L"%08X\n", LastWriteTime.dwHighDateTime );
-          _tprintf( L"%08X\n", LastWriteTime.dwLowDateTime );
+  p_node->git = (DWORD)st.st_ctime;
+*/
+#if 0
+  D_NODE *p_node = savedir(g_node->path);
 
-          FileTimeToLocalFileTime( &CreationTime, &local );
-          _tprintf( L"%08X\n", local.dwHighDateTime );
-          _tprintf( L"%08X\n", local.dwLowDateTime );
-          LocalFileTimeToFileTime( &CreationTime, &local );
-          _tprintf( L"%08X\n", local.dwHighDateTime );
-          _tprintf( L"%08X\n", local.dwLowDateTime );
-        }
+  _tprintf(L"%X %X %X %X\n",
+           g_node->ctime_hi,
+           g_node->mtime_hi,
+           g_node->ctime_lo,
+           g_node->mtime_lo);
 
-      CloseHandle( hFile );
-    }
+  struct _stat  st;
 
-  _tprintf( L"\nEND.\n" );
+  _tstat(g_node->path, &st);
 
+  _tprintf(L"%llX %llX\n",
+           st.st_ctime,
+           st.st_mtime);
+
+  _tprintf(L"%s %d %X\n", g_node->path, g_node->inode, g_node->sha1[0]);
 #endif
+}
+
+/* ------------------------------------------------------------------------ */
+DWORD WINAPI ThreadFunc(LPVOID arg)
+{
+  for (int i = 0; i < 1; i++)
+    {
+      printf("ThreadFunc %d\n", i);
+      Sleep(50);
+    }
+
   return 0;
 }
-// --------------------------------------------------------------------------
+
+/* ------------------------------------------------------------------------ */
+static int filter(dirent *entry)
+{
+//_tprintf(L"%s\n", entry->d_name);
+  return DENT_FLT_RECURSION;
+}
+
+int iii = 0;
+
+int scan(D_NODE *p, void *param)
+{
+  int  *iii = (int *)param;
+  int   ret = 0;
+
+//_tprintf(L"%s\n", p->d_name);
+
+  (*iii)++;
+
+  if (*iii == 100000)
+    {
+      ret = -1;
+    }
+
+  return ret;
+}
+
+/****************************************************************************
+ * Public functions
+ ****************************************************************************/
+
+int _tmain( int argc, TCHAR **argv )
+{
+  TCHAR     path[MAX_PATH];
+  dirent  **handle;
+  int       total;
+  D_NODE   *d_node;
+  D_NODE   *d_subd;
+
+  HANDLE  hThread;
+  DWORD   dwThreadId;
+
+  hThread = CreateThread(NULL,          // Security attributes
+                         0,             // Stack size
+                         ThreadFunc,    // Thread function
+                         NULL,          // Arguments passed to the thread function
+                         0,             // Creation option (0 or CREATE_SUSPENDED)
+                        &dwThreadId);   // Thread ID
+
+  /* Main processing */
+
+  GetCurrentDirectory(MAX_PATH, path);
+
+//_tcscpy_s(path, MAX_PATH, GIT_PATH0);
+
+//total = scandir(path, &handle, filter);
+
+//d_node = savedir(path);
+
+  _tprintf(L"ROOT: %s\n", path);
+
+  d_node = savedir(path);
+
+  total = scan_git_dir(path, node_callback, d_node);
+
+  printf("total %d\n", total);
+
+  d_node = savedir(L"C:\\user\\test\\test01\\xgit.cpp");
+
+  _tprintf(L"0: %s %d\n", d_node->d_name, d_node->git);
+
+  d_node = savedir(L"C:\\user\\test\\test01");
+
+  _tprintf(L"1: %s %d\n", d_node->d_name, d_node->git);
+
+  d_node = savedir(L"C:\\user");
+
+  _tprintf(L"2: %s %d\n", d_node->d_name, d_node->git);
+
+  d_node = savedir(L"D:\\AAA");
+
+  total = scandir(path, &handle, filter);
+
+  d_node = savedir();
+
+  _tprintf(L"___ <%s>\n", d_node->d_name);
+  d_node = d_node->subd;
+  _tprintf(L"___ <%s>\n", d_node->d_name);
+  d_node = d_node->next;
+  _tprintf(L"___ <%s>\n", d_node->d_name);
+
+/*
+  for (int i = 0; i < total && d_node; i++)
+    {
+      _tprintf(L"%d/%d %d %s\n", i + 1, total, d_node->git, d_node->d_name);
+
+      d_subd = d_node->subd;
+
+      while (d_subd)
+        {
+          _tprintf(L"%s\n", d_subd->d_name);
+          d_subd = d_subd->subd;
+        }
+
+      d_node = d_node->next;
+    }
+*/
+
+  /* End processing */
+
+	WaitForSingleObject(hThread, INFINITE);
+
+	CloseHandle(hThread);
+
+  iii = 0;
+
+  savedir_log(scan, &iii);
+
+  printf("%d\n", iii);
+
+  return 0;
+}

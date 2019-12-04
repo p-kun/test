@@ -32,12 +32,15 @@ typedef struct
   DWORD   guid;
   DWORD   size;
   BYTE    sha1[20];
+  DWORD   git;
   TCHAR   path[MAX_PATH];
 }
-GIT_INDEX;
+GIT_NODE;
+
+typedef void (*git_node_callback)(const TCHAR *path, GIT_NODE *p_node, void *param);
 
 /****************************************************************************
  * Public function prototypes
  ****************************************************************************/
 
-int scan_git_dir( const TCHAR dir[], dirent ***entry );
+int scan_git_dir( const TCHAR dir[], git_node_callback cb, void *param = NULL);

@@ -17,10 +17,19 @@
 #ifndef _SAVEDIR_H_
 #define _SAVEDIR_H_
 
+/****************************************************************************
+ * Pre-processor definitions
+ ****************************************************************************/
+
+/****************************************************************************
+ * Public type declarations
+ ****************************************************************************/
+
 typedef struct DIR_NODE_T
 {
   struct DIR_NODE_T*  next;
   struct DIR_NODE_T*  subd;
+  struct DIR_NODE_T*  parent;
   size_t              size;
   DWORD               d_no;
   DWORD               attr;
@@ -29,11 +38,24 @@ typedef struct DIR_NODE_T
   unsigned int        ltime;
   HANDLE              hHandle;
   HANDLE              hHeap;
+  DWORD               git;
   TCHAR               d_name[ 1 ];
 }
 D_NODE;
 
-void    delete_savedir(HANDLE handle);
-D_NODE* savedir(HANDLE handle, const TCHAR *path);
+/* Callback for savedir_log */
+
+typedef int (*D_NODE_CB)(D_NODE *, void *);
+
+/****************************************************************************
+ * Public function prototypes
+ ****************************************************************************/
+
+void    delete_savedir( void );
+D_NODE* node_search( D_NODE *p_parent, TCHAR *elem );
+D_NODE* savedir( const TCHAR *path );
+D_NODE* savedir( void );
+D_NODE* savedir(D_NODE  *p_node, const TCHAR *path);
+int     savedir_log(D_NODE_CB cb = NULL, void *param = NULL);
 
 #endif // _SAVEDIR_H_

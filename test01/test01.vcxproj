@@ -124,10 +124,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="savedir.cpp" />
+    <ClCompile Include="scandir.cpp" />
     <ClCompile Include="test01.cpp" />
+    <ClCompile Include="xgit.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dirent.h" />
     <ClInclude Include="savedir.h" />
+    <ClInclude Include="scandir.h" />
+    <ClInclude Include="xgit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

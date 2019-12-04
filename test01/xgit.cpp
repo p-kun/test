@@ -19,14 +19,12 @@
  * Included files
  ****************************************************************************/
 
-#include <windows.h>
+//#include <windows.h>
 #include <stdio.h>
 #include <TCHAR.h>
 #include <sys/stat.h>
 #include <shlwapi.h>
-#include "dirent.h"
-#include "scandir.h"
-#include "savedir.h"
+#include "xgit.h"
 
 /* Librarys */
 
@@ -48,9 +46,7 @@
  * Pre-processor definitions
  ****************************************************************************/
 
-#define FIND_DATA WIN32_FIND_DATA
-
-#define _STAT     struct _stat
+#define _STAT   struct _stat
 
 /****************************************************************************
  * Private types
@@ -60,8 +56,8 @@
  * Private data
  ****************************************************************************/
 
-static TCHAR  __git_path[MAX_PATH];
-static _STAT  __st;
+static TCHAR  __git_path[MAX_PATH] ={0};
+static _STAT  __st = {0};
 
 /****************************************************************************
  * Private functions
@@ -138,7 +134,7 @@ static const BYTE *Header( const BYTE *bp, int *total = NULL, DWORD *version = N
 }
 
 /* ------------------------------------------------------------------------ */
-static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_INDEX *g_idx )
+static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_NODE *g_idx )
 {
   WORD         len;
   TCHAR        path[ MAX_PATH ];
@@ -206,11 +202,15 @@ static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_INDEX *g_idx )
 
   /* path conv */
 
+  ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, g_idx->path, MAX_PATH );
+
+/*
   ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, path, MAX_PATH );
 
   _tcscpy_s(g_idx->path, MAX_PATH, root);
 
   PathAppend(g_idx->path, path);
+*/
 
   /* next point */
 
@@ -220,7 +220,7 @@ static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_INDEX *g_idx )
 }
 
 /* ------------------------------------------------------------------------ */
-static void debug_git_index( GIT_INDEX *g_idx )
+static void debug_git_index( GIT_NODE *g_idx )
 {
   /* ctime  */
 
@@ -284,25 +284,12 @@ static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
 {
   TCHAR   path[ MAX_PATH ];
   HANDLE  hFile = INVALID_HANDLE_VALUE;
-  _STAT   st;
 
   _tcscpy_s(git_path, size, input);
 
   do
     {
       _stprintf_s( path, MAX_PATH, L"%s\\%s", git_path, L".git\\index" );
-
-      _tstat(path, &st);
-
-      if (_tcsicmp(__git_path, path)   == 0
-       && memcmp(&__st, &st, sizeof(st)) == 0)
-        {
-          printf("same\n");
-          hFile = INVALID_HANDLE_VALUE;
-          break;
-        }
-
-      __st = st;
 
       hFile = CreateFile( path,
                           GENERIC_READ,
@@ -328,13 +315,11 @@ static HANDLE open_git_index(const TCHAR *input, TCHAR *git_path, size_t size)
 }
 
 /* ------------------------------------------------------------------------ */
-static int scan_git_index(const BYTE *bp, const TCHAR *git_path, dirent ***entry)
+static int scan_git_index(const BYTE *bp, const TCHAR *git_path, git_node_callback cb, void *param)
 {
   int       total = 0;
   DWORD     version;
-  GIT_INDEX g_idx;
-  _STAT     st;
-  FIND_DATA fd;
+  GIT_NODE  g_idx;
 
   bp = Header(bp, &total, &version);
 
@@ -347,23 +332,12 @@ static int scan_git_index(const BYTE *bp, const TCHAR *git_path, dirent ***entry
     {
       bp = Body(bp, git_path, &g_idx);
 
-      _tstat(g_idx.path, &st);
-
-      if ((DWORD)st.st_mtime == g_idx.mtime_hi)
-        {
-          continue;
-        }
-
-      HANDLE  hFile = ::FindFirstFile(g_idx.path, &fd);
-
-      if (hFile == INVALID_HANDLE_VALUE)
-        {
-          continue;
-        }
-
       /* Add file info */
 
-      
+      if (cb)
+        {
+          cb(git_path, &g_idx, param);
+        }
     }
 
   return total;
@@ -373,7 +347,7 @@ static int scan_git_index(const BYTE *bp, const TCHAR *git_path, dirent ***entry
  * Public functions
  ****************************************************************************/
 
-int scan_git_dir(const TCHAR dir[], dirent ***entry)
+int scan_git_dir( const TCHAR dir[], git_node_callback cb, void *param)
 {
   HANDLE  hFile;
   TCHAR   path[ MAX_PATH ];
@@ -382,6 +356,7 @@ int scan_git_dir(const TCHAR dir[], dirent ***entry)
   DWORD   size_ot;
   BYTE   *bp;
   int     total = 0;
+  _STAT   st;
 
   hFile = open_git_index(dir, path, MAX_PATH);
 
@@ -389,6 +364,23 @@ int scan_git_dir(const TCHAR dir[], dirent ***entry)
     {
       return 0;
     }
+
+  /* Check for file with the same name */
+
+  _tstat(path, &st);
+
+  if (_tcsicmp(__git_path, path) == 0
+   && __st.st_atime == st.st_atime
+   && __st.st_mtime == st.st_mtime
+   && __st.st_ctime == st.st_ctime)
+    {
+      return 0;
+    }
+
+  _tcscpy_s(__git_path, MAX_PATH, path);
+  __st = st;
+
+  /* .git/index reading analysis */
 
   size_lo = GetFileSize(hFile, &size_hi);
 
@@ -408,11 +400,13 @@ int scan_git_dir(const TCHAR dir[], dirent ***entry)
         {
           if (ReadFile(hFile, bp, size_lo, &size_ot, NULL))
             {
-              total = scan_git_index(bp, path, entry);
-            }
-        }
+              /* Analysis */
 
-      free(bp);
+              total = scan_git_index(bp, path, cb, param);
+            }
+
+          free(bp);
+        }
     }
 
   CloseHandle(hFile);
