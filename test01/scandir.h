@@ -17,16 +17,35 @@
 #ifndef _SCANDIR_H_
 #define _SCANDIR_H_
 
+/****************************************************************************
+ * Pre-processor definitions
+ ****************************************************************************/
+
 #ifndef ENOMEM
-#define ENOMEM				      -1
+#define ENOMEM              -1
 #endif
-#define DENT_ENOMEM			    ENOMEM
-#define DENT_FLT_MALLOC		  0x1
-#define DENT_FLT_RECURSION	0x2
-#define DENT_FLT_CANCEL		  (-1)
+#define DENT_ENOMEM         ENOMEM
+#define DENT_FLT_MALLOC     0x1
+#define DENT_FLT_RECURSION  0x2
+#define DENT_FLT_CANCEL     (-1)
+#undef  MAX_PATH
+#define MAX_PATH            300
+
+/****************************************************************************
+ * Public type declarations
+ ****************************************************************************/
+
+/* Filter callback */
 
 typedef int (*SCAN_FILTER )(dirent *);
+
+/* Comparison callback */
+
 typedef int (*SCAN_COMPARE)(const dirent **, const dirent **);
+
+/****************************************************************************
+ * Public function prototypes
+ ****************************************************************************/
 
 int  scandir(const TCHAR*,
              dirent***,

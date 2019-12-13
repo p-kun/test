@@ -58,7 +58,7 @@ static D_NODE*  _node_top = NULL;
  * Private functions
  ****************************************************************************/
 
-static D_NODE* Malloc(HANDLE hHeap, TCHAR *target)
+static D_NODE* Malloc(D_NODE *p_parent, HANDLE hHeap, TCHAR *target)
 {
   D_NODE* p_node;
   size_t  size;
@@ -70,11 +70,14 @@ static D_NODE* Malloc(HANDLE hHeap, TCHAR *target)
 
   if (p_node)
     {
+      *p_node = *p_parent;
+
       _tcscpy_s(p_node->d_name, str_len, target);
+
       p_node->size   = size;
       p_node->hHeap  = hHeap;
       p_node->subd   = NULL;
-      p_node->parent = NULL;
+      p_node->parent = p_parent;
       p_node->ltime  = 0;
       p_node->htime  = 0;
       p_node->d_no   = 0;
@@ -140,7 +143,7 @@ D_NODE *node_search(D_NODE *p_parent, TCHAR *elem)
     {
       if (p_node == NULL)
         {
-          p_node = Malloc(hHeap, elem);
+          p_node = Malloc(p_parent, hHeap, elem);
 
           if (p_node == NULL)
             {
@@ -216,7 +219,7 @@ D_NODE *savedir(void)
 }
 
 /* ------------------------------------------------------------------------ */
-static int savedir_log(D_NODE *p_parent, D_NODE_CB scan_cb, void *param)
+int savedir_log(D_NODE *p_parent, D_NODE_CB scan_cb, void *param)
 {
   D_NODE *p_node = p_parent->subd;
   int     ret    = 0;
@@ -250,4 +253,34 @@ static int savedir_log(D_NODE *p_parent, D_NODE_CB scan_cb, void *param)
 int savedir_log(D_NODE_CB scan_cb, void *param)
 {
   return savedir_log(_node_top, scan_cb, param);
+}
+
+/* ------------------------------------------------------------------------ */
+void savedir_get_fullpath(TCHAR *path, int size, D_NODE *d_node)
+{
+  TCHAR  *data[100];
+  int     i;
+
+  for (i = 0; i < 100 && d_node; i++)
+    {
+      data[i] = d_node->d_name;
+
+      d_node = d_node->parent;
+    }
+
+  i--;
+  i--;
+
+  if (i < 0)
+    {
+      return;
+    }
+
+  _tcscpy_s(path, MAX_PATH, data[i]);
+
+  for (; i > 0; i--)
+    {
+      _tcscat_s(path, MAX_PATH, L"\\");
+      _tcscat_s(path, MAX_PATH, data[i - 1]);
+    }
 }

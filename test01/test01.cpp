@@ -19,6 +19,7 @@
 
 #define GIT_PATH3   L"C:\\user\\test\\test0\\savedir.cpp"
 #define GIT_PATH0   L"C:\\user\\spresense\\sdk\\bsp\\board\\collet\\include"
+#define GIT_PATH4   L"C:\\user\\spresense\\sdk\\bsp\\board\\collet"
 #define GIT_PATH1   L"C:\\ProgramData\\Apple Computer\\iTunes\\adi"
 #define GIT_PATH2   L"C:\\user\\spresense-arduino-compatible\\Arduino15\\packages\\SPRESENSE\\hardware\\spresense\\1.0.0\\libraries\\Audio\\examples\\application\\voice_effector"
 
@@ -138,6 +139,77 @@ uint32_t totime(int year,
 #endif
 
 /* ------------------------------------------------------------------------ */
+static int cnv_localtime(DWORD st_time, FILETIME *ft_time)
+{
+  struct tm   tm1;
+  FILETIME    local1;
+  FILETIME    local2;
+  SYSTEMTIME  sys;
+  int         res = 0;
+
+  /* FILETIME -> local -> system */
+
+  FileTimeToLocalFileTime(ft_time, &local1);
+  FileTimeToSystemTime(&local1, &sys);
+
+  /* system -> FILETIME */
+
+  sys.wDayOfWeek    = 0;
+  sys.wMilliseconds = 0;
+
+  SystemTimeToFileTime(&sys, &local1);
+
+  /* st_time -> struct tm */
+
+  _localtime32_s(&tm1, (const __time32_t *)&st_time);
+
+  /* system -> FILETIME */
+
+  sys.wYear         = tm1.tm_year + 1900;
+  sys.wMonth        = tm1.tm_mon  + 1;
+  sys.wDay          = tm1.tm_mday;
+  sys.wHour         = tm1.tm_hour;
+  sys.wMinute       = tm1.tm_min;
+  sys.wSecond       = tm1.tm_sec;
+  sys.wDayOfWeek    = 0;
+  sys.wMilliseconds = 0;
+
+  SystemTimeToFileTime(&sys, &local2);
+
+  /* Check time */
+
+  if (local1.dwHighDateTime > local2.dwHighDateTime)
+    {
+      res = -1;
+    }
+  else if (local1.dwHighDateTime < local2.dwHighDateTime)
+    {
+      res = 1;
+    }
+  else
+    {
+      if (local1.dwLowDateTime > local2.dwLowDateTime)
+        {
+          res = -1;
+        }
+      else if (local1.dwLowDateTime < local2.dwLowDateTime)
+        {
+          res = 1;
+        }
+    }
+
+  return res;
+}
+
+/* ------------------------------------------------------------------------ */
+static void node_callback2(const TCHAR *path, GIT_NODE *g_node, void *param)
+{
+  D_NODE  *d_node = savedir(g_node->path);
+
+  d_node->d_data[0] = g_node->mtime_hi;
+}
+
+/* ------------------------------------------------------------------------ */
 static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
 {
   D_NODE       *d_node = (D_NODE *)param;
@@ -148,21 +220,28 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
   TCHAR         c1 = L' ';
   struct tm     tm1;
   struct tm     tm2;
+  TCHAR         buf[MAX_PATH];
 
-  _tstat(g_node->path, &st);
+  _tcscpy_s(buf, MAX_PATH, path);
+  PathAppend(buf, g_node->path);
+
+  _tstat(buf, &st);
+
+
 
   _localtime64_s(&tm1, &st.st_mtime);
   _localtime32_s(&tm2, (const __time32_t *)&g_node->mtime_hi);
 
+  _tprintf(L" %s\n", buf);
 /*
-  _tprintf(L"%d-%2d-%2d %02d:%02d:%02d(%d:%d:%d)\n%d-%2d-%2d %2d:%02d:%02d(%d:%d:%d)%s\n",
+  _tprintf(L"%d-%2d-%2d %02d:%02d:%02d(%d:%d:%d)\n%d-%2d-%2d %02d:%02d:%02d(%d:%d:%d)%s %s\n",
            tm1.tm_year + 1900,
            tm1.tm_mon,
-           tm1.tm_yday,
+           tm1.tm_mday,
            tm1.tm_hour,
            tm1.tm_min,
            tm1.tm_sec,
-           tm1.tm_mday,
+           tm1.tm_yday,
            tm1.tm_wday,
            tm1.tm_isdst,
            tm2.tm_year + 1900,
@@ -174,13 +253,15 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
            tm2.tm_yday,
            tm2.tm_wday,
            tm2.tm_isdst,
+           path,
            g_node->path);
 */
-  _tprintf(L"%08X %08X %d.%02d.%02d %02d-%02d-%02d(%d:%d:%d)%s\n",
+/*
+  _tprintf(L"%08X %08X\n%d.%02d.%02d %02d-%02d-%02d(%d:%d:%d)%s %s\n",
            (DWORD)st.st_mtime, 
            (DWORD)g_node->mtime_hi,
            tm2.tm_year + 1900,
-           tm2.tm_mon,
+           tm2.tm_mon  + 1,
            tm2.tm_mday,
            tm2.tm_hour,
            tm2.tm_min,
@@ -188,8 +269,9 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
            tm2.tm_yday,
            tm2.tm_wday,
            tm2.tm_isdst,
+           path,
            g_node->path);
-
+*/
   d_node = savedir(d_node, g_node->path);
 
   if (d_node->subd)
@@ -202,26 +284,37 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
 //    _tprintf(L"NXT: %s %s\n", d_node->next->d_name, d_node->d_name);
     }
 
-#ifdef _KERNELX
   FILETIME    local;
-#endif
   SYSTEMTIME  systi;
 
   __time32_t  st_mtime;
 
-  hFind = FindFirstFile(g_node->path, &fd);
+  hFind = FindFirstFile(buf, &fd);
 
   if (hFind != INVALID_HANDLE_VALUE)
     {
+      cnv_localtime(st.st_mtime, &fd.ftLastWriteTime);
+
+      FileTimeToLocalFileTime(&fd.ftLastWriteTime, &local);
+      FileTimeToSystemTime(&local, &systi);
+/*
+      _tprintf(L"%d.%02d.%02d %02d-%02d-%02d(%d:%d:%d)%s\n",
+        systi.wYear,
+        systi.wMonth,
+        systi.wDay,
+        systi.wHour,
+        systi.wMinute,
+        systi.wSecond,
+        systi.wMilliseconds,
+        systi.wDayOfWeek,
+        0,
+        buf);
+*/
+#if 0
       if (fd.ftLastWriteTime.dwLowDateTime || fd.ftLastWriteTime.dwHighDateTime)
         {
-#ifndef _KERNELX
-          if (!FileTimeToSystemTime(&fd.ftLastWriteTime, &systi)
-           || !SystemTimeToTzSpecificLocalTime(NULL, &systi, &systi))
-#else
           if (!FileTimeToLocalFileTime(&fd.ftLastWriteTime, &local)
            || !FileTimeToSystemTime(&local, &systi))
-#endif
             {
               printf("AHO\n");
               return;
@@ -240,11 +333,11 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
         {
           st_mtime = 0;
         }
-
+#endif
 
 //    _tprintf(L"%s\n", g_node->path);
 //    _tprintf(L"%08X\n", fd.ftCreationTime.dwLowDateTime);
-      _tprintf(L"%X %X\n", st_mtime, g_node->mtime_hi);
+//    _tprintf(L"%X %X\n", st_mtime, g_node->mtime_hi);
 
       if ((DWORD)st.st_mtime != g_node->mtime_hi)
         {
@@ -266,7 +359,7 @@ static void node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
 
       if (c0 == L'*' || c1 == L'*')
         {
-          d_node->git = 1;
+          d_node->d_data[0] = 1;
         }
 
 /*
@@ -346,12 +439,32 @@ DWORD WINAPI ThreadFunc(LPVOID arg)
 /* ------------------------------------------------------------------------ */
 static int filter(dirent *entry)
 {
-//_tprintf(L"%s\n", entry->d_name);
-  return DENT_FLT_RECURSION;
+  size_t  size = _tcslen(entry->d_name);
+
+  if (size > 200)
+    {
+      _tprintf(L"%s %zd\n", entry->d_name, size);
+    }
+
+  D_NODE  *d_node = savedir(entry->d_name);
+
+  for (int i = 0; i < 8; i++)
+    {
+      entry->d_data[i] = d_node->d_data[i];
+    }
+
+  _tprintf(L"%d %s %s\n", d_node->d_data[0], entry->d_name, d_node->d_name);
+
+
+  if (entry->d_data[0] == 2)
+    {
+//    _tprintf(L"::%s\n", entry->d_name);
+    }
+
+  return DENT_FLT_RECURSION | DENT_FLT_MALLOC;
 }
 
-int iii = 0;
-
+/* ------------------------------------------------------------------------ */
 int scan(D_NODE *p, void *param)
 {
   int  *iii = (int *)param;
@@ -361,12 +474,74 @@ int scan(D_NODE *p, void *param)
 
   (*iii)++;
 
-  if (*iii == 100000)
+  if (*iii == 1000000)
     {
       ret = -1;
     }
 
+  p->d_data[0] = 0;
+  p->d_data[1] = 0;
+  p->d_data[2] = 0;
+  p->d_data[3] = 0;
+  p->d_data[4] = 0;
+  p->d_data[5] = 0;
+  p->d_data[6] = 0;
+
   return ret;
+}
+
+/* ------------------------------------------------------------------------ */
+int git_node_callback(const TCHAR *path, GIT_NODE *g_node, void *param)
+{
+  D_NODE       *d_node = (D_NODE *)param;
+  TCHAR         temp[MAX_PATH];
+  int           i;
+  DWORD         poyan;
+  struct _stat  st;
+
+  d_node = savedir(d_node, g_node->path);
+
+  savedir_get_fullpath(temp, MAX_PATH, d_node);
+
+  _tstat(temp, &st);
+
+  if (g_node->mtime_hi != st.st_mtime)
+    {
+      poyan = 2;
+
+      _tprintf(L"%d <<%s>>\n", poyan, temp);
+    }
+  else
+    {
+      poyan = 1;
+    }
+
+  i = 0;
+
+  do
+    {
+      if (poyan > d_node->d_data[0])
+        {
+          _tprintf(L"%d %d %d[%s]\n", i, poyan, d_node->d_data[0], d_node->d_name);
+
+          d_node->d_data[0] = poyan;
+        }
+
+      i++;
+
+      d_node = d_node->parent;
+    }
+  while (d_node != (D_NODE *)param);
+
+  if (poyan > d_node->d_data[0])
+    {
+      _tprintf(L"%d[%s]\n", d_node->d_data[0], d_node->d_name);
+
+      d_node->d_data[0] = poyan;
+    }
+
+
+  return 0;
 }
 
 /****************************************************************************
@@ -375,9 +550,53 @@ int scan(D_NODE *p, void *param)
 
 int _tmain( int argc, TCHAR **argv )
 {
+  TCHAR   path[MAX_PATH];
+  HANDLE  handle;
+  D_NODE *d_node;
+  int     total;
+  int     iii = 0;
+
+  handle = git_open(GIT_PATH0, path, MAX_PATH);
+
+  if (handle == INVALID_HANDLE_VALUE)
+    {
+      _tprintf(L"File not found. (%s)\n", path);
+
+      return 1;
+    }
+
+  _tprintf(L"File open (%s)\n", path);
+
+  d_node = savedir(path);
+
+  savedir_log(d_node, scan, &iii);
+
+  _tprintf(L"(%s)\n", d_node->d_name);
+
+  total = git_scan(handle, path, git_node_callback, d_node);
+
+  _tprintf(L"t=%d/%d\n", total, iii);
+
+  git_close(handle);
+
+  dirent  **entries;
+
+  total = scandir(path, &entries, filter);
+
+//savedir_log(d_node, scan, &iii);
+
+//total = scandir(path, &entries, filter);
+
+  savedir_log(d_node, scan, &iii);
+
+  _tprintf(L"t=%d\n", total);
+
+#if 0
+
   TCHAR     path[MAX_PATH];
   dirent  **handle;
-  int       total;
+  int       total = 0;
+
   D_NODE   *d_node;
   D_NODE   *d_subd;
 
@@ -393,9 +612,9 @@ int _tmain( int argc, TCHAR **argv )
 
   /* Main processing */
 
-  GetCurrentDirectory(MAX_PATH, path);
+//GetCurrentDirectory(MAX_PATH, path);
 
-//_tcscpy_s(path, MAX_PATH, GIT_PATH0);
+  _tcscpy_s(path, MAX_PATH, GIT_PATH0);
 
 //total = scandir(path, &handle, filter);
 
@@ -405,21 +624,21 @@ int _tmain( int argc, TCHAR **argv )
 
   d_node = savedir(path);
 
-  total = scan_git_dir(path, node_callback, d_node);
+//total = scan_git_dir(path, node_callback2, d_node);
 
   printf("total %d\n", total);
 
   d_node = savedir(L"C:\\user\\test\\test01\\xgit.cpp");
 
-  _tprintf(L"0: %s %d\n", d_node->d_name, d_node->git);
+  _tprintf(L"0: %s %d\n", d_node->d_name, d_node->d_data[0]);
 
   d_node = savedir(L"C:\\user\\test\\test01");
 
-  _tprintf(L"1: %s %d\n", d_node->d_name, d_node->git);
+  _tprintf(L"1: %s %d\n", d_node->d_name, d_node->d_data[0]);
 
   d_node = savedir(L"C:\\user");
 
-  _tprintf(L"2: %s %d\n", d_node->d_name, d_node->git);
+  _tprintf(L"2: %s %d\n", d_node->d_name, d_node->d_data[0]);
 
   d_node = savedir(L"D:\\AAA");
 
@@ -458,9 +677,32 @@ int _tmain( int argc, TCHAR **argv )
 
   iii = 0;
 
+  total = scandir(L"C:\\user", &handle, filter);
+
+  _tcscpy_s(path, MAX_PATH, GIT_PATH4);
+
+  _tprintf(L"shino: %s %d %d\n", path, total, MAX_PATH);
+
+  savedir(L"C:\\user");
+
   savedir_log(scan, &iii);
 
-  printf("%d\n", iii);
+  total = scan_git_dir(path, node_callback2);
+
+  savedir_log(scan, &iii);
+
+  printf("%d/%d\n", iii, total);
+
+  total = scan_git_dir(L"C:\\user\\spresense-arduino-compatible", node_callback2);
+
+  savedir_log(scan, &iii);
+
+  printf("%d/%d\n", iii, total);
+#endif
+
+//total = scan_git_dir(L"C:\\user\\spresense\\sdk\\bsp\\board\\collet\\include", node_callback2);
+
+//printf("%d\n", total);
 
   return 0;
 }

@@ -21,6 +21,9 @@
  * Pre-processor definitions
  ****************************************************************************/
 
+#undef  MAX_PATH
+#define MAX_PATH            300
+
 /****************************************************************************
  * Public type declarations
  ****************************************************************************/
@@ -38,8 +41,8 @@ typedef struct DIR_NODE_T
   unsigned int        ltime;
   HANDLE              hHandle;
   HANDLE              hHeap;
-  DWORD               git;
-  TCHAR               d_name[ 1 ];
+  DWORD               d_data[8];
+  TCHAR               d_name[1];
 }
 D_NODE;
 
@@ -57,5 +60,7 @@ D_NODE* savedir( const TCHAR *path );
 D_NODE* savedir( void );
 D_NODE* savedir(D_NODE  *p_node, const TCHAR *path);
 int     savedir_log(D_NODE_CB cb = NULL, void *param = NULL);
+int     savedir_log(D_NODE *parent, D_NODE_CB cb, void *param = NULL);
+void    savedir_get_fullpath(TCHAR *path, int size, D_NODE *d_node);
 
 #endif // _SAVEDIR_H_

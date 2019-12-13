@@ -22,6 +22,7 @@ typedef struct dirent
   DWORD           bookMark;
   DWORD           userData;
   HANDLE          hHandle;
+  DWORD           d_data[8];
   TCHAR           cAlternateFileName[ 14 ];
   TCHAR           d_name[ 2 ];
 }
