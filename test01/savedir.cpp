@@ -70,8 +70,6 @@ static D_NODE* Malloc(D_NODE *p_parent, HANDLE hHeap, TCHAR *target)
 
   if (p_node)
     {
-      *p_node = *p_parent;
-
       _tcscpy_s(p_node->d_name, str_len, target);
 
       p_node->size   = size;
@@ -83,6 +81,11 @@ static D_NODE* Malloc(D_NODE *p_parent, HANDLE hHeap, TCHAR *target)
       p_node->d_no   = 0;
       p_node->attr   = 0;
       p_node->exist  = 0;
+
+      for (int i = 0; i < 8; i++)
+        {
+          p_node->d_data[i] = 0;
+        }
     }
 
   return p_node;

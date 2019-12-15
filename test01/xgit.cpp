@@ -136,7 +136,6 @@ static const BYTE *Header( const BYTE *bp, int *total = NULL, DWORD *version = N
 static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_NODE *g_idx )
 {
   WORD         len;
-  TCHAR        path[ MAX_PATH ];
   int          i;
   CHAR         cc[ MAX_PATH ];
   const BYTE  *top = bp;
@@ -204,6 +203,8 @@ static const BYTE *Body( const BYTE *bp, const TCHAR *root, GIT_NODE *g_idx )
 #if 1
   ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, g_idx->path, MAX_PATH );
 #else
+  TCHAR        path[ MAX_PATH ];
+
   ::MultiByteToWideChar( CP_UTF8, 0U, cc, -1, path, MAX_PATH );
 
   _tcscpy_s(g_idx->path, MAX_PATH, root);
