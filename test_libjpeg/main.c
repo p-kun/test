@@ -30,9 +30,9 @@
  * Pre-processor definitions
  ****************************************************************************/
 
-#define INP_FILENAME  "../flower.bmp"
+//#define INP_FILENAME  "../flower.bmp"
 //#define INP_FILENAME  "../zeno.bmp"
-//#define INP_FILENAME  "../pic.bmp"
+#define INP_FILENAME  "../pic.bmp"
 #define OUT_FILENAME  "flower.jpg"
 #define PNG_FILENAME  "../hanko.png"
 
@@ -140,10 +140,7 @@ typedef struct {
   struct jpeg_destination_mgr pub;        /* public fields */
   boolean                     succeed;
 }
-my_mem_destination_mgr;
-
-typedef my_mem_destination_mgr *my_mem_dest_ptr;
-typedef my_mem_destination_mgr  my_mem_dest;
+my_mem_dest;
 
 /*-------------------------------------------------------------------------*/
 METHODDEF(void) mem_destination (j_compress_ptr cinfo){}
@@ -153,7 +150,7 @@ METHODDEF(boolean) empty_mem_output_buffer (j_compress_ptr cinfo)
 {
   /* empty_mem_output_buffer */
 
-  my_mem_dest_ptr dest = (my_mem_dest_ptr) cinfo->dest;
+  my_mem_dest *dest = (my_mem_dest *) cinfo->dest;
 
   dest->pub.next_output_byte = dest->pub.next_output_byte - OUTPUT_BUF_MIN_SIZE;
   dest->pub.free_in_buffer   = OUTPUT_BUF_MIN_SIZE;
@@ -334,8 +331,6 @@ int main(void)
           break;
         }
     }
-
-  
 
   free(inptr);
 
