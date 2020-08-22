@@ -1,0 +1,3644 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/e522743d/
+$(ACLOCAL_M4)	Makefile.in	510;"	t
+$(am__aclocal_m4_deps)	Makefile.in	512;"	t
+$(srcdir)/Makefile.in	Makefile.in	481;"	t
+$(srcdir)/jconfig.cfg	Makefile.in	521;"	t
+$(top_builddir)/config.status	Makefile.in	505;"	t
+$(top_srcdir)/configure	Makefile.in	508;"	t
+*lt_preloaded_setup	ltmain.sh	3455;"	f
+-g	ltmain.sh	3862;"	a
+-g	ltmain.sh	93;"	a
+.c.lo	Makefile.in	722;"	t
+.c.o	Makefile.in	708;"	t
+.c.obj	Makefile.in	715;"	t
+ACLOCAL	Makefile.in	246;"	m
+ACLOCAL_M4	Makefile.in	98;"	m
+AC_DISABLE_SHARED	aclocal.m4	8179;"	m
+AC_DISABLE_STATIC	aclocal.m4	8233;"	m
+AC_ENABLE_SHARED	aclocal.m4	8175;"	m
+AC_ENABLE_STATIC	aclocal.m4	8229;"	m
+AC_PROG_CC	aclocal.m4	9069;"	d
+AC_STAT_BINS	jcarith.c	64;"	d	file:
+AC_STAT_BINS	jdarith.c	61;"	d	file:
+ADDON_MESSAGE_CODE	cderror.h	128;"	t	typeref:enum:__anonb8e7288c0103
+ALIGN_TYPE	jmemmgr.c	74;"	d	file:
+AMTAR	Makefile.in	247;"	m
+AM_AUTOMAKE_VERSION	aclocal.m4	8621;"	m
+AM_AUX_DIR_EXPAND	aclocal.m4	8752;"	m
+AM_CONDITIONAL	aclocal.m4	8770;"	m
+AM_DEFAULT_VERBOSITY	Makefile.in	248;"	m
+AM_DEP_TRACK	aclocal.m4	8961;"	m
+AM_INIT_AUTOMAKE	aclocal.m4	9085;"	m
+AM_MAINTAINER_MODE	aclocal.m4	9307;"	m
+AM_MAKE_INCLUDE	aclocal.m4	9339;"	m
+AM_MEMORY_MANAGER	jmemmgr.c	29;"	d	file:
+AM_MISSING_HAS_RUN	aclocal.m4	9397;"	m
+AM_MISSING_PROG	aclocal.m4	9388;"	m
+AM_OUTPUT_DEPENDENCY_COMMANDS	aclocal.m4	9051;"	m
+AM_PROG_AR	aclocal.m4	8657;"	m
+AM_PROG_CC_C_O	aclocal.m4	9493;"	m
+AM_PROG_INSTALL_SH	aclocal.m4	9261;"	m
+AM_PROG_INSTALL_STRIP	aclocal.m4	9670;"	m
+AM_RECURSIVE_TARGETS	Makefile.in	245;"	m
+AM_RUN_LOG	aclocal.m4	9505;"	m
+AM_SANITY_CHECK	aclocal.m4	9522;"	m
+AM_SET_CURRENT_AUTOMAKE_VERSION	aclocal.m4	8640;"	m
+AM_SET_DEPDIR	aclocal.m4	8953;"	m
+AM_SET_LEADING_DOT	aclocal.m4	9281;"	m
+AM_SILENT_RULES	aclocal.m4	9605;"	m
+AM_SUBST_NOTMAKE	aclocal.m4	9698;"	m
+AM_V_CC	Makefile.in	201;"	m
+AM_V_CCLD	Makefile.in	209;"	m
+AM_V_GEN	Makefile.in	183;"	m
+AM_V_P	Makefile.in	179;"	m
+AM_V_at	Makefile.in	187;"	m
+AM_V_lt	Makefile.in	151;"	m
+ANSI2KNR	ansi2knr.1	1;"	t
+APP0_DATA_LEN	jdmarker.c	714;"	d	file:
+APP14_DATA_LEN	jdmarker.c	715;"	d	file:
+APPN_DATA_LEN	jdmarker.c	716;"	d	file:
+AR	Makefile.in	249;"	m
+AS	Makefile.in	250;"	m
+ASCII_device_name	jmemdosa.asm	332;"	d
+ASSIGN_STATE	jchuff.c	67;"	d	file:
+ASSIGN_STATE	jchuff.c	70;"	d	file:
+ASSIGN_STATE	jdhuff.c	209;"	d	file:
+ASSIGN_STATE	jdhuff.c	212;"	d	file:
+AUTHOR	ansi2knr.1	32;"	s	title:ANSI2KNR
+AUTHOR	cjpeg.1	375;"	s	title:CJPEG
+AUTHOR	djpeg.1	246;"	s	title:DJPEG
+AUTHOR	jpegtran.1	282;"	s	title:JPEGTRAN
+AUTHOR	rdjpgcom.1	62;"	s	title:RDJPGCOM
+AUTHOR	wrjpgcom.1	102;"	s	title:WRJPGCOM
+AUTOCONF	Makefile.in	251;"	m
+AUTOHEADER	Makefile.in	252;"	m
+AUTOMAKE	Makefile.in	253;"	m
+AWK	Makefile.in	254;"	m
+Adobe_transform	jpeglib.h	607;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8
+Ah	jpeglib.h	202;"	m	struct:__anone14b59d80408	typeref:typename:int
+Ah	jpeglib.h	434;"	m	struct:jpeg_compress_struct	typeref:typename:int
+Ah	jpeglib.h	661;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+Al	jpeglib.h	202;"	m	struct:__anone14b59d80408	typeref:typename:int
+Al	jpeglib.h	434;"	m	struct:jpeg_compress_struct	typeref:typename:int
+Al	jpeglib.h	661;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+BE	jchuff.c	112;"	m	struct:__anon0ed2490c0308	typeref:typename:unsigned int	file:
+BITREAD_LOAD_STATE	jdhuff.c	104;"	d	file:
+BITREAD_SAVE_STATE	jdhuff.c	111;"	d	file:
+BITREAD_STATE_VARS	jdhuff.c	99;"	d	file:
+BITS_IN_JSAMPLE	jmorecfg.h	33;"	d
+BIT_BUF_SIZE	jdhuff.c	70;"	d	file:
+BIT_MASK	jdhuff.c	572;"	d	file:
+BIT_MASK	jdhuff.c	577;"	d	file:
+BLOCK_SMOOTHING_SUPPORTED	jmorecfg.h	375;"	d
+BOX_C0_ELEMS	jquant2.c	629;"	d	file:
+BOX_C0_LOG	jquant2.c	625;"	d	file:
+BOX_C0_SHIFT	jquant2.c	633;"	d	file:
+BOX_C1_ELEMS	jquant2.c	630;"	d	file:
+BOX_C1_LOG	jquant2.c	626;"	d	file:
+BOX_C1_SHIFT	jquant2.c	634;"	d	file:
+BOX_C2_ELEMS	jquant2.c	631;"	d	file:
+BOX_C2_LOG	jquant2.c	627;"	d	file:
+BOX_C2_SHIFT	jquant2.c	635;"	d	file:
+BUGS	cjpeg.1	377;"	s	title:CJPEG
+BUGS	djpeg.1	248;"	s	title:DJPEG
+BUGS	jpegtran.1	284;"	s	title:JPEGTRAN
+BUILD_EXECUTABLES	CMakeLists.txt	12;"	D
+BUILD_SHARED_LIBS	cmake\\dist.cmake	77;"	D
+BUILD_STATIC	CMakeLists.txt	11;"	D
+BUILD_TESTS	CMakeLists.txt	13;"	D
+BYTESPERSAMPLE	wrppm.c	36;"	d	file:
+BYTESPERSAMPLE	wrppm.c	41;"	d	file:
+BYTESPERSAMPLE	wrppm.c	50;"	d	file:
+B_CB_OFF	jccolor.c	87;"	d	file:
+B_CR_OFF	jccolor.c	90;"	d	file:
+B_SCALE	jquant2.c	76;"	d	file:
+B_Y_OFF	jccolor.c	84;"	d	file:
+B_Y_OFF	jdcolor.c	107;"	d	file:
+C0_SCALE	jquant2.c	86;"	d	file:
+C0_SCALE	jquant2.c	89;"	d	file:
+C0_SHIFT	jquant2.c	143;"	d	file:
+C1_SCALE	jquant2.c	92;"	d	file:
+C1_SHIFT	jquant2.c	144;"	d	file:
+C2_SCALE	jquant2.c	95;"	d	file:
+C2_SCALE	jquant2.c	98;"	d	file:
+C2_SHIFT	jquant2.c	145;"	d	file:
+CBCR_OFFSET	jccolor.c	72;"	d	file:
+CC	Makefile.in	255;"	m
+CCDEPMODE	Makefile.in	256;"	m
+CCIR601_sampling	jpeglib.h	360;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+CCIR601_sampling	jpeglib.h	612;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+CCLD	Makefile.in	205;"	m
+CDERROR_H	cderror.h	23;"	d
+CENTERJSAMPLE	jmorecfg.h	112;"	d
+CENTERJSAMPLE	jmorecfg.h	126;"	d
+CENTERJSAMPLE	jmorecfg.h	140;"	d
+CENTERJSAMPLE	jmorecfg.h	84;"	d
+CENTERJSAMPLE	jmorecfg.h	98;"	d
+CFLAGS	Makefile.in	257;"	m
+CHAR_OUT	wrgif.c	95;"	d	file:
+CHECK_BIT_BUFFER	jdhuff.c	135;"	d	file:
+CJPEG	cjpeg.1	1;"	t
+CLEANFILES	Makefile.am	107;"	m
+CLEANFILES	Makefile.in	471;"	m
+CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS	cmake\\dist.cmake	75;"	v
+CMAKE_BUILD_WITH_INSTALL_RPATH	cmake\\dist.cmake	89;"	v
+CMAKE_INSTALL_NAME_DIR	cmake\\dist.cmake	93;"	v
+CMAKE_INSTALL_RPATH	cmake\\dist.cmake	90;"	v
+CMAKE_INSTALL_RPATH_USE_LINK_PATH	cmake\\dist.cmake	92;"	v
+CMAKE_MODULE_PATH	cmake\\dist.cmake	76;"	v
+CMAKE_SKIP_BUILD_RPATH	cmake\\dist.cmake	88;"	v
+CMAPBITS	wrrle.c	50;"	d	file:
+CMAPLENGTH	wrrle.c	51;"	d	file:
+COMPILE	Makefile.in	195;"	m
+CONFIGFILES	Makefile.am	49;"	m
+CONFIGFILES	Makefile.in	414;"	m
+CONFIGUREFILES	Makefile.am	54;"	m
+CONFIGUREFILES	Makefile.in	420;"	m
+CONFIG_CLEAN_FILES	Makefile.in	106;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile.in	107;"	m
+CONFIG_HEADER	Makefile.in	105;"	m
+CONST_BITS	jcdctmgr.c	388;"	d	file:
+CONST_BITS	jddctmgr.c	298;"	d	file:
+CONST_BITS	jfdctfst.c	69;"	d	file:
+CONST_BITS	jfdctint.c	96;"	d	file:
+CONST_BITS	jidctfst.c	77;"	d	file:
+CONST_BITS	jidctint.c	101;"	d	file:
+CONST_SCALE	jdct.h	349;"	d
+CONTEXT_ROWS_SUPPORTED	jcprepct.c	28;"	d	file:
+CPACK_COMPONENTS_ALL	cmake\\dist.cmake	320;"	v
+CPACK_COMPONENT_DATA_DESCRIPTION	cmake\\dist.cmake	207;"	v
+CPACK_COMPONENT_DATA_DISPLAY_NAME	cmake\\dist.cmake	206;"	v
+CPACK_COMPONENT_DOCUMENTATION_DESCRIPTION	cmake\\dist.cmake	230;"	v
+CPACK_COMPONENT_DOCUMENTATION_DISPLAY_NAME	cmake\\dist.cmake	229;"	v
+CPACK_COMPONENT_EXAMPLE_DESCRIPTION	cmake\\dist.cmake	252;"	v
+CPACK_COMPONENT_EXAMPLE_DISPLAY_NAME	cmake\\dist.cmake	251;"	v
+CPACK_COMPONENT_HEADER_DESCRIPTION	cmake\\dist.cmake	185;"	v
+CPACK_COMPONENT_HEADER_DISPLAY_NAME	cmake\\dist.cmake	184;"	v
+CPACK_COMPONENT_LIBRARY_DESCRIPTION	cmake\\dist.cmake	154;"	v
+CPACK_COMPONENT_LIBRARY_DISPLAY_NAME	cmake\\dist.cmake	153;"	v
+CPACK_COMPONENT_OTHER_DESCRIPTION	cmake\\dist.cmake	296;"	v
+CPACK_COMPONENT_OTHER_DISPLAY_NAME	cmake\\dist.cmake	295;"	v
+CPACK_COMPONENT_RUNTIME_DESCRIPTION	cmake\\dist.cmake	136;"	v
+CPACK_COMPONENT_RUNTIME_DISPLAY_NAME	cmake\\dist.cmake	135;"	v
+CPACK_COMPONENT_TEST_DESCRIPTION	cmake\\dist.cmake	274;"	v
+CPACK_COMPONENT_TEST_DISPLAY_NAME	cmake\\dist.cmake	273;"	v
+CPACK_GENERATOR	cmake\\dist.cmake	315;"	v
+CPACK_PACKAGE_NAME	cmake\\dist.cmake	317;"	v
+CPACK_PACKAGE_VENDOR	cmake\\dist.cmake	319;"	v
+CPACK_PACKAGE_VERSION	cmake\\dist.cmake	318;"	v
+CPACK_STRIP_FILES	cmake\\dist.cmake	316;"	v
+CPP	Makefile.in	258;"	m
+CPPFLAGS	Makefile.in	259;"	m
+CSCOPE	Makefile.in	244;"	m
+CSTATE_RAW_OK	jpegint.h	28;"	d
+CSTATE_SCANNING	jpegint.h	27;"	d
+CSTATE_START	jpegint.h	26;"	d
+CSTATE_WRCOEFS	jpegint.h	29;"	d
+CTAGS	Makefile.in	243;"	m
+CTAGS	Makefile.in	824;"	t
+CTX_POSTPONED_ROW	jdmainct.c	140;"	d	file:
+CTX_PREPARE_FOR_IMCU	jdmainct.c	138;"	d	file:
+CTX_PROCESS_IMCU	jdmainct.c	139;"	d	file:
+CYGPATH_W	Makefile.in	260;"	m
+C_ARITH_CODING_SUPPORTED	jmorecfg.h	352;"	d
+C_MAX_BLOCKS_IN_MCU	jpeglib.h	64;"	d
+C_MULTISCAN_FILES_SUPPORTED	jmorecfg.h	353;"	d
+C_PROGRESSIVE_SUPPORTED	jmorecfg.h	354;"	d
+Cb_b_tab	jdcolor.c	24;"	m	struct:__anon46edb9230108	typeref:typename:int *	file:
+Cb_b_tab	jdmerge.c	55;"	m	struct:__anon31c87b140108	typeref:typename:int *	file:
+Cb_g_tab	jdcolor.c	26;"	m	struct:__anon46edb9230108	typeref:typename:INT32 *	file:
+Cb_g_tab	jdmerge.c	57;"	m	struct:__anon31c87b140108	typeref:typename:INT32 *	file:
+ClearCode	wrgif.c	59;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+Cr_g_tab	jdcolor.c	25;"	m	struct:__anon46edb9230108	typeref:typename:INT32 *	file:
+Cr_g_tab	jdmerge.c	56;"	m	struct:__anon31c87b140108	typeref:typename:INT32 *	file:
+Cr_r_tab	jdcolor.c	23;"	m	struct:__anon46edb9230108	typeref:typename:int *	file:
+Cr_r_tab	jdmerge.c	54;"	m	struct:__anon31c87b140108	typeref:typename:int *	file:
+DCTELEM	jdct.h	35;"	t	typeref:typename:int
+DCTELEM	jdct.h	37;"	t	typeref:typename:INT32
+DCTELEMBITS	jidctfst.c	143;"	d	file:
+DCTSIZE	jpeglib.h	50;"	d
+DCTSIZE2	jpeglib.h	51;"	d
+DCT_FLOAT_SUPPORTED	jmorecfg.h	348;"	d
+DCT_IFAST_SUPPORTED	jmorecfg.h	347;"	d
+DCT_ISLOW_SUPPORTED	jmorecfg.h	346;"	d
+DCT_SCALING_SUPPORTED	jmorecfg.h	355;"	d
+DCT_h_scaled_size	jpeglib.h	155;"	m	struct:__anone14b59d80308	typeref:typename:int
+DCT_v_scaled_size	jpeglib.h	156;"	m	struct:__anone14b59d80308	typeref:typename:int
+DC_STAT_BINS	jcarith.c	63;"	d	file:
+DC_STAT_BINS	jdarith.c	60;"	d	file:
+DEFAULT_ARGS	cmake\\dist.cmake	100;"	v
+DEFAULT_FMT	djpeg.c	71;"	d	file:
+DEFAULT_INCLUDES	Makefile.in	191;"	m
+DEFAULT_MAX_MEM	configure.ac	333;"	d
+DEFAULT_MAX_MEM	jmemansi.c	77;"	d	file:
+DEFAULT_MAX_MEM	jmemdos.c	204;"	d	file:
+DEFAULT_MAX_MEM	jmemname.c	184;"	d	file:
+DEFS	Makefile.in	261;"	m
+DEPDIR	Makefile.in	262;"	m
+DEQUANTIZE	jidctflt.c	61;"	d	file:
+DEQUANTIZE	jidctfst.c	129;"	d	file:
+DEQUANTIZE	jidctint.c	163;"	d	file:
+DESCALE	jdct.h	363;"	d
+DESCALE	jfdctfst.c	99;"	d	file:
+DESCALE	jidctfst.c	111;"	d	file:
+DESCRIPTION	ansi2knr.1	7;"	s	title:ANSI2KNR
+DESCRIPTION	cjpeg.1	13;"	s	title:CJPEG
+DESCRIPTION	djpeg.1	13;"	s	title:DJPEG
+DESCRIPTION	jpegtran.1	13;"	s	title:JPEGTRAN
+DESCRIPTION	rdjpgcom.1	16;"	s	title:RDJPGCOM
+DESCRIPTION	wrjpgcom.1	19;"	s	title:WRJPGCOM
+DIRECTCOLOR	rdrle.c	52;"	e	enum:__anon3cbe608f0103	file:
+DISTMANS	Makefile.am	29;"	m
+DISTMANS	Makefile.in	392;"	m
+DIST_COMMON	Makefile.in	94;"	m
+DIST_DEPENDS	cmake\\dist.cmake	45;"	v
+DIVIDE_BY	jcdctmgr.c	114;"	d	file:
+DIVIDE_BY	jcdctmgr.c	116;"	d	file:
+DJPEG	djpeg.1	1;"	t
+DLLTOOL	Makefile.in	263;"	m
+DOCS	Makefile.am	32;"	m
+DOCS	Makefile.in	395;"	m
+DROP_BITS	jdhuff.c	147;"	d	file:
+DSTATE_BUFIMAGE	jpegint.h	37;"	d
+DSTATE_BUFPOST	jpegint.h	38;"	d
+DSTATE_INHEADER	jpegint.h	31;"	d
+DSTATE_PRELOAD	jpegint.h	33;"	d
+DSTATE_PRESCAN	jpegint.h	34;"	d
+DSTATE_RAW_OK	jpegint.h	36;"	d
+DSTATE_RDCOEFS	jpegint.h	39;"	d
+DSTATE_READY	jpegint.h	32;"	d
+DSTATE_SCANNING	jpegint.h	35;"	d
+DSTATE_START	jpegint.h	30;"	d
+DSTATE_STOPPING	jpegint.h	40;"	d
+DST_HANDLE	jmemdos.c	479;"	d	file:
+DST_OFFSET	jmemdos.c	480;"	d	file:
+DST_PAGE	jmemdos.c	481;"	d	file:
+DST_PTR	jmemdos.c	482;"	d	file:
+DST_TYPE	jmemdos.c	478;"	d	file:
+DSYMUTIL	Makefile.in	264;"	m
+DUMPBIN	Makefile.in	265;"	m
+D_ARITH_CODING_SUPPORTED	jmorecfg.h	370;"	d
+D_MAX_BLOCKS_IN_MCU	jpeglib.h	66;"	d
+D_MULTISCAN_FILES_SUPPORTED	jmorecfg.h	371;"	d
+D_PROGRESSIVE_SUPPORTED	jmorecfg.h	372;"	d
+ECHO_C	Makefile.in	266;"	m
+ECHO_N	Makefile.in	267;"	m
+ECHO_T	Makefile.in	268;"	m
+EGREP	Makefile.in	269;"	m
+EMSH	jmemsys.h	122;"	t	typeref:typename:unsigned short
+EMSPAGESIZE	jmemdos.c	484;"	d	file:
+EMSPTR	jmemdos.c	464;"	t	typeref:typename:void far *	file:
+EMS_SUPPORTED	jmemdos.c	38;"	d	file:
+EMScontext	jmemdos.c	105;"	t	typeref:struct:__anon29f79d850208	file:
+EMSspec	jmemdos.c	469;"	t	typeref:union:__anon29f79d85050a	file:
+ENTROPY_OPT_SUPPORTED	jmorecfg.h	356;"	d
+ENVIRONMENT	cjpeg.1	353;"	s	title:CJPEG
+ENVIRONMENT	djpeg.1	224;"	s	title:DJPEG
+ENVIRONMENT	jpegtran.1	263;"	s	title:JPEGTRAN
+EOBRUN	jchuff.c	111;"	m	struct:__anon0ed2490c0308	typeref:typename:unsigned int	file:
+EOBRUN	jdhuff.c	199;"	m	struct:__anon5bcc85cd0408	typeref:typename:unsigned int	file:
+EOF	ltmain.sh	1451;"	h
+EOF	ltmain.sh	4140;"	h
+EOF	ltmain.sh	4152;"	h
+EOF	ltmain.sh	4302;"	h
+EOF	ltmain.sh	4309;"	h
+EOF	ltmain.sh	4313;"	h
+EOF	ltmain.sh	4320;"	h
+EOF	ltmain.sh	4325;"	h
+EOF	ltmain.sh	4332;"	h
+EOF	ltmain.sh	4336;"	h
+EOF	ltmain.sh	4342;"	h
+EOF	ltmain.sh	4384;"	h
+EOF	ltmain.sh	4414;"	h
+EOF	ltmain.sh	4418;"	h
+EOF	ltmain.sh	4458;"	h
+EOF	ltmain.sh	4467;"	h
+EOF	ltmain.sh	4482;"	h
+EOF	ltmain.sh	4498;"	h
+EOF	ltmain.sh	4524;"	h
+EOF	ltmain.sh	4540;"	h
+EOF	ltmain.sh	4547;"	h
+EOF	ltmain.sh	4943;"	h
+EOF	ltmain.sh	5061;"	h
+EOF	ltmain.sh	5075;"	h
+EOF	ltmain.sh	7680;"	h
+EOFCode	wrgif.c	60;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+ERREXIT	jerror.h	209;"	d
+ERREXIT	rdjpgcom.c	72;"	d	file:
+ERREXIT	wrjpgcom.c	87;"	d	file:
+ERREXIT1	jerror.h	212;"	d
+ERREXIT2	jerror.h	216;"	d
+ERREXIT3	jerror.h	221;"	d
+ERREXIT4	jerror.h	227;"	d
+ERREXIT6	jerror.h	234;"	d
+ERREXITS	jerror.h	243;"	d
+ETAGS	Makefile.in	242;"	m
+EXAMPLES	cjpeg.1	314;"	s	title:CJPEG
+EXAMPLES	djpeg.1	186;"	s	title:DJPEG
+EXAMPLES	jpegtran.1	247;"	s	title:JPEGTRAN
+EXAMPLES	wrjpgcom.1	70;"	s	title:WRJPGCOM
+EXEEXT	Makefile.in	270;"	m
+EXIT_FAILURE	cdjpeg.h	172;"	d
+EXIT_FAILURE	jerror.c	33;"	d	file:
+EXIT_FAILURE	rdjpgcom.c	49;"	d	file:
+EXIT_FAILURE	wrjpgcom.c	51;"	d	file:
+EXIT_SUCCESS	cdjpeg.h	176;"	d
+EXIT_SUCCESS	cdjpeg.h	178;"	d
+EXIT_SUCCESS	rdjpgcom.c	53;"	d	file:
+EXIT_SUCCESS	rdjpgcom.c	55;"	d	file:
+EXIT_SUCCESS	wrjpgcom.c	55;"	d	file:
+EXIT_SUCCESS	wrjpgcom.c	57;"	d	file:
+EXIT_WARNING	cdjpeg.h	183;"	d
+EXIT_WARNING	cdjpeg.h	185;"	d
+EXTERN	jmorecfg.h	248;"	d
+EXTRA_DIST	Makefile.am	103;"	m
+EXTRA_DIST	Makefile.in	466;"	m
+FALSE	jmorecfg.h	311;"	d
+FALSE	jmorecfg.h	317;"	e	enum:__anon25d69c680103
+FAR	jmorecfg.h	292;"	d
+FAR	jmorecfg.h	294;"	d
+FAST_FLOAT	jmorecfg.h	440;"	d
+FAST_FLOAT	jmorecfg.h	442;"	d
+FGREP	Makefile.in	271;"	m
+FIELD_AT	jmemdos.c	472;"	d	file:
+FIX	jccolor.c	74;"	d	file:
+FIX	jdcolor.c	96;"	d	file:
+FIX	jdct.h	356;"	d
+FIX	jdmerge.c	75;"	d	file:
+FIX_0_298631336	jfdctint.c	111;"	d	file:
+FIX_0_298631336	jidctint.c	116;"	d	file:
+FIX_0_382683433	jfdctfst.c	80;"	d	file:
+FIX_0_390180644	jfdctint.c	112;"	d	file:
+FIX_0_390180644	jidctint.c	117;"	d	file:
+FIX_0_541196100	jfdctfst.c	81;"	d	file:
+FIX_0_541196100	jfdctint.c	113;"	d	file:
+FIX_0_541196100	jidctint.c	118;"	d	file:
+FIX_0_707106781	jfdctfst.c	82;"	d	file:
+FIX_0_765366865	jfdctint.c	114;"	d	file:
+FIX_0_765366865	jidctint.c	119;"	d	file:
+FIX_0_899976223	jfdctint.c	115;"	d	file:
+FIX_0_899976223	jidctint.c	120;"	d	file:
+FIX_1_082392200	jidctfst.c	92;"	d	file:
+FIX_1_175875602	jfdctint.c	116;"	d	file:
+FIX_1_175875602	jidctint.c	121;"	d	file:
+FIX_1_306562965	jfdctfst.c	83;"	d	file:
+FIX_1_414213562	jidctfst.c	93;"	d	file:
+FIX_1_501321110	jfdctint.c	117;"	d	file:
+FIX_1_501321110	jidctint.c	122;"	d	file:
+FIX_1_847759065	jfdctint.c	118;"	d	file:
+FIX_1_847759065	jidctfst.c	94;"	d	file:
+FIX_1_847759065	jidctint.c	123;"	d	file:
+FIX_1_961570560	jfdctint.c	119;"	d	file:
+FIX_1_961570560	jidctint.c	124;"	d	file:
+FIX_2_053119869	jfdctint.c	120;"	d	file:
+FIX_2_053119869	jidctint.c	125;"	d	file:
+FIX_2_562915447	jfdctint.c	121;"	d	file:
+FIX_2_562915447	jidctint.c	126;"	d	file:
+FIX_2_613125930	jidctfst.c	95;"	d	file:
+FIX_3_072711026	jfdctint.c	122;"	d	file:
+FIX_3_072711026	jidctint.c	127;"	d	file:
+FLOAT_MULT_TYPE	jdct.h	73;"	t	typeref:typename:FAST_FLOAT
+FMEMCOPY	jutils.c	152;"	d	file:
+FMEMCOPY	jutils.c	155;"	d	file:
+FMEMZERO	jpegint.h	348;"	d
+FMEMZERO	jpegint.h	351;"	d
+FMEMZERO	jpegint.h	354;"	d
+FMT_BMP	djpeg.c	61;"	e	enum:__anon14e602a00103	file:
+FMT_GIF	djpeg.c	62;"	e	enum:__anon14e602a00103	file:
+FMT_OS2	djpeg.c	63;"	e	enum:__anon14e602a00103	file:
+FMT_PPM	djpeg.c	64;"	e	enum:__anon14e602a00103	file:
+FMT_RLE	djpeg.c	65;"	e	enum:__anon14e602a00103	file:
+FMT_TARGA	djpeg.c	66;"	e	enum:__anon14e602a00103	file:
+FMT_TIFF	djpeg.c	67;"	e	enum:__anon14e602a00103	file:
+FSERROR	jquant1.c	129;"	t	typeref:typename:INT16	file:
+FSERROR	jquant1.c	132;"	t	typeref:typename:INT32	file:
+FSERROR	jquant2.c	182;"	t	typeref:typename:INT16	file:
+FSERROR	jquant2.c	185;"	t	typeref:typename:INT32	file:
+FSERRPTR	jquant1.c	136;"	t	typeref:typename:FSERROR FAR *	file:
+FSERRPTR	jquant2.c	189;"	t	typeref:typename:FSERROR FAR *	file:
+FULL_COEF_BUFFER_SUPPORTED	jccoefct.c	25;"	d	file:
+FULL_COEF_BUFFER_SUPPORTED	jccoefct.c	28;"	d	file:
+GETJOCTET	jmorecfg.h	163;"	d
+GETJOCTET	jmorecfg.h	169;"	d
+GETJOCTET	jmorecfg.h	171;"	d
+GETJSAMPLE	jmorecfg.h	109;"	d
+GETJSAMPLE	jmorecfg.h	123;"	d
+GETJSAMPLE	jmorecfg.h	137;"	d
+GETJSAMPLE	jmorecfg.h	70;"	d
+GETJSAMPLE	jmorecfg.h	76;"	d
+GETJSAMPLE	jmorecfg.h	78;"	d
+GETJSAMPLE	jmorecfg.h	95;"	d
+GET_2B	rdbmp.c	281;"	d	file:
+GET_2B	rdtarga.c	341;"	d	file:
+GET_4B	rdbmp.c	283;"	d	file:
+GET_BITS	jdhuff.c	141;"	d	file:
+GLOBAL	jmorecfg.h	246;"	d
+GRAYSCALE	rdrle.c	52;"	e	enum:__anon3cbe608f0103	file:
+GREP	Makefile.in	272;"	m
+GTAGS	Makefile.in	831;"	t
+G_CB_OFF	jccolor.c	86;"	d	file:
+G_CR_OFF	jccolor.c	89;"	d	file:
+G_SCALE	jquant2.c	75;"	d	file:
+G_Y_OFF	jccolor.c	83;"	d	file:
+G_Y_OFF	jdcolor.c	106;"	d	file:
+HAVE_CONST	ckconfig.c	181;"	d	file:
+HAVE_ISASCII	ansi2knr.c	202;"	d	file:
+HAVE_LD_VERSION_SCRIPT	configure.ac	70;"	c
+HAVE_PROTOTYPES	ckconfig.c	100;"	d	file:
+HAVE_PROTOTYPES	configure.ac	91;"	d
+HAVE_STDDEF_H	ckconfig.c	35;"	d	file:
+HAVE_STDLIB_H	ckconfig.c	40;"	d	file:
+HAVE_UNSIGNED_CHAR	ckconfig.c	128;"	d	file:
+HAVE_UNSIGNED_SHORT	ckconfig.c	140;"	d	file:
+HAVE_VOID	ckconfig.c	151;"	d	file:
+HEADERS	CMakeLists.txt	28;"	v
+HEADERS	Makefile.in	223;"	m
+HIBYTE	jmemdos.c	486;"	d	file:
+HINTS	cjpeg.1	323;"	s	title:CJPEG
+HINTS	djpeg.1	195;"	s	title:DJPEG
+HINTS	rdjpgcom.1	43;"	s	title:RDJPGCOM
+HIST_C0_BITS	jquant2.c	133;"	d	file:
+HIST_C0_ELEMS	jquant2.c	138;"	d	file:
+HIST_C1_BITS	jquant2.c	134;"	d	file:
+HIST_C1_ELEMS	jquant2.c	139;"	d	file:
+HIST_C2_BITS	jquant2.c	135;"	d	file:
+HIST_C2_ELEMS	jquant2.c	140;"	d	file:
+HUFF_DECODE	jdhuff.c	168;"	d	file:
+HUFF_EXTEND	jdhuff.c	573;"	d	file:
+HUFF_EXTEND	jdhuff.c	578;"	d	file:
+HUFF_LOOKAHEAD	jdhuff.c	26;"	d	file:
+ID	Makefile.in	802;"	t
+IDCT_SCALING_SUPPORTED	jmorecfg.h	373;"	d
+IDCT_range_limit	jdct.h	85;"	d
+IDESCALE	jidctfst.c	157;"	d	file:
+IFAST_MULT_TYPE	jdct.h	67;"	t	typeref:typename:MULTIPLIER
+IFAST_MULT_TYPE	jdct.h	70;"	t	typeref:typename:INT32
+IFAST_SCALE_BITS	jdct.h	68;"	d
+IFAST_SCALE_BITS	jdct.h	71;"	d
+IMAGE_FORMATS	djpeg.c	68;"	t	typeref:enum:__anon14e602a00103	file:
+INLINE	configure.ac	198;"	d
+INLINE	jmorecfg.h	412;"	d
+INLINE	jmorecfg.h	415;"	d
+INPUT_2BYTES	jdmarker.c	158;"	d	file:
+INPUT_BUF_SIZE	jdatasrc.c	36;"	d	file:
+INPUT_BYTE	jdmarker.c	150;"	d	file:
+INPUT_RELOAD	jdmarker.c	132;"	d	file:
+INPUT_SMOOTHING_SUPPORTED	jmorecfg.h	366;"	d
+INPUT_SYNC	jdmarker.c	127;"	d	file:
+INPUT_VARS	jdmarker.c	121;"	d	file:
+INSTALL	Makefile.in	273;"	m
+INSTALL_BIN	cmake\\dist.cmake	53;"	v
+INSTALL_DATA	Makefile.in	274;"	m
+INSTALL_DATA	cmake\\dist.cmake	62;"	v
+INSTALL_DOC	cmake\\dist.cmake	64;"	v
+INSTALL_ETC	cmake\\dist.cmake	56;"	v
+INSTALL_EXAMPLE	cmake\\dist.cmake	66;"	v
+INSTALL_FOO	cmake\\dist.cmake	70;"	v
+INSTALL_HEADER	Makefile.in	79;"	m
+INSTALL_INC	cmake\\dist.cmake	55;"	v
+INSTALL_LIB	cmake\\dist.cmake	54;"	v
+INSTALL_PROGRAM	Makefile.in	275;"	m
+INSTALL_SCRIPT	Makefile.in	276;"	m
+INSTALL_SHARE	cmake\\dist.cmake	57;"	v
+INSTALL_STRIP_PROGRAM	Makefile.in	277;"	m
+INSTALL_TEST	cmake\\dist.cmake	68;"	v
+INSTALL_VERSION	cmake\\dist.cmake	60;"	D
+INSTINCLUDES	Makefile.am	22;"	m
+INSTINCLUDES	Makefile.in	384;"	m
+INT16	jmorecfg.h	207;"	t	typeref:typename:short
+INT32	jmorecfg.h	216;"	t	typeref:typename:long
+IRIGHT_SHIFT	jcarith.c	105;"	d	file:
+IRIGHT_SHIFT	jcarith.c	111;"	d	file:
+IRIGHT_SHIFT	jchuff.c	145;"	d	file:
+IRIGHT_SHIFT	jchuff.c	151;"	d	file:
+IRIGHT_SHIFT	jidctfst.c	147;"	d	file:
+ISHIFT_TEMPS	jcarith.c	104;"	d	file:
+ISHIFT_TEMPS	jcarith.c	110;"	d	file:
+ISHIFT_TEMPS	jchuff.c	144;"	d	file:
+ISHIFT_TEMPS	jchuff.c	150;"	d	file:
+ISHIFT_TEMPS	jidctfst.c	141;"	d	file:
+ISLOW_MULT_TYPE	jdct.h	65;"	t	typeref:typename:MULTIPLIER
+JBLOCK	jpeglib.h	79;"	t	typeref:typename:JCOEF[DCTSIZE2]
+JBLOCKARRAY	jpeglib.h	81;"	t	typeref:typename:JBLOCKROW *
+JBLOCKIMAGE	jpeglib.h	82;"	t	typeref:typename:JBLOCKARRAY *
+JBLOCKROW	jpeglib.h	80;"	t	typeref:typename:JBLOCK FAR *
+JBUF_CRANK_DEST	jpegint.h	21;"	e	enum:__anone1181acc0103
+JBUF_PASS_THRU	jpegint.h	18;"	e	enum:__anone1181acc0103
+JBUF_SAVE_AND_PASS	jpegint.h	22;"	e	enum:__anone1181acc0103
+JBUF_SAVE_SOURCE	jpegint.h	20;"	e	enum:__anone1181acc0103
+JCOEF	jmorecfg.h	151;"	t	typeref:typename:short
+JCOEFPTR	jpeglib.h	84;"	t	typeref:typename:JCOEF FAR *
+JCONFIG_INCLUDED	jinclude.h	21;"	d
+JCOPYOPT_ALL	transupp.h	208;"	e	enum:__anon971f79580403
+JCOPYOPT_COMMENTS	transupp.h	207;"	e	enum:__anon971f79580403
+JCOPYOPT_DEFAULT	transupp.h	211;"	d
+JCOPYOPT_NONE	transupp.h	206;"	e	enum:__anon971f79580403
+JCOPYRIGHT	jversion.h	14;"	d
+JCOPY_OPTION	transupp.h	209;"	t	typeref:enum:__anon971f79580403
+JCROP_CODE	transupp.h	123;"	t	typeref:enum:__anon971f79580203
+JCROP_FORCE	transupp.h	122;"	e	enum:__anon971f79580203
+JCROP_NEG	transupp.h	121;"	e	enum:__anon971f79580203
+JCROP_POS	transupp.h	120;"	e	enum:__anon971f79580203
+JCROP_UNSET	transupp.h	119;"	e	enum:__anon971f79580203
+JCS_BG_RGB	jpeglib.h	227;"	e	enum:__anone14b59d80503
+JCS_BG_YCC	jpeglib.h	228;"	e	enum:__anone14b59d80503
+JCS_CMYK	jpeglib.h	225;"	e	enum:__anone14b59d80503
+JCS_GRAYSCALE	jpeglib.h	222;"	e	enum:__anone14b59d80503
+JCS_RGB	jpeglib.h	223;"	e	enum:__anone14b59d80503
+JCS_UNKNOWN	jpeglib.h	221;"	e	enum:__anone14b59d80503
+JCS_YCCK	jpeglib.h	226;"	e	enum:__anone14b59d80503
+JCS_YCbCr	jpeglib.h	224;"	e	enum:__anone14b59d80503
+JCT_NONE	jpeglib.h	234;"	e	enum:__anone14b59d80603
+JCT_SUBTRACT_GREEN	jpeglib.h	235;"	e	enum:__anone14b59d80603
+JDCT_DEFAULT	jpeglib.h	247;"	d
+JDCT_FASTEST	jpeglib.h	250;"	d
+JDCT_FLOAT	jpeglib.h	243;"	e	enum:__anone14b59d80703
+JDCT_IFAST	jpeglib.h	242;"	e	enum:__anone14b59d80703
+JDCT_ISLOW	jpeglib.h	241;"	e	enum:__anone14b59d80703
+JDIMENSION	jmorecfg.h	229;"	t	typeref:typename:unsigned int
+JDITHER_FS	jpeglib.h	258;"	e	enum:__anone14b59d80803
+JDITHER_NONE	jpeglib.h	256;"	e	enum:__anone14b59d80803
+JDITHER_ORDERED	jpeglib.h	257;"	e	enum:__anone14b59d80803
+JERROR_H	jerror.h	203;"	d
+JFIF_major_version	jpeglib.h	376;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8
+JFIF_major_version	jpeglib.h	601;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8
+JFIF_minor_version	jpeglib.h	377;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8
+JFIF_minor_version	jpeglib.h	602;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8
+JFREAD	jinclude.h	88;"	d
+JFWRITE	jinclude.h	90;"	d
+JHUFF_TBL	jpeglib.h	120;"	t	typeref:struct:__anone14b59d80208
+JMAKE_ENUM_LIST	cderror.h	25;"	d
+JMAKE_ENUM_LIST	jerror.h	25;"	d
+JMEMDOSA_TXT	jmemdosa.asm	24;"	l
+JMESSAGE	cderror.h	28;"	d
+JMESSAGE	cderror.h	36;"	d
+JMESSAGE	cderror.h	40;"	e	enum:__anonb8e7288c0103
+JMESSAGE	cjpeg.c	43;"	d	file:
+JMESSAGE	djpeg.c	45;"	d	file:
+JMESSAGE	jerror.c	49;"	d	file:
+JMESSAGE	jerror.h	28;"	d
+JMESSAGE	jerror.h	36;"	d
+JMESSAGE	jerror.h	40;"	e	enum:__anonbfe931cf0103
+JMETHOD	jmorecfg.h	258;"	d
+JMETHOD	jmorecfg.h	260;"	d
+JMSG_LENGTH_MAX	jpeglib.h	711;"	d
+JMSG_STR_PARM_MAX	jpeglib.h	719;"	d
+JOCTET	jmorecfg.h	162;"	t	typeref:typename:unsigned char
+JOCTET	jmorecfg.h	167;"	t	typeref:typename:char
+JPEGLIB_H	jpeglib.h	15;"	d
+JPEGTRAN	jpegtran.1	1;"	t
+JPEG_APP0	jpeglib.h	1125;"	d
+JPEG_CJPEG_DJPEG	cdjpeg.h	12;"	d
+JPEG_CJPEG_DJPEG	rdjpgcom.c	15;"	d	file:
+JPEG_CJPEG_DJPEG	wrjpgcom.c	14;"	d	file:
+JPEG_COM	jpeglib.h	1126;"	d
+JPEG_EOI	jpeglib.h	1124;"	d
+JPEG_HEADER_OK	jpeglib.h	1043;"	d
+JPEG_HEADER_TABLES_ONLY	jpeglib.h	1044;"	d
+JPEG_INTERNALS	jaricom.c	16;"	d	file:
+JPEG_INTERNALS	jcapimin.c	20;"	d	file:
+JPEG_INTERNALS	jcapistd.c	18;"	d	file:
+JPEG_INTERNALS	jcarith.c	16;"	d	file:
+JPEG_INTERNALS	jccoefct.c	14;"	d	file:
+JPEG_INTERNALS	jccolor.c	12;"	d	file:
+JPEG_INTERNALS	jcdctmgr.c	15;"	d	file:
+JPEG_INTERNALS	jchuff.c	23;"	d	file:
+JPEG_INTERNALS	jcinit.c	19;"	d	file:
+JPEG_INTERNALS	jcmainct.c	14;"	d	file:
+JPEG_INTERNALS	jcmarker.c	12;"	d	file:
+JPEG_INTERNALS	jcmaster.c	15;"	d	file:
+JPEG_INTERNALS	jcomapi.c	12;"	d	file:
+JPEG_INTERNALS	jcparam.c	14;"	d	file:
+JPEG_INTERNALS	jcprepct.c	17;"	d	file:
+JPEG_INTERNALS	jcsample.c	48;"	d	file:
+JPEG_INTERNALS	jctrans.c	14;"	d	file:
+JPEG_INTERNALS	jdapimin.c	20;"	d	file:
+JPEG_INTERNALS	jdapistd.c	18;"	d	file:
+JPEG_INTERNALS	jdarith.c	16;"	d	file:
+JPEG_INTERNALS	jdcoefct.c	18;"	d	file:
+JPEG_INTERNALS	jdcolor.c	12;"	d	file:
+JPEG_INTERNALS	jddctmgr.c	19;"	d	file:
+JPEG_INTERNALS	jdhuff.c	19;"	d	file:
+JPEG_INTERNALS	jdinput.c	15;"	d	file:
+JPEG_INTERNALS	jdmainct.c	17;"	d	file:
+JPEG_INTERNALS	jdmarker.c	16;"	d	file:
+JPEG_INTERNALS	jdmaster.c	15;"	d	file:
+JPEG_INTERNALS	jdmerge.c	36;"	d	file:
+JPEG_INTERNALS	jdpostct.c	19;"	d	file:
+JPEG_INTERNALS	jdsample.c	22;"	d	file:
+JPEG_INTERNALS	jdtrans.c	14;"	d	file:
+JPEG_INTERNALS	jfdctflt.c	38;"	d	file:
+JPEG_INTERNALS	jfdctfst.c	34;"	d	file:
+JPEG_INTERNALS	jfdctint.c	44;"	d	file:
+JPEG_INTERNALS	jidctflt.c	40;"	d	file:
+JPEG_INTERNALS	jidctfst.c	35;"	d	file:
+JPEG_INTERNALS	jidctint.c	51;"	d	file:
+JPEG_INTERNALS	jmemansi.c	15;"	d	file:
+JPEG_INTERNALS	jmemdos.c	42;"	d	file:
+JPEG_INTERNALS	jmemmac.c	52;"	d	file:
+JPEG_INTERNALS	jmemmgr.c	28;"	d	file:
+JPEG_INTERNALS	jmemname.c	15;"	d	file:
+JPEG_INTERNALS	jmemnobs.c	18;"	d	file:
+JPEG_INTERNALS	jquant1.c	14;"	d	file:
+JPEG_INTERNALS	jquant2.c	21;"	d	file:
+JPEG_INTERNALS	jutils.c	15;"	d	file:
+JPEG_INTERNALS	transupp.c	18;"	d	file:
+JPEG_INTERNAL_OPTIONS	cdjpeg.h	13;"	d
+JPEG_INTERNAL_OPTIONS	jmorecfg.h	330;"	d
+JPEG_LIB_VERSION	Makefile.in	278;"	m
+JPEG_LIB_VERSION	configure.ac	360;"	s
+JPEG_LIB_VERSION	jpeglib.h	40;"	d
+JPEG_LIB_VERSION_MAJOR	jpeglib.h	41;"	d
+JPEG_LIB_VERSION_MINOR	jpeglib.h	42;"	d
+JPEG_MARKER	jcmarker.c	83;"	t	typeref:enum:__anonc2bbf6650103	file:
+JPEG_MARKER	jdmarker.c	87;"	t	typeref:enum:__anon373867660103	file:
+JPEG_MAX_DIMENSION	jmorecfg.h	231;"	d
+JPEG_REACHED_EOI	jpeglib.h	1074;"	d
+JPEG_REACHED_SOS	jpeglib.h	1073;"	d
+JPEG_ROW_COMPLETED	jpeglib.h	1075;"	d
+JPEG_RST0	jpeglib.h	1123;"	d
+JPEG_SCAN_COMPLETED	jpeglib.h	1076;"	d
+JPEG_SUSPENDED	jpeglib.h	1042;"	d
+JPOOL_IMAGE	jpeglib.h	808;"	d
+JPOOL_NUMPOOLS	jpeglib.h	809;"	d
+JPOOL_PERMANENT	jpeglib.h	807;"	d
+JPP	jpeglib.h	877;"	d
+JPP	jpeglib.h	879;"	d
+JQUANT_TBL	jpeglib.h	104;"	t	typeref:struct:__anone14b59d80108
+JSAMPARRAY	jpeglib.h	76;"	t	typeref:typename:JSAMPROW *
+JSAMPIMAGE	jpeglib.h	77;"	t	typeref:typename:JSAMPARRAY *
+JSAMPLE	jmorecfg.h	108;"	t	typeref:typename:short
+JSAMPLE	jmorecfg.h	122;"	t	typeref:typename:short
+JSAMPLE	jmorecfg.h	136;"	t	typeref:typename:short
+JSAMPLE	jmorecfg.h	69;"	t	typeref:typename:unsigned char
+JSAMPLE	jmorecfg.h	74;"	t	typeref:typename:char
+JSAMPLE	jmorecfg.h	94;"	t	typeref:typename:short
+JSAMPROW	jpeglib.h	75;"	t	typeref:typename:JSAMPLE FAR *
+JVERSION	jversion.h	12;"	d
+JXFORM_CODE	transupp.h	110;"	t	typeref:enum:__anon971f79580103
+JXFORM_FLIP_H	transupp.h	102;"	e	enum:__anon971f79580103
+JXFORM_FLIP_V	transupp.h	103;"	e	enum:__anon971f79580103
+JXFORM_NONE	transupp.h	101;"	e	enum:__anon971f79580103
+JXFORM_ROT_180	transupp.h	107;"	e	enum:__anon971f79580103
+JXFORM_ROT_270	transupp.h	108;"	e	enum:__anon971f79580103
+JXFORM_ROT_90	transupp.h	106;"	e	enum:__anon971f79580103
+JXFORM_TRANSPOSE	transupp.h	104;"	e	enum:__anon971f79580103
+JXFORM_TRANSVERSE	transupp.h	105;"	e	enum:__anon971f79580103
+JXFORM_WIPE	transupp.h	109;"	e	enum:__anon971f79580103
+J_BUF_MODE	jpegint.h	23;"	t	typeref:enum:__anone1181acc0103
+J_COLOR_SPACE	jpeglib.h	229;"	t	typeref:enum:__anone14b59d80503
+J_COLOR_TRANSFORM	jpeglib.h	236;"	t	typeref:enum:__anone14b59d80603
+J_DCT_METHOD	jpeglib.h	244;"	t	typeref:enum:__anone14b59d80703
+J_DITHER_MODE	jpeglib.h	259;"	t	typeref:enum:__anone14b59d80803
+J_MESSAGE_CODE	jerror.h	193;"	t	typeref:enum:__anonbfe931cf0103
+LD	Makefile.in	279;"	m
+LDFLAGS	Makefile.in	280;"	m
+LIBOBJS	Makefile.in	281;"	m
+LIBS	Makefile.in	282;"	m
+LIBSOURCES	Makefile.am	9;"	m
+LIBSOURCES	Makefile.in	370;"	m
+LIBTOOL	Makefile.in	283;"	m
+LINK	Makefile.in	206;"	m
+LIPO	Makefile.in	284;"	m
+LN_S	Makefile.in	285;"	m
+LOBYTE	jmemdos.c	487;"	d	file:
+LOCAL	jchuff.c	306;"	f	typeref:typename:INLINE
+LOCAL	jchuff.c	348;"	f	typeref:typename:INLINE
+LOCAL	jchuff.c	415;"	f	typeref:typename:INLINE
+LOCAL	jchuff.c	428;"	f	typeref:typename:INLINE
+LOCAL	jmorecfg.h	244;"	d
+LOCFSERROR	jquant1.c	130;"	t	typeref:typename:int	file:
+LOCFSERROR	jquant1.c	133;"	t	typeref:typename:INT32	file:
+LOCFSERROR	jquant2.c	183;"	t	typeref:typename:int	file:
+LOCFSERROR	jquant2.c	186;"	t	typeref:typename:INT32	file:
+LTCOMPILE	Makefile.in	197;"	m
+LTLIBOBJS	Makefile.in	286;"	m
+LTLIBRARIES	Makefile.in	137;"	m
+LTOBSOLETE_VERSION	aclocal.m4	8546;"	m
+LTOPTIONS_VERSION	aclocal.m4	7997;"	m
+LTSUGAR_VERSION	aclocal.m4	8375;"	m
+LTVERSION_VERSION	aclocal.m4	8504;"	m
+LT_CMD_MAX_LEN	aclocal.m4	1609;"	m
+LT_INIT	aclocal.m4	91;"	m
+LT_LANG	aclocal.m4	817;"	m
+LT_LIB_M	aclocal.m4	3574;"	m
+LT_OPTION_DEFINE	aclocal.m4	8081;"	d
+LT_OUTPUT	aclocal.m4	625;"	m
+LT_PACKAGE_REVISION	aclocal.m4	8502;"	d
+LT_PACKAGE_VERSION	aclocal.m4	8501;"	d
+LT_PATH_LD	aclocal.m4	3029;"	m
+LT_PATH_NM	aclocal.m4	3413;"	m
+LT_PROG_GCJ	aclocal.m4	7624;"	m
+LT_PROG_GO	aclocal.m4	7640;"	m
+LT_PROG_RC	aclocal.m4	7647;"	m
+LT_SUPPORTED_TAG	aclocal.m4	806;"	m
+LT_SYS_DLOPEN_SELF	aclocal.m4	1858;"	m
+MAINT	Makefile.in	287;"	m
+MAKEINFO	Makefile.in	288;"	m
+MAKESTMT	jerror.h	248;"	d
+MAKE_BYTE_AVAIL	jdmarker.c	140;"	d	file:
+MANIFEST_TOOL	Makefile.in	289;"	m
+MANS	Makefile.in	222;"	m
+MAPPEDGRAY	rdrle.c	52;"	e	enum:__anon3cbe608f0103	file:
+MAX	jpegint.h	266;"	d
+MAXCODE	wrgif.c	72;"	d	file:
+MAXJSAMPLE	jmorecfg.h	111;"	d
+MAXJSAMPLE	jmorecfg.h	125;"	d
+MAXJSAMPLE	jmorecfg.h	139;"	d
+MAXJSAMPLE	jmorecfg.h	83;"	d
+MAXJSAMPLE	jmorecfg.h	97;"	d
+MAXNUMCOLORS	jquant2.c	128;"	d	file:
+MAX_AH_AL	jcmaster.c	418;"	d	file:
+MAX_ALLOC_CHUNK	jmemsys.h	78;"	d
+MAX_CLEN	jchuff.c	1255;"	d	file:
+MAX_COEF_BITS	jchuff.c	35;"	d	file:
+MAX_COEF_BITS	jchuff.c	37;"	d	file:
+MAX_COMPONENTS	jmorecfg.h	45;"	d
+MAX_COMPS_IN_SCAN	jpeglib.h	55;"	d
+MAX_COM_LENGTH	wrjpgcom.c	66;"	d	file:
+MAX_CORR_BITS	jchuff.c	136;"	d	file:
+MAX_Q_COMPS	jquant1.c	141;"	d	file:
+MAX_SAMP_FACTOR	jpeglib.h	56;"	d
+MAX_SCANS	rdswitch.c	180;"	d	file:
+MCU_blocks	jpeglib.h	180;"	m	struct:__anone14b59d80308	typeref:typename:int
+MCU_buffer	jccoefct.c	52;"	m	struct:__anon9f2a5d370108	typeref:typename:JBLOCKROW[]	file:
+MCU_buffer	jdcoefct.c	49;"	m	struct:__anon13a6ce380108	typeref:typename:JBLOCKROW[]	file:
+MCU_ctr	jdcoefct.c	34;"	m	struct:__anon13a6ce380108	typeref:typename:JDIMENSION	file:
+MCU_height	jpeglib.h	179;"	m	struct:__anone14b59d80308	typeref:typename:int
+MCU_membership	jpeglib.h	430;"	m	struct:jpeg_compress_struct	typeref:typename:int[]
+MCU_membership	jpeglib.h	657;"	m	struct:jpeg_decompress_struct	typeref:typename:int[]
+MCU_rows_in_scan	jpeglib.h	427;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+MCU_rows_in_scan	jpeglib.h	654;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+MCU_rows_per_iMCU_row	jccoefct.c	41;"	m	struct:__anon9f2a5d370108	typeref:typename:int	file:
+MCU_rows_per_iMCU_row	jctrans.c	211;"	m	struct:__anon7d81d14b0108	typeref:typename:int	file:
+MCU_rows_per_iMCU_row	jdcoefct.c	36;"	m	struct:__anon13a6ce380108	typeref:typename:int	file:
+MCU_sample_width	jpeglib.h	181;"	m	struct:__anone14b59d80308	typeref:typename:int
+MCU_vert_offset	jccoefct.c	40;"	m	struct:__anon9f2a5d370108	typeref:typename:int	file:
+MCU_vert_offset	jctrans.c	210;"	m	struct:__anon7d81d14b0108	typeref:typename:int	file:
+MCU_vert_offset	jdcoefct.c	35;"	m	struct:__anon13a6ce380108	typeref:typename:int	file:
+MCU_width	jpeglib.h	178;"	m	struct:__anone14b59d80308	typeref:typename:int
+MCUs_per_row	jpeglib.h	426;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+MCUs_per_row	jpeglib.h	653;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+MEMCOPY	jinclude.h	62;"	d
+MEMCOPY	jinclude.h	68;"	d
+MEMORYMGR	Makefile.in	290;"	m
+MEMORYMGR	configure.ac	354;"	s
+MEMZERO	jinclude.h	61;"	d
+MEMZERO	jinclude.h	67;"	d
+METHODDEF	jmorecfg.h	242;"	d
+MIN	jpegint.h	268;"	d
+MIN_GET_BITS	jdhuff.c	458;"	d	file:
+MIN_GET_BITS	jdhuff.c	460;"	d	file:
+MIN_SLOP	jmemmgr.c	254;"	d	file:
+MKDIR_P	Makefile.in	291;"	m
+MKFILES	Makefile.am	36;"	m
+MKFILES	Makefile.in	400;"	m
+MULTIPLIER	jmorecfg.h	426;"	d
+MULTIPLY	jfdctfst.c	107;"	d	file:
+MULTIPLY	jfdctint.c	147;"	d	file:
+MULTIPLY	jidctfst.c	119;"	d	file:
+MULTIPLY	jidctint.c	152;"	d	file:
+MULTIPLY16C16	jdct.h	375;"	d
+MULTIPLY16C16	jdct.h	378;"	d
+MULTIPLY16C16	jdct.h	382;"	d
+MULTIPLY16V16	jdct.h	388;"	d
+MULTIPLY16V16	jdct.h	392;"	d
+M_APP0	jcmarker.c	58;"	e	enum:__anonc2bbf6650103	file:
+M_APP0	jdmarker.c	62;"	e	enum:__anon373867660103	file:
+M_APP0	rdjpgcom.c	126;"	d	file:
+M_APP1	jcmarker.c	59;"	e	enum:__anonc2bbf6650103	file:
+M_APP1	jdmarker.c	63;"	e	enum:__anon373867660103	file:
+M_APP10	jcmarker.c	68;"	e	enum:__anonc2bbf6650103	file:
+M_APP10	jdmarker.c	72;"	e	enum:__anon373867660103	file:
+M_APP11	jcmarker.c	69;"	e	enum:__anonc2bbf6650103	file:
+M_APP11	jdmarker.c	73;"	e	enum:__anon373867660103	file:
+M_APP12	jcmarker.c	70;"	e	enum:__anonc2bbf6650103	file:
+M_APP12	jdmarker.c	74;"	e	enum:__anon373867660103	file:
+M_APP12	rdjpgcom.c	127;"	d	file:
+M_APP13	jcmarker.c	71;"	e	enum:__anonc2bbf6650103	file:
+M_APP13	jdmarker.c	75;"	e	enum:__anon373867660103	file:
+M_APP14	jcmarker.c	72;"	e	enum:__anonc2bbf6650103	file:
+M_APP14	jdmarker.c	76;"	e	enum:__anon373867660103	file:
+M_APP15	jcmarker.c	73;"	e	enum:__anonc2bbf6650103	file:
+M_APP15	jdmarker.c	77;"	e	enum:__anon373867660103	file:
+M_APP2	jcmarker.c	60;"	e	enum:__anonc2bbf6650103	file:
+M_APP2	jdmarker.c	64;"	e	enum:__anon373867660103	file:
+M_APP3	jcmarker.c	61;"	e	enum:__anonc2bbf6650103	file:
+M_APP3	jdmarker.c	65;"	e	enum:__anon373867660103	file:
+M_APP4	jcmarker.c	62;"	e	enum:__anonc2bbf6650103	file:
+M_APP4	jdmarker.c	66;"	e	enum:__anon373867660103	file:
+M_APP5	jcmarker.c	63;"	e	enum:__anonc2bbf6650103	file:
+M_APP5	jdmarker.c	67;"	e	enum:__anon373867660103	file:
+M_APP6	jcmarker.c	64;"	e	enum:__anonc2bbf6650103	file:
+M_APP6	jdmarker.c	68;"	e	enum:__anon373867660103	file:
+M_APP7	jcmarker.c	65;"	e	enum:__anonc2bbf6650103	file:
+M_APP7	jdmarker.c	69;"	e	enum:__anon373867660103	file:
+M_APP8	jcmarker.c	66;"	e	enum:__anonc2bbf6650103	file:
+M_APP8	jdmarker.c	70;"	e	enum:__anon373867660103	file:
+M_APP9	jcmarker.c	67;"	e	enum:__anonc2bbf6650103	file:
+M_APP9	jdmarker.c	71;"	e	enum:__anon373867660103	file:
+M_COM	jcmarker.c	78;"	e	enum:__anonc2bbf6650103	file:
+M_COM	jdmarker.c	82;"	e	enum:__anon373867660103	file:
+M_COM	rdjpgcom.c	128;"	d	file:
+M_COM	wrjpgcom.c	173;"	d	file:
+M_DAC	jcmarker.c	38;"	e	enum:__anonc2bbf6650103	file:
+M_DAC	jdmarker.c	42;"	e	enum:__anon373867660103	file:
+M_DHP	jcmarker.c	55;"	e	enum:__anonc2bbf6650103	file:
+M_DHP	jdmarker.c	59;"	e	enum:__anon373867660103	file:
+M_DHT	jcmarker.c	36;"	e	enum:__anonc2bbf6650103	file:
+M_DHT	jdmarker.c	40;"	e	enum:__anon373867660103	file:
+M_DNL	jcmarker.c	53;"	e	enum:__anonc2bbf6650103	file:
+M_DNL	jdmarker.c	57;"	e	enum:__anon373867660103	file:
+M_DQT	jcmarker.c	52;"	e	enum:__anonc2bbf6650103	file:
+M_DQT	jdmarker.c	56;"	e	enum:__anon373867660103	file:
+M_DRI	jcmarker.c	54;"	e	enum:__anonc2bbf6650103	file:
+M_DRI	jdmarker.c	58;"	e	enum:__anon373867660103	file:
+M_EOI	jcmarker.c	50;"	e	enum:__anonc2bbf6650103	file:
+M_EOI	jdmarker.c	54;"	e	enum:__anon373867660103	file:
+M_EOI	rdjpgcom.c	124;"	d	file:
+M_EOI	wrjpgcom.c	171;"	d	file:
+M_ERROR	jcmarker.c	82;"	e	enum:__anonc2bbf6650103	file:
+M_ERROR	jdmarker.c	86;"	e	enum:__anon373867660103	file:
+M_EXP	jcmarker.c	56;"	e	enum:__anonc2bbf6650103	file:
+M_EXP	jdmarker.c	60;"	e	enum:__anon373867660103	file:
+M_JPG	jcmarker.c	27;"	e	enum:__anonc2bbf6650103	file:
+M_JPG	jdmarker.c	31;"	e	enum:__anon373867660103	file:
+M_JPG0	jcmarker.c	75;"	e	enum:__anonc2bbf6650103	file:
+M_JPG0	jdmarker.c	79;"	e	enum:__anon373867660103	file:
+M_JPG13	jcmarker.c	77;"	e	enum:__anonc2bbf6650103	file:
+M_JPG13	jdmarker.c	81;"	e	enum:__anon373867660103	file:
+M_JPG8	jcmarker.c	76;"	e	enum:__anonc2bbf6650103	file:
+M_JPG8	jdmarker.c	80;"	e	enum:__anon373867660103	file:
+M_RST0	jcmarker.c	40;"	e	enum:__anonc2bbf6650103	file:
+M_RST0	jdmarker.c	44;"	e	enum:__anon373867660103	file:
+M_RST1	jcmarker.c	41;"	e	enum:__anonc2bbf6650103	file:
+M_RST1	jdmarker.c	45;"	e	enum:__anon373867660103	file:
+M_RST2	jcmarker.c	42;"	e	enum:__anonc2bbf6650103	file:
+M_RST2	jdmarker.c	46;"	e	enum:__anon373867660103	file:
+M_RST3	jcmarker.c	43;"	e	enum:__anonc2bbf6650103	file:
+M_RST3	jdmarker.c	47;"	e	enum:__anon373867660103	file:
+M_RST4	jcmarker.c	44;"	e	enum:__anonc2bbf6650103	file:
+M_RST4	jdmarker.c	48;"	e	enum:__anon373867660103	file:
+M_RST5	jcmarker.c	45;"	e	enum:__anonc2bbf6650103	file:
+M_RST5	jdmarker.c	49;"	e	enum:__anon373867660103	file:
+M_RST6	jcmarker.c	46;"	e	enum:__anonc2bbf6650103	file:
+M_RST6	jdmarker.c	50;"	e	enum:__anon373867660103	file:
+M_RST7	jcmarker.c	47;"	e	enum:__anonc2bbf6650103	file:
+M_RST7	jdmarker.c	51;"	e	enum:__anon373867660103	file:
+M_SOF0	jcmarker.c	18;"	e	enum:__anonc2bbf6650103	file:
+M_SOF0	jdmarker.c	22;"	e	enum:__anon373867660103	file:
+M_SOF0	rdjpgcom.c	110;"	d	file:
+M_SOF0	wrjpgcom.c	157;"	d	file:
+M_SOF1	jcmarker.c	19;"	e	enum:__anonc2bbf6650103	file:
+M_SOF1	jdmarker.c	23;"	e	enum:__anon373867660103	file:
+M_SOF1	rdjpgcom.c	111;"	d	file:
+M_SOF1	wrjpgcom.c	158;"	d	file:
+M_SOF10	jcmarker.c	29;"	e	enum:__anonc2bbf6650103	file:
+M_SOF10	jdmarker.c	33;"	e	enum:__anon373867660103	file:
+M_SOF10	rdjpgcom.c	118;"	d	file:
+M_SOF10	wrjpgcom.c	165;"	d	file:
+M_SOF11	jcmarker.c	30;"	e	enum:__anonc2bbf6650103	file:
+M_SOF11	jdmarker.c	34;"	e	enum:__anon373867660103	file:
+M_SOF11	rdjpgcom.c	119;"	d	file:
+M_SOF11	wrjpgcom.c	166;"	d	file:
+M_SOF13	jcmarker.c	32;"	e	enum:__anonc2bbf6650103	file:
+M_SOF13	jdmarker.c	36;"	e	enum:__anon373867660103	file:
+M_SOF13	rdjpgcom.c	120;"	d	file:
+M_SOF13	wrjpgcom.c	167;"	d	file:
+M_SOF14	jcmarker.c	33;"	e	enum:__anonc2bbf6650103	file:
+M_SOF14	jdmarker.c	37;"	e	enum:__anon373867660103	file:
+M_SOF14	rdjpgcom.c	121;"	d	file:
+M_SOF14	wrjpgcom.c	168;"	d	file:
+M_SOF15	jcmarker.c	34;"	e	enum:__anonc2bbf6650103	file:
+M_SOF15	jdmarker.c	38;"	e	enum:__anon373867660103	file:
+M_SOF15	rdjpgcom.c	122;"	d	file:
+M_SOF15	wrjpgcom.c	169;"	d	file:
+M_SOF2	jcmarker.c	20;"	e	enum:__anonc2bbf6650103	file:
+M_SOF2	jdmarker.c	24;"	e	enum:__anon373867660103	file:
+M_SOF2	rdjpgcom.c	112;"	d	file:
+M_SOF2	wrjpgcom.c	159;"	d	file:
+M_SOF3	jcmarker.c	21;"	e	enum:__anonc2bbf6650103	file:
+M_SOF3	jdmarker.c	25;"	e	enum:__anon373867660103	file:
+M_SOF3	rdjpgcom.c	113;"	d	file:
+M_SOF3	wrjpgcom.c	160;"	d	file:
+M_SOF5	jcmarker.c	23;"	e	enum:__anonc2bbf6650103	file:
+M_SOF5	jdmarker.c	27;"	e	enum:__anon373867660103	file:
+M_SOF5	rdjpgcom.c	114;"	d	file:
+M_SOF5	wrjpgcom.c	161;"	d	file:
+M_SOF6	jcmarker.c	24;"	e	enum:__anonc2bbf6650103	file:
+M_SOF6	jdmarker.c	28;"	e	enum:__anon373867660103	file:
+M_SOF6	rdjpgcom.c	115;"	d	file:
+M_SOF6	wrjpgcom.c	162;"	d	file:
+M_SOF7	jcmarker.c	25;"	e	enum:__anonc2bbf6650103	file:
+M_SOF7	jdmarker.c	29;"	e	enum:__anon373867660103	file:
+M_SOF7	rdjpgcom.c	116;"	d	file:
+M_SOF7	wrjpgcom.c	163;"	d	file:
+M_SOF9	jcmarker.c	28;"	e	enum:__anonc2bbf6650103	file:
+M_SOF9	jdmarker.c	32;"	e	enum:__anon373867660103	file:
+M_SOF9	rdjpgcom.c	117;"	d	file:
+M_SOF9	wrjpgcom.c	164;"	d	file:
+M_SOI	jcmarker.c	49;"	e	enum:__anonc2bbf6650103	file:
+M_SOI	jdmarker.c	53;"	e	enum:__anon373867660103	file:
+M_SOI	rdjpgcom.c	123;"	d	file:
+M_SOI	wrjpgcom.c	170;"	d	file:
+M_SOS	jcmarker.c	51;"	e	enum:__anonc2bbf6650103	file:
+M_SOS	jdmarker.c	55;"	e	enum:__anon373867660103	file:
+M_SOS	rdjpgcom.c	125;"	d	file:
+M_SOS	wrjpgcom.c	172;"	d	file:
+M_TEM	jcmarker.c	80;"	e	enum:__anonc2bbf6650103	file:
+M_TEM	jdmarker.c	84;"	e	enum:__anon373867660103	file:
+Makefile	Makefile.in	495;"	t
+NAME	ansi2knr.1	2;"	s	title:ANSI2KNR
+NAME	cjpeg.1	2;"	s	title:CJPEG
+NAME	djpeg.1	2;"	s	title:DJPEG
+NAME	jpegtran.1	2;"	s	title:JPEGTRAN
+NAME	rdjpgcom.1	2;"	s	title:RDJPGCOM
+NAME	wrjpgcom.1	2;"	s	title:WRJPGCOM
+NEXTBYTE	rdjpgcom.c	68;"	d	file:
+NEXTBYTE	wrjpgcom.c	78;"	d	file:
+NM	Makefile.in	292;"	m
+NMEDIT	Makefile.in	293;"	m
+NORMAL_INSTALL	Makefile.in	81;"	m
+NORMAL_UNINSTALL	Makefile.in	84;"	m
+NROFF	Makefile.in	221;"	m
+NULL	ansi2knr.c	193;"	d	file:
+NUM_ARITH_TBLS	jpeglib.h	54;"	d
+NUM_HUFF_TBLS	jpeglib.h	53;"	d
+NUM_QUANT_TBLS	jpeglib.h	52;"	d
+Ncolors	jquant1.c	157;"	m	struct:__anon8f5b6fba0108	typeref:typename:int[]	file:
+OBJDUMP	Makefile.in	294;"	m
+OBJEXT	Makefile.in	295;"	m
+ODD	jmemdos.c	329;"	d	file:
+ODITHER_CELLS	jquant1.c	74;"	d	file:
+ODITHER_MASK	jquant1.c	75;"	d	file:
+ODITHER_MATRIX	jquant1.c	77;"	t	typeref:typename:int[ODITHER_SIZE][ODITHER_SIZE]	file:
+ODITHER_MATRIX_PTR	jquant1.c	78;"	t	typeref:typename:int (*)[ODITHER_SIZE]	file:
+ODITHER_SIZE	jquant1.c	72;"	d	file:
+ONE	jdct.h	348;"	d
+ONE_HALF	jccolor.c	73;"	d	file:
+ONE_HALF	jdcolor.c	95;"	d	file:
+ONE_HALF	jdmerge.c	74;"	d	file:
+OPTIONS	cjpeg.1	21;"	s	title:CJPEG
+OPTIONS	djpeg.1	20;"	s	title:DJPEG
+OPTIONS	jpegtran.1	36;"	s	title:JPEGTRAN
+OPTIONS	rdjpgcom.1	29;"	s	title:RDJPGCOM
+OPTIONS	wrjpgcom.1	38;"	s	title:WRJPGCOM
+OTHERFILES	Makefile.am	58;"	m
+OTHERFILES	Makefile.in	425;"	m
+OTHERINCLUDES	Makefile.am	25;"	m
+OTHERINCLUDES	Makefile.in	387;"	m
+OTOOL	Makefile.in	296;"	m
+OTOOL64	Makefile.in	297;"	m
+OUTPUT_BUF_SIZE	jdatadst.c	40;"	d	file:
+PACKAGE	Makefile.in	298;"	m
+PACKAGE_BUGREPORT	Makefile.in	299;"	m
+PACKAGE_NAME	Makefile.in	300;"	m
+PACKAGE_STRING	Makefile.in	301;"	m
+PACKAGE_TARNAME	Makefile.in	302;"	m
+PACKAGE_URL	Makefile.in	303;"	m
+PACKAGE_VERSION	Makefile.in	304;"	m
+PASS1_BITS	jfdctint.c	97;"	d	file:
+PASS1_BITS	jidctfst.c	78;"	d	file:
+PASS1_BITS	jidctint.c	102;"	d	file:
+PATH_SEPARATOR	Makefile.in	305;"	m
+PEEK_BITS	jdhuff.c	144;"	d	file:
+POST_INSTALL	Makefile.in	83;"	m
+POST_UNINSTALL	Makefile.in	86;"	m
+PPM_MAXVAL	wrppm.c	37;"	d	file:
+PPM_MAXVAL	wrppm.c	42;"	d	file:
+PPM_MAXVAL	wrppm.c	51;"	d	file:
+PRE_INSTALL	Makefile.in	82;"	m
+PRE_UNINSTALL	Makefile.in	85;"	m
+PROGRAMS	Makefile.in	158;"	m
+PROVIDE_ISLOW_TABLES	jcdctmgr.c	57;"	d	file:
+PROVIDE_ISLOW_TABLES	jcdctmgr.c	60;"	d	file:
+PROVIDE_ISLOW_TABLES	jddctmgr.c	75;"	d	file:
+PROVIDE_ISLOW_TABLES	jddctmgr.c	78;"	d	file:
+PSEUDOCOLOR	rdrle.c	52;"	e	enum:__anon3cbe608f0103	file:
+PUTBYTE	wrjpgcom.c	83;"	d	file:
+PUTPPMSAMPLE	wrppm.c	35;"	d	file:
+PUTPPMSAMPLE	wrppm.c	40;"	d	file:
+PUTPPMSAMPLE	wrppm.c	45;"	d	file:
+PUT_2B	wrbmp.c	162;"	d	file:
+PUT_4B	wrbmp.c	165;"	d	file:
+Q01_POS	jdcoefct.c	392;"	d	file:
+Q02_POS	jdcoefct.c	396;"	d	file:
+Q10_POS	jdcoefct.c	393;"	d	file:
+Q11_POS	jdcoefct.c	395;"	d	file:
+Q20_POS	jdcoefct.c	394;"	d	file:
+QUANT_1PASS_SUPPORTED	jmorecfg.h	378;"	d
+QUANT_2PASS_SUPPORTED	jmorecfg.h	379;"	d
+RANGE_MASK	jdct.h	87;"	d
+RANLIB	Makefile.in	306;"	m
+RDJPGCOM	rdjpgcom.1	1;"	t
+READ_BINARY	cdjpeg.h	159;"	d
+READ_BINARY	cdjpeg.h	163;"	d
+READ_BINARY	cdjpeg.h	166;"	d
+READ_BINARY	jmemdos.c	75;"	d	file:
+READ_BINARY	jmemdos.c	77;"	d	file:
+READ_BINARY	jmemname.c	30;"	d	file:
+READ_BINARY	jmemname.c	34;"	d	file:
+READ_BINARY	jmemname.c	37;"	d	file:
+READ_BINARY	rdjpgcom.c	39;"	d	file:
+READ_BINARY	rdjpgcom.c	42;"	d	file:
+READ_BINARY	rdjpgcom.c	44;"	d	file:
+READ_BINARY	wrjpgcom.c	38;"	d	file:
+READ_BINARY	wrjpgcom.c	42;"	d	file:
+READ_BINARY	wrjpgcom.c	45;"	d	file:
+RGB_BLUE	jmorecfg.h	399;"	d
+RGB_GREEN	jmorecfg.h	398;"	d
+RGB_PIXELSIZE	jmorecfg.h	400;"	d
+RGB_RED	jmorecfg.h	397;"	d
+RIGHT_SHIFT	jpegint.h	283;"	d
+RIGHT_SHIFT	jpegint.h	289;"	d
+RW_BINARY	jmemname.c	31;"	d	file:
+RW_BINARY	jmemname.c	35;"	d	file:
+RW_BINARY	jmemname.c	38;"	d	file:
+R_CB_OFF	jccolor.c	85;"	d	file:
+R_CR_OFF	jccolor.c	88;"	d	file:
+R_SCALE	jquant2.c	74;"	d	file:
+R_Y_OFF	jccolor.c	82;"	d	file:
+R_Y_OFF	jdcolor.c	105;"	d	file:
+ReadOK	rdbmp.c	46;"	d	file:
+ReadOK	rdppm.c	56;"	d	file:
+ReadOK	rdtarga.c	41;"	d	file:
+SAVED_COEFS	jdcoefct.c	59;"	d	file:
+SAVE_MARKERS_SUPPORTED	jmorecfg.h	374;"	d
+SCALEBITS	jccolor.c	71;"	d	file:
+SCALEBITS	jdcolor.c	94;"	d	file:
+SCALEBITS	jdmerge.c	73;"	d	file:
+SED	Makefile.in	307;"	m
+SEE	cjpeg.1	364;"	s	title:CJPEG
+SEE	djpeg.1	235;"	s	title:DJPEG
+SEE	jpegtran.1	274;"	s	title:JPEGTRAN
+SEE	rdjpgcom.1	57;"	s	title:RDJPGCOM
+SEE	wrjpgcom.1	97;"	s	title:WRJPGCOM
+SEEK_SET	jmemansi.c	26;"	d	file:
+SEEK_SET	jmemname.c	26;"	d	file:
+SET_COMP	jcparam.c	430;"	d	file:
+SET_MAKE	Makefile.in	308;"	m
+SHELL	Makefile.in	309;"	m
+SHIFT_TEMPS	jpegint.h	282;"	d
+SHIFT_TEMPS	jpegint.h	288;"	d
+SIZEOF	jinclude.h	80;"	d
+SOURCES	Makefile.in	213;"	m
+SRC	CMakeLists.txt	30;"	v
+SRC_HANDLE	jmemdos.c	474;"	d	file:
+SRC_OFFSET	jmemdos.c	475;"	d	file:
+SRC_PAGE	jmemdos.c	476;"	d	file:
+SRC_PTR	jmemdos.c	477;"	d	file:
+SRC_TYPE	jmemdos.c	473;"	d	file:
+STEPSIZE	jquant2.c	1121;"	d	file:
+STEP_C0	jquant2.c	808;"	d	file:
+STEP_C1	jquant2.c	809;"	d	file:
+STEP_C2	jquant2.c	810;"	d	file:
+STRIP	Makefile.in	310;"	m
+SYNOPSIS	ansi2knr.1	4;"	s	title:ANSI2KNR
+SYNOPSIS	cjpeg.1	4;"	s	title:CJPEG
+SYNOPSIS	djpeg.1	4;"	s	title:DJPEG
+SYNOPSIS	jpegtran.1	4;"	s	title:JPEGTRAN
+SYNOPSIS	rdjpgcom.1	4;"	s	title:RDJPGCOM
+SYNOPSIS	wrjpgcom.1	4;"	s	title:WRJPGCOM
+SYSDEPSOURCES	Makefile.am	19;"	m
+SYSDEPSOURCES	Makefile.in	381;"	m
+Se	jpeglib.h	201;"	m	struct:__anone14b59d80408	typeref:typename:int
+Se	jpeglib.h	434;"	m	struct:jpeg_compress_struct	typeref:typename:int
+Se	jpeglib.h	661;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+Ss	jpeglib.h	201;"	m	struct:__anone14b59d80408	typeref:typename:int
+Ss	jpeglib.h	434;"	m	struct:jpeg_compress_struct	typeref:typename:int
+Ss	jpeglib.h	661;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+TABLE_SIZE	jccolor.c	91;"	d	file:
+TABLE_SIZE	jdcolor.c	108;"	d	file:
+TAGS	Makefile.in	805;"	t
+TEMP_DIRECTORY	jmemname.c	70;"	d	file:
+TEMP_FILE_NAME	jmemmac.c	68;"	d	file:
+TEMP_FILE_NAME	jmemname.c	122;"	d	file:
+TEMP_FILE_NAME	jmemname.c	78;"	d	file:
+TEMP_NAME_LENGTH	jmemsys.h	116;"	d
+TESTFILES	Makefile.am	61;"	m
+TESTFILES	Makefile.in	428;"	m
+TRACEMS	jerror.h	265;"	d
+TRACEMS1	jerror.h	268;"	d
+TRACEMS2	jerror.h	272;"	d
+TRACEMS3	jerror.h	277;"	d
+TRACEMS4	jerror.h	282;"	d
+TRACEMS5	jerror.h	287;"	d
+TRACEMS8	jerror.h	293;"	d
+TRACEMSS	jerror.h	299;"	d
+TRANSFORMS_SUPPORTED	transupp.h	22;"	d
+TRUE	jmorecfg.h	314;"	d
+TRUE	jmorecfg.h	317;"	e	enum:__anon25d69c680103
+TRUECOLOR	rdrle.c	52;"	e	enum:__anon3cbe608f0103	file:
+TWO_FILE_COMMANDLINE	CMakeLists.txt	20;"	v
+UCH	rdbmp.c	34;"	d	file:
+UCH	rdbmp.c	38;"	d	file:
+UCH	rdbmp.c	41;"	d	file:
+UCH	rdppm.c	44;"	d	file:
+UCH	rdppm.c	48;"	d	file:
+UCH	rdppm.c	51;"	d	file:
+UCH	rdtarga.c	29;"	d	file:
+UCH	rdtarga.c	33;"	d	file:
+UCH	rdtarga.c	36;"	d	file:
+UINT16	jmorecfg.h	199;"	t	typeref:typename:unsigned short
+UINT16	jmorecfg.h	201;"	t	typeref:typename:unsigned int
+UINT8	jmorecfg.h	187;"	t	typeref:typename:unsigned char
+UINT8	jmorecfg.h	190;"	t	typeref:typename:char
+UINT8	jmorecfg.h	192;"	t	typeref:typename:short
+UPSAMPLE_MERGING_SUPPORTED	jmorecfg.h	377;"	d
+USE_RPATH	cmake\\dist.cmake	85;"	D
+U_CHAR	rdbmp.c	33;"	t	typeref:typename:unsigned char	file:
+U_CHAR	rdbmp.c	37;"	t	typeref:typename:char	file:
+U_CHAR	rdbmp.c	40;"	t	typeref:typename:char	file:
+U_CHAR	rdppm.c	43;"	t	typeref:typename:unsigned char	file:
+U_CHAR	rdppm.c	47;"	t	typeref:typename:char	file:
+U_CHAR	rdppm.c	50;"	t	typeref:typename:char	file:
+U_CHAR	rdtarga.c	28;"	t	typeref:typename:unsigned char	file:
+U_CHAR	rdtarga.c	32;"	t	typeref:typename:char	file:
+U_CHAR	rdtarga.c	35;"	t	typeref:typename:char	file:
+V	jaricom.c	29;"	d	file:
+VERSION	Makefile.in	311;"	m
+VPATH	Makefile.in	25;"	m
+WARNMS	jerror.h	251;"	d
+WARNMS1	jerror.h	254;"	d
+WARNMS2	jerror.h	258;"	d
+WRITE_BINARY	cdjpeg.h	160;"	d
+WRITE_BINARY	cdjpeg.h	164;"	d
+WRITE_BINARY	cdjpeg.h	167;"	d
+WRITE_BINARY	wrjpgcom.c	39;"	d	file:
+WRITE_BINARY	wrjpgcom.c	43;"	d	file:
+WRITE_BINARY	wrjpgcom.c	46;"	d	file:
+WRJPGCOM	wrjpgcom.1	1;"	t
+XMSDRIVER	jmemdos.c	97;"	t	typeref:typename:void far *	file:
+XMSH	jmemsys.h	121;"	t	typeref:typename:unsigned short
+XMSPTR	jmemdos.c	319;"	t	typeref:union:__anon29f79d85030a	file:
+XMS_SUPPORTED	jmemdos.c	35;"	d	file:
+XMScontext	jmemdos.c	101;"	t	typeref:struct:__anon29f79d850108	file:
+XMSspec	jmemdos.c	327;"	t	typeref:struct:__anon29f79d850408	file:
+X_density	jpeglib.h	383;"	m	struct:jpeg_compress_struct	typeref:typename:UINT16
+X_density	jpeglib.h	604;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT16
+Y_density	jpeglib.h	384;"	m	struct:jpeg_compress_struct	typeref:typename:UINT16
+Y_density	jpeglib.h	605;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT16
+_AC_AM_CONFIG_HEADER_HOOK	aclocal.m4	9238;"	m
+_AC_COMPILER_EXEEXT	aclocal.m4	9228;"	d
+_AM_AUTOCONF_VERSION	aclocal.m4	8634;"	d
+_AM_DEPENDENCIES	aclocal.m4	8816;"	m
+_AM_IF_OPTION	aclocal.m4	9445;"	m
+_AM_MANGLE_OPTION	aclocal.m4	9427;"	m
+_AM_OUTPUT_DEPENDENCY_COMMANDS	aclocal.m4	8992;"	m
+_AM_PROG_CC_C_O	aclocal.m4	9458;"	m
+_AM_PROG_TAR	aclocal.m4	9722;"	m
+_AM_SET_OPTION	aclocal.m4	9433;"	m
+_AM_SET_OPTIONS	aclocal.m4	9439;"	m
+_AM_SUBST_NOTMAKE	aclocal.m4	9693;"	m
+_ARG_PATTERN	cmake\\dist.cmake	172;"	v
+_ARG_REGEX	cmake\\dist.cmake	175;"	v
+_LTDL_MODE	aclocal.m4	8349;"	d
+_LTDL_TYPE	aclocal.m4	8357;"	d
+_LT_COMPILER_OPTION	aclocal.m4	1516;"	m
+_LT_CONFIG_LIBTOOL	aclocal.m4	328;"	d
+_LT_CONFIG_LIBTOOL_INIT	aclocal.m4	315;"	d
+_LT_CONFIG_STATUS_DECLARE	aclocal.m4	443;"	d
+_LT_COPYING	aclocal.m4	34;"	d
+_LT_DECL	aclocal.m4	366;"	d
+_LT_ENABLE_FAST_INSTALL	aclocal.m4	8251;"	d
+_LT_ENABLE_SHARED	aclocal.m4	8143;"	d
+_LT_ENABLE_STATIC	aclocal.m4	8197;"	d
+_LT_EOF	ltmain.sh	1001;"	h
+_LT_EOF	ltmain.sh	986;"	h
+_LT_EOF	ltmain.sh	993;"	h
+_LT_FORMAT_COMMENT	aclocal.m4	350;"	d
+_LT_IF_OPTION	aclocal.m4	8022;"	d
+_LT_LANG_C_enabled	aclocal.m4	810;"	d
+_LT_LIBTOOL_DECLARE	aclocal.m4	476;"	d
+_LT_LIBTOOL_TAG_VARS	aclocal.m4	504;"	d
+_LT_LINKER_OPTION	aclocal.m4	1567;"	m
+_LT_MANGLE_DEFUN	aclocal.m4	8075;"	d
+_LT_MANGLE_OPTION	aclocal.m4	8002;"	d
+_LT_OUTPUT_LIBTOOL_COMMANDS	aclocal.m4	335;"	d
+_LT_OUTPUT_LIBTOOL_COMMANDS_INIT	aclocal.m4	538;"	d
+_LT_OUTPUT_LIBTOOL_INIT	aclocal.m4	322;"	d
+_LT_PATH_TOOL_PREFIX	aclocal.m4	2944;"	m
+_LT_SET_OPTION	aclocal.m4	8011;"	d
+_LT_SHELL_INIT	aclocal.m4	1174;"	d
+_LT_TAGDECL	aclocal.m4	380;"	d
+_LT_TAGS	aclocal.m4	811;"	d
+_LT_TAGVAR	aclocal.m4	511;"	d
+_LT_UNLESS_OPTIONS	aclocal.m4	8030;"	d
+_LT_WITH_PIC	aclocal.m4	8307;"	d
+_LT_WITH_SYSROOT	aclocal.m4	1239;"	m
+__anon0ed2490c0108	jchuff.c	42;"	s	file:
+__anon0ed2490c0208	jchuff.c	55;"	s	file:
+__anon0ed2490c0308	jchuff.c	81;"	s	file:
+__anon0ed2490c0408	jchuff.c	123;"	s	file:
+__anon12c1b1d40108	jdinput.c	22;"	s	file:
+__anon132f8f040108	jcdctmgr.c	23;"	s	file:
+__anon132f8f04020a	jcdctmgr.c	45;"	u	file:
+__anon13a6ce380108	jdcoefct.c	29;"	s	file:
+__anon14e602a00103	djpeg.c	60;"	g	file:
+__anon1936d22e0108	wrtarga.c	43;"	s	file:
+__anon226f33000108	jdmainct.c	115;"	s	file:
+__anon25d69c680103	jmorecfg.h	317;"	g
+__anon29f79d850108	jmemdos.c	98;"	s	file:
+__anon29f79d850208	jmemdos.c	102;"	s	file:
+__anon29f79d85030a	jmemdos.c	316;"	u	file:
+__anon29f79d850408	jmemdos.c	321;"	s	file:
+__anon29f79d85050a	jmemdos.c	466;"	u	file:
+__anon2a9612c50108	jmemmgr.c	93;"	s	union:small_pool_struct	file:
+__anon2a9612c50208	jmemmgr.c	104;"	s	union:large_pool_struct	file:
+__anon2a9612c50308	jmemmgr.c	117;"	s	file:
+__anon2b0c88e3010a	jmemsys.h	124;"	u
+__anon31c87b140108	jdmerge.c	45;"	s	file:
+__anon34a42d810108	jdpostct.c	26;"	s	file:
+__anon373867660103	jdmarker.c	21;"	g	file:
+__anon373867660208	jdmarker.c	92;"	s	file:
+__anon3a306c900108	jdmaster.c	22;"	s	file:
+__anon3c9c83190108	rdppm.c	72;"	s	file:
+__anon3cbe608f0103	rdrle.c	52;"	g	file:
+__anon40fb42650108	jcsample.c	60;"	s	file:
+__anon46edb9230108	jdcolor.c	19;"	s	file:
+__anon5aabe4420108	jccolor.c	19;"	s	file:
+__anon5bcc85cd0108	jdhuff.c	28;"	s	file:
+__anon5bcc85cd0208	jdhuff.c	79;"	s	file:
+__anon5bcc85cd0308	jdhuff.c	84;"	s	file:
+__anon5bcc85cd0408	jdhuff.c	198;"	s	file:
+__anon5bcc85cd0508	jdhuff.c	222;"	s	file:
+__anon7d81d14b0108	jctrans.c	205;"	s	file:
+__anon8625d7f10108	jcprepct.c	53;"	s	file:
+__anon87ac00050108	jddctmgr.c	44;"	s	file:
+__anon87ac0005020a	jddctmgr.c	60;"	u	file:
+__anon8f5b6fba0108	jquant1.c	143;"	s	file:
+__anon8f5b73fb0108	jquant2.c	194;"	s	file:
+__anon8f5b73fb0208	jquant2.c	259;"	s	file:
+__anon971f79580103	transupp.h	100;"	g
+__anon971f79580203	transupp.h	118;"	g
+__anon971f79580308	transupp.h	131;"	s
+__anon971f79580403	transupp.h	205;"	g
+__anon9f2a5d370108	jccoefct.c	35;"	s	file:
+__anonadf2c1ff0108	jcmainct.c	29;"	s	file:
+__anonb29646c50108	jdatadst.c	31;"	s	file:
+__anonb29646c50208	jdatadst.c	45;"	s	file:
+__anonb3a4e1a20108	jdatasrc.c	26;"	s	file:
+__anonb3c5035c0108	jdarith.c	23;"	s	file:
+__anonb577b3660108	jdsample.c	34;"	s	file:
+__anonb8e7288c0103	cderror.h	34;"	g
+__anonbfe931cf0103	jerror.h	34;"	g
+__anonc2bbf6650103	jcmarker.c	17;"	g	file:
+__anonc2bbf6650208	jcmarker.c	88;"	s	file:
+__anonc5b3fb8f0103	jcmaster.c	22;"	g	file:
+__anonc5b3fb8f0208	jcmaster.c	28;"	s	file:
+__anonc7832e7b0108	jcarith.c	23;"	s	file:
+__anondd28fc3e0108	wrbmp.c	44;"	s	file:
+__anondd811ab50108	wrgif.c	47;"	s	file:
+__anonde27ebac0108	wrppm.c	69;"	s	file:
+__anonde49c9220108	wrrle.c	53;"	s	file:
+__anone1181acc0103	jpegint.h	17;"	g
+__anone14b59d80108	jpeglib.h	92;"	s
+__anone14b59d80208	jpeglib.h	109;"	s
+__anone14b59d80308	jpeglib.h	125;"	s
+__anone14b59d80408	jpeglib.h	198;"	s
+__anone14b59d80503	jpeglib.h	220;"	g
+__anone14b59d80603	jpeglib.h	233;"	g
+__anone14b59d80703	jpeglib.h	240;"	g
+__anone14b59d80803	jpeglib.h	255;"	g
+__anone14b59d8090a	jpeglib.h	720;"	u	struct:jpeg_error_mgr
+_bmp_source_struct	rdbmp.c	53;"	s	file:
+_complete_install_args	cmake\\dist.cmake	170;"	m
+_jdos_close	jmemdosa.asm	78;"	l
+_jdos_open	jmemdosa.asm	43;"	l
+_jdos_read	jmemdosa.asm	144;"	l
+_jdos_seek	jmemdosa.asm	110;"	l
+_jdos_write	jmemdosa.asm	182;"	l
+_jems_available	jmemdosa.asm	302;"	l
+_jems_calldriver	jmemdosa.asm	344;"	l
+_jxms_calldriver	jmemdosa.asm	263;"	l
+_jxms_getdriver	jmemdosa.asm	220;"	l
+_lt_decl_all_varnames	aclocal.m4	432;"	d
+_lt_decl_filter	aclocal.m4	391;"	d
+_lt_decl_varnames_tagged	aclocal.m4	420;"	d
+_lt_join	aclocal.m4	8388;"	d
+_parse_dist_field	cmake\\dist.cmake	20;"	m
+_rle_source_struct	rdrle.c	64;"	s	file:
+_src	CMakeLists.txt	74;"	v
+_tga_source_struct	rdtarga.c	48;"	s	file:
+a	jcarith.c	27;"	m	struct:__anonc7832e7b0108	typeref:typename:INT32	file:
+a	jdarith.c	27;"	m	struct:__anonb3c5035c0108	typeref:typename:INT32	file:
+abs_builddir	Makefile.in	312;"	m
+abs_srcdir	Makefile.in	313;"	m
+abs_top_builddir	Makefile.in	314;"	m
+abs_top_srcdir	Makefile.in	315;"	m
+ac_count_ptrs	jchuff.c	96;"	m	struct:__anon0ed2490c0308	typeref:typename:long * []	file:
+ac_ct_AR	Makefile.in	316;"	m
+ac_ct_CC	Makefile.in	317;"	m
+ac_ct_DUMPBIN	Makefile.in	318;"	m
+ac_cur_tbls	jdhuff.c	252;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl * []	file:
+ac_derived_tbl	jdhuff.c	240;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl *	file:
+ac_derived_tbls	jchuff.c	92;"	m	struct:__anon0ed2490c0308	typeref:typename:c_derived_tbl * []	file:
+ac_derived_tbls	jdhuff.c	246;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl * []	file:
+ac_huff_tbl_ptrs	jpeglib.h	343;"	m	struct:jpeg_compress_struct	typeref:typename:JHUFF_TBL * []
+ac_huff_tbl_ptrs	jpeglib.h	574;"	m	struct:jpeg_decompress_struct	typeref:typename:JHUFF_TBL * []
+ac_stats	jcarith.c	42;"	m	struct:__anonc7832e7b0108	typeref:typename:unsigned char * []	file:
+ac_stats	jdarith.c	39;"	m	struct:__anonb3c5035c0108	typeref:typename:unsigned char * []	file:
+ac_tbl_no	jchuff.c	110;"	m	struct:__anon0ed2490c0308	typeref:typename:int	file:
+ac_tbl_no	jpeglib.h	139;"	m	struct:__anone14b59d80308	typeref:typename:int
+access_virt_barray	jmemmgr.c	842;"	f	typeref:typename:JBLOCKARRAY
+access_virt_sarray	jmemmgr.c	757;"	f	typeref:typename:JSAMPARRAY
+actual_number_of_colors	jpeglib.h	526;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+add_huff_table	jcparam.c	169;"	f	typeref:typename:void
+add_map_entry	rdcolmap.c	46;"	f	typeref:typename:void
+addon_message_table	jpeglib.h	752;"	m	struct:jpeg_error_mgr	typeref:typename:const char * const *
+adjust_exif_parameters	transupp.c	1318;"	f	typeref:typename:void
+all	Makefile.in	474;"	t
+all-am	Makefile.in	863;"	t
+alloc_barray	jmemmgr.c	444;"	f	typeref:typename:JBLOCKARRAY
+alloc_fs_workspace	jquant1.c	723;"	f	typeref:typename:void
+alloc_funny_pointers	jdmainct.c	158;"	f	typeref:typename:void
+alloc_large	jmemmgr.c	343;"	f	typeref:typename:void FAR *
+alloc_sarray	jmemmgr.c	396;"	f	typeref:typename:JSAMPARRAY
+alloc_small	jmemmgr.c	258;"	f	typeref:typename:void *
+am--refresh	Makefile.in	479;"	t
+am__CONFIG_DISTCLEAN_FILES	Makefile.in	102;"	m
+am__aclocal_m4_deps	Makefile.in	99;"	m
+am__base_list	Makefile.in	126;"	m
+am__can_run_installinfo	Makefile.in	215;"	m
+am__cd	Makefile.in	75;"	m
+am__configure_deps	Makefile.in	100;"	m
+am__define_uniq_tagged_files	Makefile.in	237;"	m
+am__depfiles_maybe	Makefile.in	193;"	m
+am__include	Makefile.in	319;"	m
+am__install_max	Makefile.in	114;"	m
+am__installdirs	Makefile.in	135;"	m
+am__is_gnu_make	Makefile.in	26;"	m
+am__leading_dot	Makefile.in	320;"	m
+am__make_dryrun	Makefile.in	69;"	m
+am__make_keepgoing	Makefile.in	70;"	m
+am__make_running_with_option	Makefile.in	27;"	m
+am__mv	Makefile.in	194;"	m
+am__nobase_list	Makefile.in	119;"	m
+am__nobase_strip	Makefile.in	117;"	m
+am__nobase_strip_setup	Makefile.in	115;"	m
+am__objects_1	Makefile.in	139;"	m
+am__quote	Makefile.in	321;"	m
+am__strip_dir	Makefile.in	113;"	m
+am__tagged_files	Makefile.in	224;"	m
+am__tar	Makefile.in	322;"	m
+am__uninstall_files_from_dir	Makefile.in	129;"	m
+am__uniquify_input	Makefile.in	229;"	m
+am__untar	Makefile.in	323;"	m
+am__v_CCLD_	Makefile.in	210;"	m
+am__v_CCLD_0	Makefile.in	211;"	m
+am__v_CCLD_1	Makefile.in	212;"	m
+am__v_CC_	Makefile.in	202;"	m
+am__v_CC_0	Makefile.in	203;"	m
+am__v_CC_1	Makefile.in	204;"	m
+am__v_GEN_	Makefile.in	184;"	m
+am__v_GEN_0	Makefile.in	185;"	m
+am__v_GEN_1	Makefile.in	186;"	m
+am__v_P_	Makefile.in	180;"	m
+am__v_P_0	Makefile.in	181;"	m
+am__v_P_1	Makefile.in	182;"	m
+am__v_at_	Makefile.in	188;"	m
+am__v_at_0	Makefile.in	189;"	m
+am__v_at_1	Makefile.in	190;"	m
+am__v_lt_	Makefile.in	152;"	m
+am__v_lt_0	Makefile.in	153;"	m
+am__v_lt_1	Makefile.in	154;"	m
+am__vpath_adj	Makefile.in	109;"	m
+am__vpath_adj_setup	Makefile.in	108;"	m
+am_cjpeg_OBJECTS	Makefile.in	159;"	m
+am_djpeg_OBJECTS	Makefile.in	164;"	m
+am_jpegtran_OBJECTS	Makefile.in	169;"	m
+am_libjpeg_la_OBJECTS	Makefile.in	149;"	m
+am_rdjpgcom_OBJECTS	Makefile.in	173;"	m
+am_wrjpgcom_OBJECTS	Makefile.in	176;"	m
+another_method	ckconfig.c	108;"	m	struct:methods_struct	typeref:typename:int (*)(void)	file:
+arith_ac_K	jpeglib.h	348;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8[]
+arith_ac_K	jpeglib.h	592;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8[]
+arith_code	jpeglib.h	358;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+arith_code	jpeglib.h	588;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+arith_dc_L	jpeglib.h	346;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8[]
+arith_dc_L	jpeglib.h	590;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8[]
+arith_dc_U	jpeglib.h	347;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8[]
+arith_dc_U	jpeglib.h	591;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8[]
+arith_decode	jdarith.c	106;"	f	typeref:typename:int
+arith_encode	jcarith.c	219;"	f	typeref:typename:void
+arith_entropy_decoder	jdarith.c	43;"	t	typeref:struct:__anonb3c5035c0108	file:
+arith_entropy_encoder	jcarith.c	46;"	t	typeref:struct:__anonc7832e7b0108	file:
+arith_entropy_ptr	jcarith.c	48;"	t	typeref:typename:arith_entropy_encoder *	file:
+arith_entropy_ptr	jdarith.c	45;"	t	typeref:typename:arith_entropy_decoder *	file:
+avail_done	jmemdosa.asm	323;"	l
+ax	jmemdos.c	103;"	m	struct:__anon29f79d850208	typeref:typename:unsigned short	file:
+ax	jmemdos.c	99;"	m	struct:__anon29f79d850108	typeref:typename:unsigned short	file:
+b_s_info	jmemmgr.c	164;"	m	struct:jvirt_sarray_control	typeref:typename:backing_store_info	file:
+b_s_info	jmemmgr.c	180;"	m	struct:jvirt_barray_control	typeref:typename:backing_store_info	file:
+b_s_open	jmemmgr.c	162;"	m	struct:jvirt_sarray_control	typeref:typename:boolean	file:
+b_s_open	jmemmgr.c	178;"	m	struct:jvirt_barray_control	typeref:typename:boolean	file:
+backing_store_info	jmemsys.h	169;"	t	typeref:struct:backing_store_struct
+backing_store_ptr	jmemsys.h	137;"	t	typeref:struct:backing_store_struct *
+backing_store_struct	jmemsys.h	139;"	s
+base_dither_matrix	jquant1.c	80;"	v	typeref:typename:const UINT8[][]	file:
+bin_PROGRAMS	Makefile.am	79;"	m
+bin_PROGRAMS	Makefile.in	91;"	m
+bindir	Makefile.in	324;"	m
+bit_buf_type	jdhuff.c	69;"	t	typeref:typename:INT32	file:
+bit_buffer	jchuff.c	113;"	m	struct:__anon0ed2490c0308	typeref:typename:char *	file:
+bitread_perm_state	jdhuff.c	82;"	t	typeref:struct:__anon5bcc85cd0208	file:
+bitread_working_state	jdhuff.c	96;"	t	typeref:struct:__anon5bcc85cd0308	file:
+bits	jpeglib.h	111;"	m	struct:__anone14b59d80208	typeref:typename:UINT8[17]
+bits_left	jdhuff.c	81;"	m	struct:__anon5bcc85cd0208	typeref:typename:int	file:
+bits_left	jdhuff.c	93;"	m	struct:__anon5bcc85cd0308	typeref:typename:int	file:
+bits_per_pixel	rdbmp.c	64;"	m	struct:_bmp_source_struct	typeref:typename:int	file:
+bitstate	jdhuff.c	228;"	m	struct:__anon5bcc85cd0508	typeref:typename:bitread_perm_state	file:
+block_count	rdtarga.c	67;"	m	struct:_tga_source_struct	typeref:typename:int	file:
+block_size	jpeglib.h	436;"	m	struct:jpeg_compress_struct	typeref:typename:int
+block_size	jpeglib.h	665;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+blocks_in_MCU	jpeglib.h	429;"	m	struct:jpeg_compress_struct	typeref:typename:int
+blocks_in_MCU	jpeglib.h	656;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+blocksperrow	jmemmgr.c	170;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+bmask	jdhuff.c	580;"	v	typeref:typename:const int[16]	file:
+bmp_dest_ptr	wrbmp.c	56;"	t	typeref:typename:bmp_dest_struct *	file:
+bmp_dest_struct	wrbmp.c	54;"	t	typeref:struct:__anondd28fc3e0108	file:
+bmp_source_ptr	rdbmp.c	51;"	t	typeref:struct:_bmp_source_struct *	file:
+bmp_source_struct	rdbmp.c	65;"	t	typeref:struct:_bmp_source_struct	file:
+boolean	jmorecfg.h	309;"	t	typeref:typename:int
+boolean	jmorecfg.h	317;"	t	typeref:enum:__anon25d69c680103
+box	jquant2.c	268;"	t	typeref:struct:__anon8f5b73fb0208	file:
+boxptr	jquant2.c	270;"	t	typeref:typename:box *	file:
+buffer	cdjpeg.h	36;"	m	struct:cjpeg_source_struct	typeref:typename:JSAMPARRAY
+buffer	cdjpeg.h	68;"	m	struct:djpeg_dest_struct	typeref:typename:JSAMPARRAY
+buffer	jcarith.c	32;"	m	struct:__anonc7832e7b0108	typeref:typename:int	file:
+buffer	jcmainct.c	41;"	m	struct:__anonadf2c1ff0108	typeref:typename:JSAMPARRAY[]	file:
+buffer	jdatadst.c	35;"	m	struct:__anonb29646c50108	typeref:typename:JOCTET *	file:
+buffer	jdatadst.c	51;"	m	struct:__anonb29646c50208	typeref:typename:JOCTET *	file:
+buffer	jdatasrc.c	30;"	m	struct:__anonb3a4e1a20108	typeref:typename:JOCTET *	file:
+buffer	jdmainct.c	119;"	m	struct:__anon226f33000108	typeref:typename:JSAMPARRAY[]	file:
+buffer	jdpostct.c	35;"	m	struct:__anon34a42d810108	typeref:typename:JSAMPARRAY	file:
+buffer_full	jdmainct.c	121;"	m	struct:__anon226f33000108	typeref:typename:boolean	file:
+buffer_height	cdjpeg.h	37;"	m	struct:cjpeg_source_struct	typeref:typename:JDIMENSION
+buffer_height	cdjpeg.h	69;"	m	struct:djpeg_dest_struct	typeref:typename:JDIMENSION
+buffer_width	rdppm.c	77;"	m	struct:__anon3c9c83190108	typeref:typename:size_t	file:
+buffer_width	wrppm.c	75;"	m	struct:__anonde27ebac0108	typeref:typename:size_t	file:
+buffer_width	wrtarga.c	47;"	m	struct:__anon1936d22e0108	typeref:typename:JDIMENSION	file:
+buffered_image	jpeglib.h	484;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+bufsize	ansi2knr.c	238;"	d	file:
+bufsize	jdatadst.c	52;"	m	struct:__anonb29646c50208	typeref:typename:size_t	file:
+build	Makefile.in	325;"	m
+build_alias	Makefile.in	326;"	m
+build_bg_ycc_rgb_table	jdcolor.c	158;"	f	typeref:typename:void
+build_cpu	Makefile.in	327;"	m
+build_os	Makefile.in	328;"	m
+build_rgb_y_table	jdcolor.c	277;"	f	typeref:typename:void
+build_triplet	Makefile.in	87;"	m
+build_vendor	Makefile.in	329;"	m
+build_ycc_rgb_table	jdcolor.c	116;"	f	typeref:typename:void
+build_ycc_rgb_table	jdmerge.c	84;"	f	typeref:typename:void
+builddir	Makefile.in	330;"	m
+bx	jmemdos.c	103;"	m	struct:__anon29f79d850208	typeref:typename:unsigned short	file:
+bx	jmemdos.c	99;"	m	struct:__anon29f79d850108	typeref:typename:unsigned short	file:
+bytes	jmemdos.c	468;"	m	union:__anon29f79d85050a	typeref:typename:char[18]	file:
+bytes_in_buffer	jdhuff.c	88;"	m	struct:__anon5bcc85cd0308	typeref:typename:size_t	file:
+bytes_in_buffer	jpeglib.h	786;"	m	struct:jpeg_source_mgr	typeref:typename:size_t
+bytes_left	jmemmgr.c	107;"	m	struct:large_pool_struct::__anon2a9612c50208	typeref:typename:size_t	file:
+bytes_left	jmemmgr.c	96;"	m	struct:small_pool_struct::__anon2a9612c50108	typeref:typename:size_t	file:
+bytes_read	jdmarker.c	105;"	m	struct:__anon373867660208	typeref:typename:unsigned int	file:
+bytes_used	jmemmgr.c	106;"	m	struct:large_pool_struct::__anon2a9612c50208	typeref:typename:size_t	file:
+bytes_used	jmemmgr.c	95;"	m	struct:small_pool_struct::__anon2a9612c50108	typeref:typename:size_t	file:
+bytesinpkt	wrgif.c	64;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+c	jcarith.c	26;"	m	struct:__anonc7832e7b0108	typeref:typename:INT32	file:
+c	jdarith.c	26;"	m	struct:__anonb3c5035c0108	typeref:typename:INT32	file:
+c0max	jquant2.c	261;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c0min	jquant2.c	261;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c1max	jquant2.c	262;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c1min	jquant2.c	262;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c2max	jquant2.c	263;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c2min	jquant2.c	263;"	m	struct:__anon8f5b73fb0208	typeref:typename:int	file:
+c5to8bits	rdtarga.c	78;"	v	typeref:typename:const UINT8[32]	file:
+c_derived_tbl	jchuff.c	46;"	t	typeref:struct:__anon0ed2490c0108	file:
+c_pass_type	jcmaster.c	26;"	t	typeref:enum:__anonc5b3fb8f0103	file:
+call_pass_startup	jpegint.h	52;"	m	struct:jpeg_comp_master	typeref:typename:boolean
+carray	ckconfig.c	184;"	v	typeref:typename:const int[3]	file:
+cconvert	jpeglib.h	448;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_color_converter *
+cconvert	jpeglib.h	687;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_color_deconverter *
+cd_progress_ptr	cdjpeg.h	89;"	t	typeref:struct:cdjpeg_progress_mgr *
+cdjpeg_message_table	cjpeg.c	45;"	v	typeref:typename:const char * const[]	file:
+cdjpeg_message_table	djpeg.c	47;"	v	typeref:typename:const char * const[]	file:
+cdjpeg_progress_mgr	cdjpeg.h	81;"	s
+check	Makefile.in	862;"	t
+check-am	Makefile.in	860;"	t
+check-local	Makefile.am	121;"	t
+check-local	Makefile.in	1012;"	t
+cinfo	jchuff.c	107;"	m	struct:__anon0ed2490c0308	typeref:typename:j_compress_ptr	file:
+cinfo	jchuff.c	127;"	m	struct:__anon0ed2490c0408	typeref:typename:j_compress_ptr	file:
+cinfo	jdhuff.c	95;"	m	struct:__anon5bcc85cd0308	typeref:typename:j_decompress_ptr	file:
+cinfo	jpeglib.h	868;"	t	typeref:typename:JMETHOD (boolean,jpeg_marker_parser_method,(j_decompress_ptr))
+cinfo	rdbmp.c	56;"	m	struct:_bmp_source_struct	typeref:typename:j_compress_ptr	file:
+cinfo	rdtarga.c	51;"	m	struct:_tga_source_struct	typeref:typename:j_compress_ptr	file:
+cinfo	wrgif.c	50;"	m	struct:__anondd811ab50108	typeref:typename:j_decompress_ptr	file:
+cjpeg	CMakeLists.txt	45;"	t
+cjpeg$(EXEEXT)	Makefile.in	616;"	t
+cjpeg_DEPENDENCIES	Makefile.in	163;"	m
+cjpeg_LDADD	Makefile.am	84;"	m
+cjpeg_LDADD	Makefile.in	446;"	m
+cjpeg_OBJECTS	Makefile.in	162;"	m
+cjpeg_SOURCES	Makefile.am	82;"	m
+cjpeg_SOURCES	Makefile.in	443;"	m
+cjpeg_source_ptr	cdjpeg.h	24;"	t	typeref:struct:cjpeg_source_struct *
+cjpeg_source_struct	cdjpeg.h	26;"	s
+clean	Makefile.in	902;"	t
+clean-am	Makefile.in	904;"	t
+clean-binPROGRAMS	Makefile.in	607;"	t
+clean-cscope	Makefile.in	838;"	t
+clean-generic	Makefile.in	892;"	t
+clean-libLTLIBRARIES	Makefile.in	553;"	t
+clean-libtool	Makefile.in	732;"	t
+close_backing_store	jmemansi.c	123;"	f	typeref:typename:void
+close_backing_store	jmemmac.c	190;"	f	typeref:typename:void
+close_backing_store	jmemname.c	230;"	f	typeref:typename:void
+close_ems_store	jmemdos.c	541;"	f	typeref:typename:void
+close_err	jmemdosa.asm	93;"	l
+close_file_store	jmemdos.c	275;"	f	typeref:typename:void
+close_xms_store	jmemdos.c	401;"	f	typeref:typename:void
+cmyk_ycck_convert	jccolor.c	237;"	f	typeref:typename:void
+code_counter	wrgif.c	61;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+coef	jpeglib.h	446;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_c_coef_controller *
+coef	jpeglib.h	680;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_d_coef_controller *
+coef_arrays	jpegint.h	176;"	m	struct:jpeg_d_coef_controller	typeref:typename:jvirt_barray_ptr *
+coef_bits	jpeglib.h	559;"	m	struct:jpeg_decompress_struct	typeref:typename:int (*)[]
+coef_bits_latch	jdcoefct.c	58;"	m	struct:__anon13a6ce380108	typeref:typename:int *	file:
+coef_limit	jdhuff.c	254;"	m	struct:__anon5bcc85cd0508	typeref:typename:int[]	file:
+color_buf	jcprepct.c	59;"	m	struct:__anon8625d7f10108	typeref:typename:JSAMPARRAY[]	file:
+color_buf	jdsample.c	44;"	m	struct:__anonb577b3660108	typeref:typename:JSAMPARRAY[]	file:
+color_quantize	jquant1.c	460;"	f	typeref:typename:void
+color_quantize3	jquant1.c	488;"	f	typeref:typename:void
+color_transform	jpeglib.h	387;"	m	struct:jpeg_compress_struct	typeref:typename:J_COLOR_TRANSFORM
+color_transform	jpeglib.h	609;"	m	struct:jpeg_decompress_struct	typeref:typename:J_COLOR_TRANSFORM
+colorcount	jquant2.c	267;"	m	struct:__anon8f5b73fb0208	typeref:typename:long	file:
+colorindex	jquant1.c	150;"	m	struct:__anon8f5b6fba0108	typeref:typename:JSAMPARRAY	file:
+colormap	jpeglib.h	527;"	m	struct:jpeg_decompress_struct	typeref:typename:JSAMPARRAY
+colormap	rdbmp.c	58;"	m	struct:_bmp_source_struct	typeref:typename:JSAMPARRAY	file:
+colormap	rdtarga.c	53;"	m	struct:_tga_source_struct	typeref:typename:JSAMPARRAY	file:
+colormap	wrrle.c	57;"	m	struct:__anonde49c9220108	typeref:typename:rle_map *	file:
+comp_info	jpeglib.h	333;"	m	struct:jpeg_compress_struct	typeref:typename:jpeg_component_info *
+comp_info	jpeglib.h	583;"	m	struct:jpeg_decompress_struct	typeref:typename:jpeg_component_info *
+completed_extra_passes	cdjpeg.h	83;"	m	struct:cdjpeg_progress_mgr	typeref:typename:int
+completed_passes	jpeglib.h	765;"	m	struct:jpeg_progress_mgr	typeref:typename:int
+component_id	jpeglib.h	129;"	m	struct:__anone14b59d80308	typeref:typename:int
+component_index	jpeglib.h	130;"	m	struct:__anone14b59d80308	typeref:typename:int
+component_index	jpeglib.h	200;"	m	struct:__anone14b59d80408	typeref:typename:int[]
+component_needed	jpeglib.h	174;"	m	struct:__anone14b59d80308	typeref:typename:boolean
+compress_data	jccoefct.c	144;"	f	typeref:typename:boolean
+compress_first_pass	jccoefct.c	249;"	f	typeref:typename:boolean
+compress_init	wrgif.c	143;"	f	typeref:typename:void
+compress_output	jccoefct.c	346;"	f	typeref:typename:boolean
+compress_output	jctrans.c	275;"	f	typeref:typename:boolean
+compress_pixel	wrgif.c	162;"	f	typeref:typename:void
+compress_term	wrgif.c	182;"	f	typeref:typename:void
+comps_in_scan	jpeglib.h	199;"	m	struct:__anone14b59d80408	typeref:typename:int
+comps_in_scan	jpeglib.h	422;"	m	struct:jpeg_compress_struct	typeref:typename:int
+comps_in_scan	jpeglib.h	649;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+compute_color	jquant2.c	500;"	f	typeref:typename:void
+consume_data	jdcoefct.c	246;"	f	typeref:typename:int
+consume_markers	jdinput.c	560;"	f	typeref:typename:int
+context_state	jdmainct.c	130;"	m	struct:__anon226f33000108	typeref:typename:int	file:
+convert1	ansi2knr.c	556;"	f
+copy_pixel_rows	wrppm.c	106;"	f	typeref:typename:void
+copy_rest_of_file	wrjpgcom.c	142;"	f	typeref:typename:void	file:
+copy_variable	wrjpgcom.c	244;"	f	typeref:typename:void	file:
+copyoption	jpegtran.c	41;"	v	typeref:typename:JCOPY_OPTION	file:
+cquantize	jpeglib.h	688;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_color_quantizer *
+create_colorindex	jquant1.c	334;"	f	typeref:typename:void
+create_colormap	jquant1.c	274;"	f	typeref:typename:void
+create_context_buffer	jcprepct.c	269;"	f	typeref:typename:void
+create_odither_tables	jquant1.c	433;"	f	typeref:typename:void
+crop	transupp.h	137;"	m	struct:__anon971f79580308	typeref:typename:boolean
+crop_height	transupp.h	144;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+crop_height_set	transupp.h	145;"	m	struct:__anon971f79580308	typeref:typename:JCROP_CODE
+crop_width	transupp.h	142;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+crop_width_set	transupp.h	143;"	m	struct:__anon971f79580308	typeref:typename:JCROP_CODE
+crop_xoffset	transupp.h	146;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+crop_xoffset_set	transupp.h	147;"	m	struct:__anon971f79580308	typeref:typename:JCROP_CODE
+crop_yoffset	transupp.h	148;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+crop_yoffset_set	transupp.h	149;"	m	struct:__anon971f79580308	typeref:typename:JCROP_CODE
+cscope	Makefile.in	835;"	t
+cscope.files	Makefile.in	840;"	t
+cscopelist	Makefile.in	841;"	t
+cscopelist-am	Makefile.in	843;"	t
+ct	jcarith.c	31;"	m	struct:__anonc7832e7b0108	typeref:typename:int	file:
+ct	jdarith.c	28;"	m	struct:__anonb3c5035c0108	typeref:typename:int	file:
+ctags	Makefile.in	822;"	t
+ctags-am	Makefile.in	825;"	t
+ctr	jfdctflt.c	67;"	v	typeref:typename:int
+ctr	jfdctfst.c	122;"	v	typeref:typename:int
+ctr	jfdctint.c	165;"	v	typeref:typename:int
+ctr	jidctflt.c	81;"	v	typeref:typename:int
+ctr	jidctfst.c	180;"	v	typeref:typename:int
+ctr	jidctint.c	185;"	v	typeref:typename:int
+cur	jchuff.c	126;"	m	struct:__anon0ed2490c0408	typeref:typename:savable_state	file:
+cur_accum	wrgif.c	55;"	m	struct:__anondd811ab50108	typeref:typename:INT32	file:
+cur_bits	wrgif.c	56;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+cur_comp_info	jpeglib.h	423;"	m	struct:jpeg_compress_struct	typeref:typename:jpeg_component_info * []
+cur_comp_info	jpeglib.h	650;"	m	struct:jpeg_decompress_struct	typeref:typename:jpeg_component_info * []
+cur_iMCU_row	jcmainct.c	32;"	m	struct:__anonadf2c1ff0108	typeref:typename:JDIMENSION	file:
+cur_marker	jdmarker.c	104;"	m	struct:__anon373867660208	typeref:typename:jpeg_saved_marker_ptr	file:
+cur_method	jddctmgr.c	52;"	m	struct:__anon87ac00050108	typeref:typename:int[]	file:
+cur_output_row	wrbmp.c	53;"	m	struct:__anondd28fc3e0108	typeref:typename:JDIMENSION	file:
+cur_start_row	jmemmgr.c	158;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+cur_start_row	jmemmgr.c	174;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+current_arg_list	cmake\\dist.cmake	109;"	v
+current_arg_list	cmake\\dist.cmake	116;"	v
+current_arg_list	cmake\\dist.cmake	123;"	v
+current_arg_name	cmake\\dist.cmake	108;"	v
+current_arg_name	cmake\\dist.cmake	115;"	v
+current_row	rdtarga.c	56;"	m	struct:_tga_source_struct	typeref:typename:JDIMENSION	file:
+d_derived_tbl	jdhuff.c	48;"	t	typeref:struct:__anon5bcc85cd0108	file:
+data	jpeglib.h	214;"	m	struct:jpeg_marker_struct	typeref:typename:JOCTET FAR *
+data_length	jpeglib.h	213;"	m	struct:jpeg_marker_struct	typeref:typename:unsigned int
+data_precision	jpeglib.h	328;"	m	struct:jpeg_compress_struct	typeref:typename:int
+data_precision	jpeglib.h	581;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+data_width	wrbmp.c	50;"	m	struct:__anondd28fc3e0108	typeref:typename:JDIMENSION	file:
+datadir	Makefile.in	331;"	m
+dataptr	jfdctflt.c	65;"	v	typeref:typename:FAST_FLOAT *
+dataptr	jfdctfst.c	120;"	v	typeref:typename:DCTELEM *
+dataptr	jfdctfst.c	127;"	v	typeref:typename:SHIFT_TEMPS
+dataptr	jfdctint.c	163;"	v	typeref:typename:DCTELEM *
+dataptr	jfdctint.c	174;"	v	typeref:typename:SHIFT_TEMPS
+datarootdir	Makefile.in	332;"	m
+dc_context	jcarith.c	35;"	m	struct:__anonc7832e7b0108	typeref:typename:int[]	file:
+dc_context	jdarith.c	33;"	m	struct:__anonb3c5035c0108	typeref:typename:int[]	file:
+dc_count_ptrs	jchuff.c	95;"	m	struct:__anon0ed2490c0308	typeref:typename:long * []	file:
+dc_cur_tbls	jdhuff.c	251;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl * []	file:
+dc_derived_tbls	jchuff.c	91;"	m	struct:__anon0ed2490c0308	typeref:typename:c_derived_tbl * []	file:
+dc_derived_tbls	jdhuff.c	245;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl * []	file:
+dc_huff_tbl_ptrs	jpeglib.h	342;"	m	struct:jpeg_compress_struct	typeref:typename:JHUFF_TBL * []
+dc_huff_tbl_ptrs	jpeglib.h	573;"	m	struct:jpeg_decompress_struct	typeref:typename:JHUFF_TBL * []
+dc_stats	jcarith.c	41;"	m	struct:__anonc7832e7b0108	typeref:typename:unsigned char * []	file:
+dc_stats	jdarith.c	38;"	m	struct:__anonb3c5035c0108	typeref:typename:unsigned char * []	file:
+dc_tbl_no	jpeglib.h	138;"	m	struct:__anone14b59d80308	typeref:typename:int
+dct_method	jpeglib.h	363;"	m	struct:jpeg_compress_struct	typeref:typename:J_DCT_METHOD
+dct_method	jpeglib.h	487;"	m	struct:jpeg_decompress_struct	typeref:typename:J_DCT_METHOD
+dct_table	jpeglib.h	192;"	m	struct:__anone14b59d80308	typeref:typename:void *
+dcval	jidctfst.c	296;"	v	typeref:typename:JSAMPLE
+dcval	jidctint.c	212;"	v	typeref:typename:int
+dcval	jidctint.c	321;"	v	typeref:typename:JSAMPLE
+decode_mcu	jdarith.c	511;"	f	typeref:typename:boolean
+decode_mcu	jdhuff.c	1199;"	f	typeref:typename:boolean
+decode_mcu_AC_first	jdarith.c	321;"	f	typeref:typename:boolean
+decode_mcu_AC_first	jdhuff.c	779;"	f	typeref:typename:boolean
+decode_mcu_AC_refine	jdarith.c	436;"	f	typeref:typename:boolean
+decode_mcu_AC_refine	jdhuff.c	914;"	f	typeref:typename:boolean
+decode_mcu_DC_first	jdarith.c	242;"	f	typeref:typename:boolean
+decode_mcu_DC_first	jdhuff.c	708;"	f	typeref:typename:boolean
+decode_mcu_DC_refine	jdarith.c	403;"	f	typeref:typename:boolean
+decode_mcu_DC_refine	jdhuff.c	867;"	f	typeref:typename:boolean
+decode_mcu_sub	jdhuff.c	1071;"	f	typeref:typename:boolean
+decompress_data	jdcoefct.c	317;"	f	typeref:typename:int
+decompress_onepass	jdcoefct.c	148;"	f	typeref:typename:int
+decompress_smooth_data	jdcoefct.c	463;"	f	typeref:typename:int
+default_decompress_parms	jdapimin.c	115;"	f	typeref:typename:void
+density_unit	jpeglib.h	382;"	m	struct:jpeg_compress_struct	typeref:typename:UINT8
+density_unit	jpeglib.h	603;"	m	struct:jpeg_decompress_struct	typeref:typename:UINT8
+depcomp	Makefile.in	192;"	m
+derived_tbls	jdhuff.c	238;"	m	struct:__anon5bcc85cd0508	typeref:typename:d_derived_tbl * []	file:
+desired	jquant2.c	199;"	m	struct:__anon8f5b73fb0108	typeref:typename:int	file:
+desired_number_of_colors	jpeglib.h	495;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+dest	jpeglib.h	295;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_destination_mgr *
+dirty	jmemmgr.c	161;"	m	struct:jvirt_sarray_control	typeref:typename:boolean	file:
+dirty	jmemmgr.c	177;"	m	struct:jvirt_barray_control	typeref:typename:boolean	file:
+discarded_bytes	jpegint.h	208;"	m	struct:jpeg_marker_reader	typeref:typename:unsigned int
+distclean	Makefile.in	907;"	t
+distclean-am	Makefile.in	911;"	t
+distclean-compile	Makefile.in	639;"	t
+distclean-generic	Makefile.in	895;"	t
+distclean-hdr	Makefile.in	526;"	t
+distclean-libtool	Makefile.in	735;"	t
+distclean-tags	Makefile.in	857;"	t
+dither_mode	jpeglib.h	493;"	m	struct:jpeg_decompress_struct	typeref:typename:J_DITHER_MODE
+divisor_table	jcdctmgr.c	50;"	t	typeref:union:__anon132f8f04020a	file:
+djpeg	CMakeLists.txt	47;"	t
+djpeg$(EXEEXT)	Makefile.in	620;"	t
+djpeg_DEPENDENCIES	Makefile.in	168;"	m
+djpeg_LDADD	Makefile.am	87;"	m
+djpeg_LDADD	Makefile.in	450;"	m
+djpeg_OBJECTS	Makefile.in	167;"	m
+djpeg_SOURCES	Makefile.am	85;"	m
+djpeg_SOURCES	Makefile.in	447;"	m
+djpeg_dest_ptr	cdjpeg.h	45;"	t	typeref:struct:djpeg_dest_struct *
+djpeg_dest_struct	cdjpeg.h	47;"	s
+do_barray_io	jmemmgr.c	724;"	f	typeref:typename:void
+do_block_smoothing	jpeglib.h	489;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+do_crop	transupp.c	79;"	f	typeref:typename:void
+do_crop_ext	transupp.c	117;"	f	typeref:typename:void
+do_dct	jcdctmgr.c	27;"	m	struct:__anon132f8f040108	typeref:typename:forward_DCT_method_ptr[]	file:
+do_fancy_downsampling	jpeglib.h	361;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+do_fancy_upsampling	jpeglib.h	488;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+do_flip_h	transupp.c	294;"	f	typeref:typename:void
+do_flip_h_no_crop	transupp.c	227;"	f	typeref:typename:void
+do_flip_v	transupp.c	356;"	f	typeref:typename:void
+do_float_dct	jcdctmgr.c	31;"	m	struct:__anon132f8f040108	typeref:typename:float_DCT_method_ptr[]	file:
+do_rot_180	transupp.c	636;"	f	typeref:typename:void
+do_rot_270	transupp.c	565;"	f	typeref:typename:void
+do_rot_90	transupp.c	484;"	f	typeref:typename:void
+do_sarray_io	jmemmgr.c	691;"	f	typeref:typename:void
+do_transpose	transupp.c	436;"	f	typeref:typename:void
+do_transverse	transupp.c	744;"	f	typeref:typename:void
+do_wipe	transupp.c	195;"	f	typeref:typename:void
+docdir	Makefile.in	333;"	m
+downsample	jpeglib.h	449;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_downsampler *
+downsampled_height	jpeglib.h	165;"	m	struct:__anone14b59d80308	typeref:typename:JDIMENSION
+downsampled_width	jpeglib.h	164;"	m	struct:__anone14b59d80308	typeref:typename:JDIMENSION
+drop_height	transupp.h	159;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+drop_width	transupp.h	158;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+ds_si	jmemdos.c	100;"	m	struct:__anon29f79d850108	typeref:typename:void far *	file:
+ds_si	jmemdos.c	104;"	m	struct:__anon29f79d850208	typeref:typename:void far *	file:
+dst	jmemdos.c	326;"	m	struct:__anon29f79d850408	typeref:typename:XMSPTR	file:
+dst_handle	jmemdos.c	325;"	m	struct:__anon29f79d850408	typeref:typename:XMSH	file:
+dummy	jmemmgr.c	109;"	m	union:large_pool_struct	typeref:typename:ALIGN_TYPE	file:
+dummy	jmemmgr.c	98;"	m	union:small_pool_struct	typeref:typename:ALIGN_TYPE	file:
+dummy	jpegint.h	423;"	m	struct:jvirt_sarray_control	typeref:typename:long
+dummy	jpegint.h	424;"	m	struct:jvirt_barray_control	typeref:typename:long
+dummy	jpeglib.h	1136;"	m	struct:jvirt_sarray_control	typeref:typename:long
+dummy	jpeglib.h	1137;"	m	struct:jvirt_barray_control	typeref:typename:long
+dummy	jpeglib.h	1138;"	m	struct:jpeg_comp_master	typeref:typename:long
+dummy	jpeglib.h	1139;"	m	struct:jpeg_c_main_controller	typeref:typename:long
+dummy	jpeglib.h	1140;"	m	struct:jpeg_c_prep_controller	typeref:typename:long
+dummy	jpeglib.h	1141;"	m	struct:jpeg_c_coef_controller	typeref:typename:long
+dummy	jpeglib.h	1142;"	m	struct:jpeg_marker_writer	typeref:typename:long
+dummy	jpeglib.h	1143;"	m	struct:jpeg_color_converter	typeref:typename:long
+dummy	jpeglib.h	1144;"	m	struct:jpeg_downsampler	typeref:typename:long
+dummy	jpeglib.h	1145;"	m	struct:jpeg_forward_dct	typeref:typename:long
+dummy	jpeglib.h	1146;"	m	struct:jpeg_entropy_encoder	typeref:typename:long
+dummy	jpeglib.h	1147;"	m	struct:jpeg_decomp_master	typeref:typename:long
+dummy	jpeglib.h	1148;"	m	struct:jpeg_d_main_controller	typeref:typename:long
+dummy	jpeglib.h	1149;"	m	struct:jpeg_d_coef_controller	typeref:typename:long
+dummy	jpeglib.h	1150;"	m	struct:jpeg_d_post_controller	typeref:typename:long
+dummy	jpeglib.h	1151;"	m	struct:jpeg_input_controller	typeref:typename:long
+dummy	jpeglib.h	1152;"	m	struct:jpeg_marker_reader	typeref:typename:long
+dummy	jpeglib.h	1153;"	m	struct:jpeg_entropy_decoder	typeref:typename:long
+dummy	jpeglib.h	1154;"	m	struct:jpeg_inverse_dct	typeref:typename:long
+dummy	jpeglib.h	1155;"	m	struct:jpeg_upsampler	typeref:typename:long
+dummy	jpeglib.h	1156;"	m	struct:jpeg_color_deconverter	typeref:typename:long
+dummy	jpeglib.h	1157;"	m	struct:jpeg_color_quantizer	typeref:typename:long
+dummy_buffer	jctrans.c	217;"	m	struct:__anon7d81d14b0108	typeref:typename:JBLOCKROW[]	file:
+dummy_consume_data	jdcoefct.c	230;"	f	typeref:typename:int
+dump_buffer_e	jchuff.c	284;"	f	typeref:typename:void
+dump_buffer_s	jchuff.c	269;"	f	typeref:typename:boolean
+dup_pixel_count	rdtarga.c	68;"	m	struct:_tga_source_struct	typeref:typename:int	file:
+dvi	Makefile.in	914;"	t
+dvi-am	Makefile.in	916;"	t
+dvidir	Makefile.in	334;"	m
+dx	jmemdos.c	103;"	m	struct:__anon29f79d850208	typeref:typename:unsigned short	file:
+dx	jmemdos.c	99;"	m	struct:__anon29f79d850108	typeref:typename:unsigned short	file:
+ehufco	jchuff.c	43;"	m	struct:__anon0ed2490c0108	typeref:typename:unsigned int[256]	file:
+ehufsi	jchuff.c	44;"	m	struct:__anon0ed2490c0108	typeref:typename:char[256]	file:
+elemptr	jfdctflt.c	66;"	v	typeref:typename:JSAMPROW
+elemptr	jfdctfst.c	121;"	v	typeref:typename:JSAMPROW
+elemptr	jfdctint.c	164;"	v	typeref:typename:JSAMPROW
+emit_2bytes	jcmarker.c	133;"	f	typeref:typename:void
+emit_adobe_app14	jcmarker.c	434;"	f	typeref:typename:void
+emit_buffered_bits	jchuff.c	445;"	f	typeref:typename:void
+emit_byte	jcarith.c	116;"	f	typeref:typename:void
+emit_byte	jcmarker.c	110;"	f	typeref:typename:void
+emit_byte_e	jchuff.c	262;"	d	file:
+emit_byte_s	jchuff.c	255;"	d	file:
+emit_dac	jcmarker.c	225;"	f	typeref:typename:void
+emit_dht	jcmarker.c	187;"	f	typeref:typename:void
+emit_dqt	jcmarker.c	146;"	f	typeref:typename:int
+emit_dri	jcmarker.c	274;"	f	typeref:typename:void
+emit_eobrun	jchuff.c	464;"	f	typeref:typename:void
+emit_header	wrgif.c	219;"	f	typeref:typename:void
+emit_jfif_app0	jcmarker.c	399;"	f	typeref:typename:void
+emit_lse_ict	jcmarker.c	286;"	f	typeref:typename:void
+emit_marker	jcmarker.c	124;"	f	typeref:typename:void
+emit_message	jerror.c	129;"	f	typeref:typename:void
+emit_pseudo_sos	jcmarker.c	383;"	f	typeref:typename:void
+emit_restart	jcarith.c	319;"	f	typeref:typename:void
+emit_restart_e	jchuff.c	516;"	f	typeref:typename:void
+emit_restart_s	jchuff.c	495;"	f	typeref:typename:boolean
+emit_sof	jcmarker.c	317;"	f	typeref:typename:void
+emit_sos	jcmarker.c	348;"	f	typeref:typename:void
+empty_mem_output_buffer	jdatadst.c	123;"	f	typeref:typename:boolean
+empty_output_buffer	jdatadst.c	108;"	f	typeref:typename:boolean
+ems_handle	jmemsys.h	127;"	m	union:__anon2b0c88e3010a	typeref:typename:EMSH
+enable_1pass_quant	jpeglib.h	497;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+enable_2pass_quant	jpeglib.h	499;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+enable_external_quant	jpeglib.h	498;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+enable_signal_catcher	cdjpeg.c	47;"	f	typeref:typename:void
+enable_signal_catcher	cdjpeg.h	111;"	d
+encode_mcu	jcarith.c	692;"	f	typeref:typename:boolean
+encode_mcu_AC_first	jcarith.c	451;"	f	typeref:typename:boolean
+encode_mcu_AC_first	jchuff.c	629;"	f	typeref:typename:boolean
+encode_mcu_AC_refine	jcarith.c	593;"	f	typeref:typename:boolean
+encode_mcu_AC_refine	jchuff.c	783;"	f	typeref:typename:boolean
+encode_mcu_DC_first	jcarith.c	362;"	f	typeref:typename:boolean
+encode_mcu_DC_first	jchuff.c	546;"	f	typeref:typename:boolean
+encode_mcu_DC_refine	jcarith.c	558;"	f	typeref:typename:boolean
+encode_mcu_DC_refine	jchuff.c	740;"	f	typeref:typename:boolean
+encode_mcu_gather	jchuff.c	1194;"	f	typeref:typename:boolean
+encode_mcu_huff	jchuff.c	1013;"	f	typeref:typename:boolean
+encode_one_block	jchuff.c	913;"	f	typeref:typename:boolean
+end_progress_monitor	cdjpeg.c	103;"	f	typeref:typename:void
+end_progress_monitor	cdjpeg.h	113;"	d
+entropy	jpeglib.h	451;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_entropy_encoder *
+entropy	jpeglib.h	684;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_entropy_decoder *
+eoi_reached	jpegint.h	157;"	m	struct:jpeg_input_controller	typeref:typename:boolean
+error_exit	ckconfig.c	106;"	m	struct:methods_struct	typeref:typename:int (*)(char * msgtext)	file:
+error_exit	jerror.c	71;"	f	typeref:typename:noreturn_t
+error_limiter	jquant2.c	209;"	m	struct:__anon8f5b73fb0108	typeref:typename:int *	file:
+examine_app0	jdmarker.c	720;"	f	typeref:typename:void
+examine_app14	jdmarker.c	797;"	f	typeref:typename:void
+exec_prefix	Makefile.in	335;"	m
+expand_bottom_edge	jcprepct.c	106;"	f	typeref:typename:void
+expand_right_edge	jcsample.c	96;"	f	typeref:typename:void
+extra_pool_slop	jmemmgr.c	248;"	v	typeref:typename:const size_t[]	file:
+far_free	jmemdos.c	59;"	d	file:
+far_free	jmemdos.c	64;"	d	file:
+far_free	jmemdos.c	70;"	d	file:
+far_malloc	jmemdos.c	58;"	d	file:
+far_malloc	jmemdos.c	63;"	d	file:
+far_malloc	jmemdos.c	69;"	d	file:
+fdct	jpeglib.h	450;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_forward_dct *
+file_handle	jmemsys.h	125;"	m	union:__anon2b0c88e3010a	typeref:typename:short
+fill_a_scan	jcparam.c	536;"	f	typeref:typename:jpeg_scan_info *
+fill_dc_scans	jcparam.c	570;"	f	typeref:typename:jpeg_scan_info *
+fill_input_buffer	jdatasrc.c	97;"	f	typeref:typename:boolean
+fill_inverse_cmap	jquant2.c	856;"	f	typeref:typename:void
+fill_mem_input_buffer	jdatasrc.c	122;"	f	typeref:typename:boolean
+fill_scans	jcparam.c	551;"	f	typeref:typename:jpeg_scan_info *
+find_best_colors	jquant2.c	776;"	f	typeref:typename:void
+find_biggest_color_pop	jquant2.c	274;"	f	typeref:typename:boxptr
+find_biggest_volume	jquant2.c	294;"	f	typeref:typename:boxptr
+find_nearby_colors	jquant2.c	647;"	f	typeref:typename:int
+finish_input_bmp	rdbmp.c	453;"	f	typeref:typename:void
+finish_input_pass	jdinput.c	538;"	f	typeref:typename:void
+finish_input_ppm	rdppm.c	433;"	f	typeref:typename:void
+finish_input_rle	rdrle.c	360;"	f	typeref:typename:void
+finish_input_tga	rdtarga.c	473;"	f	typeref:typename:void
+finish_output_bmp	wrbmp.c	344;"	f	typeref:typename:void
+finish_output_gif	wrgif.c	338;"	f	typeref:typename:void
+finish_output_pass	jdmaster.c	484;"	f	typeref:typename:void
+finish_output_ppm	wrppm.c	206;"	f	typeref:typename:void
+finish_output_rle	wrrle.c	172;"	f	typeref:typename:void
+finish_output_tga	wrtarga.c	211;"	f	typeref:typename:void
+finish_pass	jcarith.c	133;"	f	typeref:typename:void
+finish_pass	jdarith.c	753;"	f	typeref:typename:void
+finish_pass1	jquant2.c	1144;"	f	typeref:typename:void
+finish_pass2	jquant2.c	1157;"	f	typeref:typename:void
+finish_pass_1_quant	jquant1.c	799;"	f	typeref:typename:void
+finish_pass_gather	jchuff.c	1394;"	f	typeref:typename:void
+finish_pass_huff	jchuff.c	1070;"	f	typeref:typename:void
+finish_pass_huff	jdhuff.c	635;"	f	typeref:typename:void
+finish_pass_master	jcmaster.c	761;"	f	typeref:typename:void
+first_addon_message	jpeglib.h	753;"	m	struct:jpeg_error_mgr	typeref:typename:int
+first_marker	jdmarker.c	1058;"	f	typeref:typename:boolean
+first_marker	rdjpgcom.c	177;"	f	typeref:typename:int	file:
+first_marker	wrjpgcom.c	222;"	f	typeref:typename:int	file:
+first_pool_slop	jmemmgr.c	242;"	v	typeref:typename:const size_t[]	file:
+first_undef_row	jmemmgr.c	159;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+first_undef_row	jmemmgr.c	175;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+fixed_bin	jcarith.c	45;"	m	struct:__anonc7832e7b0108	typeref:typename:unsigned char[4]	file:
+fixed_bin	jdarith.c	42;"	m	struct:__anonb3c5035c0108	typeref:typename:unsigned char[4]	file:
+float_array	jcdctmgr.c	48;"	m	union:__anon132f8f04020a	typeref:typename:FAST_FLOAT[]	file:
+float_array	jddctmgr.c	66;"	m	union:__anon87ac0005020a	typeref:typename:FLOAT_MULT_TYPE[]	file:
+flush_bits_e	jchuff.c	402;"	f	typeref:typename:void
+flush_bits_s	jchuff.c	391;"	f	typeref:typename:boolean
+flush_packet	wrgif.c	81;"	f	typeref:typename:void
+force_grayscale	transupp.h	136;"	m	struct:__anon971f79580308	typeref:typename:boolean
+format_message	jerror.c	158;"	f	typeref:typename:void
+forward_DCT	jcdctmgr.c	74;"	f	typeref:typename:void
+forward_DCT	jpegint.h	112;"	m	struct:jpeg_forward_dct	typeref:typename:forward_DCT_ptr[]
+forward_DCT_float	jcdctmgr.c	137;"	f	typeref:typename:void
+free_in_buffer	jchuff.c	106;"	m	struct:__anon0ed2490c0308	typeref:typename:size_t	file:
+free_in_buffer	jchuff.c	125;"	m	struct:__anon0ed2490c0408	typeref:typename:size_t	file:
+free_in_buffer	jpeglib.h	774;"	m	struct:jpeg_destination_mgr	typeref:typename:size_t
+free_pool	jmemmgr.c	931;"	f	typeref:typename:void
+fserrors	jquant1.c	164;"	m	struct:__anon8f5b6fba0108	typeref:typename:FSERRPTR[]	file:
+fserrors	jquant2.c	207;"	m	struct:__anon8f5b73fb0108	typeref:typename:FSERRPTR	file:
+fullsize_downsample	jcsample.c	199;"	f	typeref:typename:void
+fullsize_smooth_downsample	jcsample.c	406;"	f	typeref:typename:void
+fullsize_upsample	jdsample.c	158;"	f	typeref:typename:void
+func_append	ltmain.sh	845;"	f
+func_append_quoted	ltmain.sh	853;"	f
+func_arith	ltmain.sh	861;"	f
+func_basename	ltmain.sh	178;"	f
+func_check_version_match	ltmain.sh	981;"	f
+func_config	ltmain.sh	902;"	f
+func_convert_core_file_wine_to_w32	ltmain.sh	1483;"	f
+func_convert_core_msys_to_w32	ltmain.sh	1575;"	f
+func_convert_core_path_wine_to_w32	ltmain.sh	1515;"	f
+func_convert_file_check	ltmain.sh	1589;"	f
+func_convert_file_cygwin_to_w32	ltmain.sh	1715;"	f
+func_convert_file_msys_to_cygwin	ltmain.sh	1748;"	f
+func_convert_file_msys_to_w32	ltmain.sh	1699;"	f
+func_convert_file_nix_to_cygwin	ltmain.sh	1766;"	f
+func_convert_file_nix_to_w32	ltmain.sh	1732;"	f
+func_convert_file_noop	ltmain.sh	1688;"	f
+func_convert_path_check	ltmain.sh	1607;"	f
+func_convert_path_cygwin_to_w32	ltmain.sh	1864;"	f
+func_convert_path_front_back_pathsep	ltmain.sh	1631;"	f
+func_convert_path_msys_to_cygwin	ltmain.sh	1905;"	f
+func_convert_path_msys_to_w32	ltmain.sh	1841;"	f
+func_convert_path_nix_to_cygwin	ltmain.sh	1928;"	f
+func_convert_path_nix_to_w32	ltmain.sh	1884;"	f
+func_convert_path_noop	ltmain.sh	1830;"	f
+func_cygming_dll_for_implib	ltmain.sh	3594;"	f
+func_cygming_dll_for_implib_fallback	ltmain.sh	3696;"	f
+func_cygming_dll_for_implib_fallback_core	ltmain.sh	3611;"	f
+func_cygming_gnu_implib_p	ltmain.sh	3665;"	f
+func_cygming_ms_implib_p	ltmain.sh	3677;"	f
+func_cygpath	ltmain.sh	1555;"	f
+func_dirname	ltmain.sh	166;"	f
+func_dirname_and_basename	ltmain.sh	196;"	f
+func_echo	ltmain.sh	440;"	f
+func_echo_all	ltmain.sh	459;"	f
+func_emit_cwrapperexe_src	ltmain.sh	4138;"	f
+func_emit_wrapper	ltmain.sh	3836;"	f
+func_enable_tag	ltmain.sh	941;"	f
+func_error	ltmain.sh	466;"	f
+func_exec_program	ltmain.sh	3986;"	f
+func_exec_program_core	ltmain.sh	3953;"	f
+func_execute_cmds	ltmain.sh	1309;"	f
+func_extract_an_archive	ltmain.sh	3713;"	f
+func_extract_archives	ltmain.sh	3739;"	f
+func_fallback_echo	ltmain.sh	102;"	f
+func_fallback_echo	ltmain.sh	3890;"	f
+func_fatal_configuration	ltmain.sh	892;"	f
+func_fatal_error	ltmain.sh	483;"	f
+func_fatal_help	ltmain.sh	492;"	f
+func_features	ltmain.sh	920;"	f
+func_generate_dlsyms	ltmain.sh	3236;"	f
+func_grep	ltmain.sh	502;"	f
+func_help	ltmain.sh	755;"	f
+func_infer_tag	ltmain.sh	1375;"	f
+func_init_to_host_path_cmd	ltmain.sh	1806;"	f
+func_lalib_p	ltmain.sh	1231;"	f
+func_lalib_unsafe_p	ltmain.sh	1245;"	f
+func_len	ltmain.sh	869;"	f
+func_lo2o	ltmain.sh	876;"	f
+func_lt_dump_args	ltmain.sh	3942;"	f
+func_ltwrapper_executable_p	ltmain.sh	1274;"	f
+func_ltwrapper_p	ltmain.sh	1299;"	f
+func_ltwrapper_script_p	ltmain.sh	1265;"	f
+func_ltwrapper_scriptname	ltmain.sh	1288;"	f
+func_missing_arg	ltmain.sh	787;"	f
+func_mkdir_p	ltmain.sh	510;"	f
+func_mktempdir	ltmain.sh	557;"	f
+func_mode_compile	ltmain.sh	1950;"	f
+func_mode_execute	ltmain.sh	2517;"	f
+func_mode_finish	ltmain.sh	2650;"	f
+func_mode_help	ltmain.sh	2297;"	f
+func_mode_install	ltmain.sh	2769;"	f
+func_mode_link	ltmain.sh	5093;"	f
+func_mode_uninstall	ltmain.sh	9442;"	f
+func_normal_abspath	ltmain.sh	239;"	f
+func_parse_lt_options	ltmain.sh	3912;"	f
+func_quote_for_eval	ltmain.sh	594;"	f
+func_quote_for_expand	ltmain.sh	621;"	f
+func_relative_path	ltmain.sh	315;"	f
+func_replace_sysroot	ltmain.sh	1355;"	f
+func_resolve_sysroot	ltmain.sh	1341;"	f
+func_show_eval	ltmain.sh	649;"	f
+func_show_eval_locale	ltmain.sh	673;"	f
+func_source	ltmain.sh	1328;"	f
+func_split_long_opt	ltmain.sh	812;"	f
+func_split_short_opt	ltmain.sh	799;"	f
+func_stripname	ltmain.sh	215;"	f
+func_to_host_file	ltmain.sh	1658;"	f
+func_to_host_path	ltmain.sh	1819;"	f
+func_to_tool_file	ltmain.sh	1670;"	f
+func_tr_sh	ltmain.sh	699;"	f
+func_usage	ltmain.sh	737;"	f
+func_verbose	ltmain.sh	447;"	f
+func_version	ltmain.sh	714;"	f
+func_warning	ltmain.sh	473;"	f
+func_win32_import_lib_p	ltmain.sh	5083;"	f
+func_win32_libid	ltmain.sh	3542;"	f
+func_write_libtool_object	ltmain.sh	1435;"	f
+func_xform	ltmain.sh	883;"	f
+gather_statistics	jchuff.c	101;"	m	struct:__anon0ed2490c0308	typeref:typename:boolean	file:
+get_16bit_row	rdtarga.c	211;"	f	typeref:typename:JDIMENSION
+get_24bit_row	rdbmp.c	151;"	f	typeref:typename:JDIMENSION
+get_24bit_row	rdtarga.c	239;"	f	typeref:typename:JDIMENSION
+get_32bit_row	rdbmp.c	182;"	f	typeref:typename:JDIMENSION
+get_32bit_row	rdtarga.c	263;"	d	file:
+get_8bit_gray_row	rdtarga.c	174;"	f	typeref:typename:JDIMENSION
+get_8bit_row	rdbmp.c	120;"	f	typeref:typename:JDIMENSION
+get_8bit_row	rdtarga.c	190;"	f	typeref:typename:JDIMENSION
+get_buffer	jdhuff.c	80;"	m	struct:__anon5bcc85cd0208	typeref:typename:bit_buf_type	file:
+get_buffer	jdhuff.c	92;"	m	struct:__anon5bcc85cd0308	typeref:typename:bit_buf_type	file:
+get_byte	jdarith.c	65;"	f	typeref:typename:int
+get_dac	jdmarker.c	413;"	f	typeref:typename:boolean
+get_dac	jdmarker.c	453;"	d	file:
+get_dht	jdmarker.c	459;"	f	typeref:typename:boolean
+get_dqt	jdmarker.c	532;"	f	typeref:typename:boolean
+get_dri	jdmarker.c	622;"	f	typeref:typename:boolean
+get_interesting_appn	jdmarker.c	828;"	f	typeref:typename:boolean
+get_lse	jdmarker.c	646;"	f	typeref:typename:boolean
+get_memory_row	rdtarga.c	273;"	f	typeref:typename:JDIMENSION
+get_pseudocolor_row	rdrle.c	205;"	f	typeref:typename:JDIMENSION
+get_raw_row	rdppm.c	224;"	f	typeref:typename:JDIMENSION
+get_rle_row	rdrle.c	187;"	f	typeref:typename:JDIMENSION
+get_scaled_gray_row	rdppm.c	180;"	f	typeref:typename:JDIMENSION
+get_scaled_rgb_row	rdppm.c	201;"	f	typeref:typename:JDIMENSION
+get_sof	jdmarker.c	240;"	f	typeref:typename:boolean
+get_soi	jdmarker.c	199;"	f	typeref:typename:boolean
+get_sos	jdmarker.c	322;"	f	typeref:typename:boolean
+get_text_gray_row	rdppm.c	142;"	f	typeref:typename:JDIMENSION
+get_text_rgb_row	rdppm.c	160;"	f	typeref:typename:JDIMENSION
+get_word_gray_row	rdppm.c	239;"	f	typeref:typename:JDIMENSION
+get_word_rgb_row	rdppm.c	263;"	f	typeref:typename:JDIMENSION
+gif_dest_ptr	wrgif.c	69;"	t	typeref:typename:gif_dest_struct *	file:
+gif_dest_struct	wrgif.c	67;"	t	typeref:struct:__anondd811ab50108	file:
+gray_rgb_convert	jdcolor.c	502;"	f	typeref:typename:void
+grayscale_convert	jccolor.c	334;"	f	typeref:typename:void
+grayscale_convert	jdcolor.c	486;"	f	typeref:typename:void
+h2v1_downsample	jcsample.c	224;"	f	typeref:typename:void
+h2v1_merged_upsample	jdmerge.c	227;"	f	typeref:typename:void
+h2v1_upsample	jdsample.c	234;"	f	typeref:typename:void
+h2v2_downsample	jcsample.c	261;"	f	typeref:typename:void
+h2v2_merged_upsample	jdmerge.c	289;"	f	typeref:typename:void
+h2v2_smooth_downsample	jcsample.c	305;"	f	typeref:typename:void
+h2v2_upsample	jdsample.c	262;"	f	typeref:typename:void
+h_expand	jcsample.c	72;"	m	struct:__anon40fb42650108	typeref:typename:UINT8[]	file:
+h_expand	jdsample.c	58;"	m	struct:__anonb577b3660108	typeref:typename:UINT8[]	file:
+h_samp_factor	jpeglib.h	131;"	m	struct:__anone14b59d80308	typeref:typename:int
+handle	jmemsys.h	155;"	m	struct:backing_store_struct	typeref:typename:handle_union
+handle_union	jmemsys.h	128;"	t	typeref:union:__anon2b0c88e3010a
+has_multiple_scans	jpegint.h	156;"	m	struct:jpeg_input_controller	typeref:typename:boolean
+hdr	jmemmgr.c	108;"	m	union:large_pool_struct	typeref:struct:large_pool_struct::__anon2a9612c50208	file:
+hdr	jmemmgr.c	97;"	m	union:small_pool_struct	typeref:struct:small_pool_struct::__anon2a9612c50108	file:
+header	rdrle.c	70;"	m	struct:_rle_source_struct	typeref:typename:rle_hdr	file:
+height_in_blocks	jpeglib.h	149;"	m	struct:__anone14b59d80308	typeref:typename:JDIMENSION
+hist1d	jquant2.c	152;"	t	typeref:typename:histcell[HIST_C2_ELEMS]	file:
+hist2d	jquant2.c	153;"	t	typeref:typename:hist1d FAR *	file:
+hist3d	jquant2.c	154;"	t	typeref:typename:hist2d *	file:
+histcell	jquant2.c	148;"	t	typeref:typename:UINT16	file:
+histogram	jquant2.c	202;"	m	struct:__anon8f5b73fb0108	typeref:typename:hist3d	file:
+histptr	jquant2.c	150;"	t	typeref:typename:histcell FAR *	file:
+host	Makefile.in	336;"	m
+host_alias	Makefile.in	337;"	m
+host_cpu	Makefile.in	338;"	m
+host_os	Makefile.in	339;"	m
+host_triplet	Makefile.in	88;"	m
+host_vendor	Makefile.in	340;"	m
+htest_one_block	jchuff.c	1119;"	f	typeref:typename:void
+html	Makefile.in	918;"	t
+html-am	Makefile.in	920;"	t
+htmldir	Makefile.in	341;"	m
+huff_entropy_decoder	jdhuff.c	255;"	t	typeref:struct:__anon5bcc85cd0508	file:
+huff_entropy_encoder	jchuff.c	115;"	t	typeref:struct:__anon0ed2490c0308	file:
+huff_entropy_ptr	jchuff.c	117;"	t	typeref:typename:huff_entropy_encoder *	file:
+huff_entropy_ptr	jdhuff.c	257;"	t	typeref:typename:huff_entropy_decoder *	file:
+huff_opt_pass	jcmaster.c	24;"	e	enum:__anonc5b3fb8f0103	file:
+huffval	jpeglib.h	113;"	m	struct:__anone14b59d80208	typeref:typename:UINT8[256]
+i	jpeglib.h	721;"	m	union:jpeg_error_mgr::__anone14b59d8090a	typeref:typename:int[8]
+iMCU_row_ctr	jdmainct.c	132;"	m	struct:__anon226f33000108	typeref:typename:JDIMENSION	file:
+iMCU_row_num	jccoefct.c	38;"	m	struct:__anon9f2a5d370108	typeref:typename:JDIMENSION	file:
+iMCU_row_num	jctrans.c	208;"	m	struct:__anon7d81d14b0108	typeref:typename:JDIMENSION	file:
+iMCU_sample_height	transupp.h	161;"	m	struct:__anon971f79580308	typeref:typename:int
+iMCU_sample_width	transupp.h	160;"	m	struct:__anon971f79580308	typeref:typename:int
+idct	jpeglib.h	685;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_inverse_dct *
+ifast_array	jddctmgr.c	63;"	m	union:__anon87ac0005020a	typeref:typename:IFAST_MULT_TYPE[]	file:
+image	rdrle.c	68;"	m	struct:_rle_source_struct	typeref:typename:jvirt_sarray_ptr	file:
+image	wrrle.c	56;"	m	struct:__anonde49c9220108	typeref:typename:jvirt_sarray_ptr	file:
+image_height	jpeglib.h	303;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+image_height	jpeglib.h	469;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+image_width	jpeglib.h	302;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+image_width	jpeglib.h	468;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+in_color_space	jpeglib.h	305;"	m	struct:jpeg_compress_struct	typeref:typename:J_COLOR_SPACE
+include_HEADERS	Makefile.am	97;"	m
+include_HEADERS	Makefile.in	460;"	m
+includedir	Makefile.in	342;"	m
+infile	jdatasrc.c	29;"	m	struct:__anonb3a4e1a20108	typeref:typename:FILE *	file:
+infile	rdjpgcom.c	65;"	v	typeref:typename:FILE *	file:
+infile	wrjpgcom.c	75;"	v	typeref:typename:FILE *	file:
+info	Makefile.in	922;"	t
+info-am	Makefile.in	924;"	t
+infodir	Makefile.in	343;"	m
+inheaders	jdinput.c	25;"	m	struct:__anon12c1b1d40108	typeref:typename:int	file:
+init_destination	jdatadst.c	64;"	f	typeref:typename:void
+init_error_limit	jquant2.c	1109;"	f	typeref:typename:void
+init_mem_destination	jdatadst.c	78;"	f	typeref:typename:void
+init_mem_source	jdatasrc.c	57;"	f	typeref:typename:void
+init_source	jdatasrc.c	45;"	f	typeref:typename:void
+initial_setup	jcmaster.c	220;"	f	typeref:typename:void
+initial_setup	jdinput.c	208;"	f	typeref:typename:void
+inptr	jidctflt.c	76;"	v	typeref:typename:JCOEFPTR
+inptr	jidctfst.c	175;"	v	typeref:typename:JCOEFPTR
+inptr	jidctfst.c	187;"	v	typeref:typename:SHIFT_TEMPS ISHIFT_TEMPS
+inptr	jidctint.c	180;"	v	typeref:typename:JCOEFPTR
+inptr	jidctint.c	194;"	v	typeref:typename:SHIFT_TEMPS
+input_components	jpeglib.h	304;"	m	struct:jpeg_compress_struct	typeref:typename:int
+input_file	cdjpeg.h	34;"	m	struct:cjpeg_source_struct	typeref:typename:FILE *
+input_gamma	jpeglib.h	307;"	m	struct:jpeg_compress_struct	typeref:typename:double
+input_iMCU_row	jpeglib.h	543;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+input_scan_number	jpeglib.h	542;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+inputctl	jpeglib.h	682;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_input_controller *
+install	Makefile.in	871;"	t
+install-am	Makefile.in	876;"	t
+install-binPROGRAMS	Makefile.in	566;"	t
+install-binPROGRAMS	Makefile.in	865;"	t
+install-data	Makefile.in	873;"	t
+install-data-am	Makefile.in	926;"	t
+install-data-local	Makefile.am	111;"	t
+install-data-local	Makefile.in	1002;"	t
+install-dvi	Makefile.in	928;"	t
+install-dvi-am	Makefile.in	930;"	t
+install-exec	Makefile.in	872;"	t
+install-exec-am	Makefile.in	932;"	t
+install-html	Makefile.in	934;"	t
+install-html-am	Makefile.in	936;"	t
+install-includeHEADERS	Makefile.in	780;"	t
+install-info	Makefile.in	938;"	t
+install-info-am	Makefile.in	940;"	t
+install-libLTLIBRARIES	Makefile.in	529;"	t
+install-man	Makefile.in	942;"	t
+install-man1	Makefile.in	737;"	t
+install-pdf	Makefile.in	944;"	t
+install-pdf-am	Makefile.in	946;"	t
+install-ps	Makefile.in	948;"	t
+install-ps-am	Makefile.in	950;"	t
+install-strip	Makefile.in	880;"	t
+install_data	cmake\\dist.cmake	209;"	m
+install_doc	cmake\\dist.cmake	232;"	m
+install_example	cmake\\dist.cmake	254;"	m
+install_executable	cmake\\dist.cmake	138;"	m
+install_foo	cmake\\dist.cmake	298;"	m
+install_header	cmake\\dist.cmake	187;"	m
+install_library	cmake\\dist.cmake	156;"	m
+install_sh	Makefile.in	344;"	m
+install_sh_DATA	Makefile.in	76;"	m
+install_sh_PROGRAM	Makefile.in	77;"	m
+install_sh_SCRIPT	Makefile.in	78;"	m
+install_test	cmake\\dist.cmake	276;"	m
+installcheck	Makefile.in	879;"	t
+installcheck-am	Makefile.in	952;"	t
+installdirs	Makefile.in	867;"	t
+insufficient_data	jdhuff.c	232;"	m	struct:__anon5bcc85cd0508	typeref:typename:boolean	file:
+int_array	jcdctmgr.c	46;"	m	union:__anon132f8f04020a	typeref:typename:DCTELEM[]	file:
+int_downsample	jcsample.c	150;"	f	typeref:typename:void
+int_upsample	jdsample.c	190;"	f	typeref:typename:void
+inverse_DCT	jpegint.h	227;"	m	struct:jpeg_inverse_dct	typeref:typename:inverse_DCT_method_ptr[]
+iobuffer	rdppm.c	75;"	m	struct:__anon3c9c83190108	typeref:typename:U_CHAR *	file:
+iobuffer	wrppm.c	73;"	m	struct:__anonde27ebac0108	typeref:typename:char *	file:
+iobuffer	wrtarga.c	46;"	m	struct:__anon1936d22e0108	typeref:typename:char *	file:
+is_alnum	ansi2knr.c	213;"	d	file:
+is_alpha	ansi2knr.c	212;"	d	file:
+is_ascii	ansi2knr.c	206;"	d	file:
+is_ascii	ansi2knr.c	208;"	d	file:
+is_baseline	jpeglib.h	586;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+is_char_signed	ckconfig.c	243;"	f	typeref:typename:int
+is_dummy_pass	jpegint.h	145;"	m	struct:jpeg_decomp_master	typeref:typename:boolean
+is_last_pass	jpegint.h	53;"	m	struct:jpeg_comp_master	typeref:typename:boolean
+is_os2	wrbmp.c	47;"	m	struct:__anondd28fc3e0108	typeref:typename:boolean	file:
+is_padded	jquant1.c	155;"	m	struct:__anon8f5b6fba0108	typeref:typename:boolean	file:
+is_shifting_signed	ckconfig.c	261;"	f	typeref:typename:int
+is_space	ansi2knr.c	211;"	d	file:
+is_targa	cjpeg.c	77;"	v	typeref:typename:boolean	file:
+isidchar	ansi2knr.c	216;"	d	file:
+isidfirstchar	ansi2knr.c	217;"	d	file:
+islow_array	jddctmgr.c	61;"	m	union:__anon87ac0005020a	typeref:typename:ISLOW_MULT_TYPE[]	file:
+j_common_ptr	jpeglib.h	284;"	t	typeref:struct:jpeg_common_struct *
+j_compress_ptr	jpeglib.h	285;"	t	typeref:struct:jpeg_compress_struct *
+j_decompress_ptr	jpeglib.h	286;"	t	typeref:struct:jpeg_decompress_struct *
+jconfig.h	Makefile.in	514;"	t
+jcopy_block_row	jpegint.h	326;"	d
+jcopy_block_row	jutils.c	211;"	f	typeref:typename:void
+jcopy_markers_execute	transupp.c	1721;"	f	typeref:typename:void
+jcopy_markers_execute	transupp.h	92;"	d
+jcopy_markers_setup	transupp.c	1696;"	f	typeref:typename:void
+jcopy_markers_setup	transupp.h	91;"	d
+jcopy_sample_rows	jpegint.h	325;"	d
+jcopy_sample_rows	jutils.c	177;"	f	typeref:typename:void
+jdiv_round_up	jpegint.h	322;"	d
+jdiv_round_up	jutils.c	124;"	f	typeref:typename:long
+jinit_1pass_quantizer	jpegint.h	318;"	d
+jinit_1pass_quantizer	jquant1.c	822;"	f	typeref:typename:void
+jinit_2pass_quantizer	jpegint.h	319;"	d
+jinit_2pass_quantizer	jquant2.c	1245;"	f	typeref:typename:void
+jinit_arith_decoder	jdarith.c	764;"	f	typeref:typename:void
+jinit_arith_decoder	jpegint.h	314;"	d
+jinit_arith_encoder	jcarith.c	924;"	f	typeref:typename:void
+jinit_arith_encoder	jpegint.h	305;"	d
+jinit_c_coef_controller	jccoefct.c	410;"	f	typeref:typename:void
+jinit_c_coef_controller	jpegint.h	300;"	d
+jinit_c_main_controller	jcmainct.c	248;"	f	typeref:typename:void
+jinit_c_main_controller	jpegint.h	298;"	d
+jinit_c_master_control	jcmaster.c	801;"	f	typeref:typename:void
+jinit_c_master_control	jpegint.h	297;"	d
+jinit_c_prep_controller	jcprepct.c	318;"	f	typeref:typename:void
+jinit_c_prep_controller	jpegint.h	299;"	d
+jinit_color_converter	jccolor.c	438;"	f	typeref:typename:void
+jinit_color_converter	jpegint.h	301;"	d
+jinit_color_deconverter	jdcolor.c	592;"	f	typeref:typename:void
+jinit_color_deconverter	jpegint.h	317;"	d
+jinit_compress_master	jcinit.c	31;"	f	typeref:typename:void
+jinit_compress_master	jpegint.h	296;"	d
+jinit_d_coef_controller	jdcoefct.c	678;"	f	typeref:typename:void
+jinit_d_coef_controller	jpegint.h	309;"	d
+jinit_d_main_controller	jdmainct.c	477;"	f	typeref:typename:void
+jinit_d_main_controller	jpegint.h	308;"	d
+jinit_d_post_controller	jdpostct.c	250;"	f	typeref:typename:void
+jinit_d_post_controller	jpegint.h	310;"	d
+jinit_downsampler	jcsample.c	478;"	f	typeref:typename:void
+jinit_downsampler	jpegint.h	302;"	d
+jinit_forward_dct	jcdctmgr.c	458;"	f	typeref:typename:void
+jinit_forward_dct	jpegint.h	303;"	d
+jinit_huff_decoder	jdhuff.c	1521;"	f	typeref:typename:void
+jinit_huff_decoder	jpegint.h	313;"	d
+jinit_huff_encoder	jchuff.c	1554;"	f	typeref:typename:void
+jinit_huff_encoder	jpegint.h	304;"	d
+jinit_input_controller	jdinput.c	642;"	f	typeref:typename:void
+jinit_input_controller	jpegint.h	311;"	d
+jinit_inverse_dct	jddctmgr.c	362;"	f	typeref:typename:void
+jinit_inverse_dct	jpegint.h	315;"	d
+jinit_marker_reader	jdmarker.c	1413;"	f	typeref:typename:void
+jinit_marker_reader	jpegint.h	312;"	d
+jinit_marker_writer	jcmarker.c	700;"	f	typeref:typename:void
+jinit_marker_writer	jpegint.h	306;"	d
+jinit_master_decompress	jdmaster.c	529;"	f	typeref:typename:void
+jinit_master_decompress	jpegint.h	307;"	d
+jinit_memory_mgr	jmemmgr.c	1029;"	f	typeref:typename:void
+jinit_memory_mgr	jpegint.h	321;"	d
+jinit_merged_upsampler	jdmerge.c	371;"	f	typeref:typename:void
+jinit_merged_upsampler	jpegint.h	320;"	d
+jinit_read_bmp	cdjpeg.h	95;"	d
+jinit_read_bmp	rdbmp.c	464;"	f	typeref:typename:cjpeg_source_ptr
+jinit_read_gif	cdjpeg.h	97;"	d
+jinit_read_gif	rdgif.c	31;"	f	typeref:typename:cjpeg_source_ptr
+jinit_read_ppm	cdjpeg.h	99;"	d
+jinit_read_ppm	rdppm.c	444;"	f	typeref:typename:cjpeg_source_ptr
+jinit_read_rle	cdjpeg.h	101;"	d
+jinit_read_rle	rdrle.c	371;"	f	typeref:typename:cjpeg_source_ptr
+jinit_read_targa	cdjpeg.h	103;"	d
+jinit_read_targa	rdtarga.c	484;"	f	typeref:typename:cjpeg_source_ptr
+jinit_upsampler	jdsample.c	294;"	f	typeref:typename:void
+jinit_upsampler	jpegint.h	316;"	d
+jinit_write_bmp	cdjpeg.h	96;"	d
+jinit_write_bmp	wrbmp.c	390;"	f	typeref:typename:djpeg_dest_ptr
+jinit_write_gif	cdjpeg.h	98;"	d
+jinit_write_gif	wrgif.c	360;"	f	typeref:typename:djpeg_dest_ptr
+jinit_write_ppm	cdjpeg.h	100;"	d
+jinit_write_ppm	wrppm.c	220;"	f	typeref:typename:djpeg_dest_ptr
+jinit_write_rle	cdjpeg.h	102;"	d
+jinit_write_rle	wrrle.c	277;"	f	typeref:typename:djpeg_dest_ptr
+jinit_write_targa	cdjpeg.h	104;"	d
+jinit_write_targa	wrtarga.c	225;"	f	typeref:typename:djpeg_dest_ptr
+jpeg	CMakeLists.txt	39;"	t
+jpeg	CMakeLists.txt	41;"	t
+jpeg_CreateCompress	jcapimin.c	31;"	f	typeref:typename:void
+jpeg_CreateCompress	jpeglib.h	892;"	d
+jpeg_CreateDecompress	jdapimin.c	31;"	f	typeref:typename:void
+jpeg_CreateDecompress	jpeglib.h	893;"	d
+jpeg_abort	jcomapi.c	29;"	f	typeref:typename:void
+jpeg_abort	jpeglib.h	941;"	d
+jpeg_abort_compress	jcapimin.c	108;"	f	typeref:typename:void
+jpeg_abort_compress	jpeglib.h	939;"	d
+jpeg_abort_decompress	jdapimin.c	104;"	f	typeref:typename:void
+jpeg_abort_decompress	jpeglib.h	940;"	d
+jpeg_add_quant_table	jcparam.c	24;"	f	typeref:typename:void
+jpeg_add_quant_table	jpeglib.h	906;"	d
+jpeg_alloc_huff_table	jcomapi.c	98;"	f	typeref:typename:JHUFF_TBL *
+jpeg_alloc_huff_table	jpeglib.h	911;"	d
+jpeg_alloc_quant_table	jcomapi.c	86;"	f	typeref:typename:JQUANT_TBL *
+jpeg_alloc_quant_table	jpeglib.h	910;"	d
+jpeg_aritab	jaricom.c	31;"	v	typeref:typename:const INT32[]
+jpeg_aritab	jpegint.h	335;"	d
+jpeg_c_coef_controller	jpegint.h	77;"	s
+jpeg_c_coef_controller	jpeglib.h	1141;"	s
+jpeg_c_main_controller	jpegint.h	57;"	s
+jpeg_c_main_controller	jpeglib.h	1139;"	s
+jpeg_c_prep_controller	jpegint.h	65;"	s
+jpeg_c_prep_controller	jpeglib.h	1140;"	s
+jpeg_calc_jpeg_dimensions	jcmaster.c	53;"	f	typeref:typename:void
+jpeg_calc_jpeg_dimensions	jpeglib.h	915;"	d
+jpeg_calc_output_dimensions	jdmaster.c	89;"	f	typeref:typename:void
+jpeg_calc_output_dimensions	jpeglib.h	933;"	d
+jpeg_calc_trans_dimensions	jcmaster.c	209;"	f	typeref:typename:void
+jpeg_color_converter	jpegint.h	84;"	s
+jpeg_color_converter	jpeglib.h	1143;"	s
+jpeg_color_deconverter	jpegint.h	245;"	s
+jpeg_color_deconverter	jpeglib.h	1156;"	s
+jpeg_color_quantizer	jpegint.h	253;"	s
+jpeg_color_quantizer	jpeglib.h	1157;"	s
+jpeg_color_space	jpeglib.h	331;"	m	struct:jpeg_compress_struct	typeref:typename:J_COLOR_SPACE
+jpeg_color_space	jpeglib.h	471;"	m	struct:jpeg_decompress_struct	typeref:typename:J_COLOR_SPACE
+jpeg_common_fields	jpeglib.h	264;"	d
+jpeg_common_struct	jpeglib.h	276;"	s
+jpeg_comp_master	jpegint.h	46;"	s
+jpeg_comp_master	jpeglib.h	1138;"	s
+jpeg_component_info	jpeglib.h	193;"	t	typeref:struct:__anone14b59d80308
+jpeg_compress_struct	jpeglib.h	291;"	s
+jpeg_consume_input	jdapimin.c	291;"	f	typeref:typename:int
+jpeg_consume_input	jpeglib.h	931;"	d
+jpeg_copy_critical_parameters	jctrans.c	64;"	f	typeref:typename:void
+jpeg_copy_critical_parameters	jpeglib.h	938;"	d
+jpeg_core_output_dimensions	jdinput.c	47;"	f	typeref:typename:void
+jpeg_core_output_dimensions	jpeglib.h	932;"	d
+jpeg_create_compress	jpeglib.h	958;"	d
+jpeg_create_decompress	jpeglib.h	961;"	d
+jpeg_d_coef_controller	jpegint.h	169;"	s
+jpeg_d_coef_controller	jpeglib.h	1149;"	s
+jpeg_d_main_controller	jpegint.h	161;"	s
+jpeg_d_main_controller	jpeglib.h	1148;"	s
+jpeg_d_post_controller	jpegint.h	180;"	s
+jpeg_d_post_controller	jpeglib.h	1150;"	s
+jpeg_decomp_master	jpegint.h	140;"	s
+jpeg_decomp_master	jpeglib.h	1147;"	s
+jpeg_decompress_struct	jpeglib.h	459;"	s
+jpeg_default_colorspace	jcparam.c	386;"	f	typeref:typename:void
+jpeg_default_colorspace	jpeglib.h	902;"	d
+jpeg_default_qtables	jcparam.c	91;"	f	typeref:typename:void
+jpeg_default_qtables	jpeglib.h	905;"	d
+jpeg_destination_mgr	jpeglib.h	772;"	s
+jpeg_destroy	jcomapi.c	69;"	f	typeref:typename:void
+jpeg_destroy	jpeglib.h	942;"	d
+jpeg_destroy_compress	jcapimin.c	96;"	f	typeref:typename:void
+jpeg_destroy_compress	jpeglib.h	894;"	d
+jpeg_destroy_decompress	jdapimin.c	92;"	f	typeref:typename:void
+jpeg_destroy_decompress	jpeglib.h	895;"	d
+jpeg_downsampler	jpegint.h	92;"	s
+jpeg_downsampler	jpeglib.h	1144;"	s
+jpeg_entropy_decoder	jpegint.h	212;"	s
+jpeg_entropy_decoder	jpeglib.h	1153;"	s
+jpeg_entropy_encoder	jpegint.h	116;"	s
+jpeg_entropy_encoder	jpeglib.h	1146;"	s
+jpeg_error_mgr	jpeglib.h	702;"	s
+jpeg_fdct_10x10	jdct.h	104;"	d
+jpeg_fdct_10x10	jfdctint.c	1091;"	f	typeref:typename:void
+jpeg_fdct_10x5	jdct.h	114;"	d
+jpeg_fdct_10x5	jfdctint.c	2884;"	f	typeref:typename:void
+jpeg_fdct_11x11	jdct.h	105;"	d
+jpeg_fdct_11x11	jfdctint.c	1255;"	f	typeref:typename:void
+jpeg_fdct_12x12	jdct.h	106;"	d
+jpeg_fdct_12x12	jfdctint.c	1439;"	f	typeref:typename:void
+jpeg_fdct_12x6	jdct.h	113;"	d
+jpeg_fdct_12x6	jfdctint.c	2744;"	f	typeref:typename:void
+jpeg_fdct_13x13	jdct.h	107;"	d
+jpeg_fdct_13x13	jfdctint.c	1605;"	f	typeref:typename:void
+jpeg_fdct_14x14	jdct.h	108;"	d
+jpeg_fdct_14x14	jfdctint.c	1805;"	f	typeref:typename:void
+jpeg_fdct_14x7	jdct.h	112;"	d
+jpeg_fdct_14x7	jfdctint.c	2579;"	f	typeref:typename:void
+jpeg_fdct_15x15	jdct.h	109;"	d
+jpeg_fdct_15x15	jfdctint.c	2006;"	f	typeref:typename:void
+jpeg_fdct_16x16	jdct.h	110;"	d
+jpeg_fdct_16x16	jfdctint.c	2186;"	f	typeref:typename:void
+jpeg_fdct_16x8	jdct.h	111;"	d
+jpeg_fdct_16x8	jfdctint.c	2396;"	f	typeref:typename:void
+jpeg_fdct_1x1	jdct.h	102;"	d
+jpeg_fdct_1x1	jfdctint.c	922;"	f	typeref:typename:void
+jpeg_fdct_1x2	jdct.h	126;"	d
+jpeg_fdct_1x2	jfdctint.c	4378;"	f	typeref:typename:void
+jpeg_fdct_2x1	jdct.h	118;"	d
+jpeg_fdct_2x1	jfdctint.c	3343;"	f	typeref:typename:void
+jpeg_fdct_2x2	jdct.h	101;"	d
+jpeg_fdct_2x2	jfdctint.c	877;"	f	typeref:typename:void
+jpeg_fdct_2x4	jdct.h	125;"	d
+jpeg_fdct_2x4	jfdctint.c	4298;"	f	typeref:typename:void
+jpeg_fdct_3x3	jdct.h	100;"	d
+jpeg_fdct_3x3	jfdctint.c	791;"	f	typeref:typename:void
+jpeg_fdct_3x6	jdct.h	124;"	d
+jpeg_fdct_3x6	jfdctint.c	4192;"	f	typeref:typename:void
+jpeg_fdct_4x2	jdct.h	117;"	d
+jpeg_fdct_4x2	jfdctint.c	3259;"	f	typeref:typename:void
+jpeg_fdct_4x4	jdct.h	99;"	d
+jpeg_fdct_4x4	jfdctint.c	696;"	f	typeref:typename:void
+jpeg_fdct_4x8	jdct.h	123;"	d
+jpeg_fdct_4x8	jfdctint.c	4051;"	f	typeref:typename:void
+jpeg_fdct_5x10	jdct.h	122;"	d
+jpeg_fdct_5x10	jfdctint.c	3904;"	f	typeref:typename:void
+jpeg_fdct_5x5	jdct.h	98;"	d
+jpeg_fdct_5x5	jfdctint.c	585;"	f	typeref:typename:void
+jpeg_fdct_6x12	jdct.h	121;"	d
+jpeg_fdct_6x12	jfdctint.c	3754;"	f	typeref:typename:void
+jpeg_fdct_6x3	jdct.h	116;"	d
+jpeg_fdct_6x3	jfdctint.c	3158;"	f	typeref:typename:void
+jpeg_fdct_6x6	jdct.h	97;"	d
+jpeg_fdct_6x6	jfdctint.c	471;"	f	typeref:typename:void
+jpeg_fdct_7x14	jdct.h	120;"	d
+jpeg_fdct_7x14	jfdctint.c	3572;"	f	typeref:typename:void
+jpeg_fdct_7x7	jdct.h	96;"	d
+jpeg_fdct_7x7	jfdctint.c	335;"	f	typeref:typename:void
+jpeg_fdct_8x16	jdct.h	119;"	d
+jpeg_fdct_8x16	jfdctint.c	3378;"	f	typeref:typename:void
+jpeg_fdct_8x4	jdct.h	115;"	d
+jpeg_fdct_8x4	jfdctint.c	3017;"	f	typeref:typename:void
+jpeg_fdct_9x9	jdct.h	103;"	d
+jpeg_fdct_9x9	jfdctint.c	940;"	f	typeref:typename:void
+jpeg_fdct_float	jdct.h	95;"	d
+jpeg_fdct_ifast	jdct.h	94;"	d
+jpeg_fdct_islow	jdct.h	93;"	d
+jpeg_fill_bit_buffer	jdhuff.c	465;"	f	typeref:typename:boolean
+jpeg_finish_compress	jcapimin.c	155;"	f	typeref:typename:void
+jpeg_finish_compress	jpeglib.h	914;"	d
+jpeg_finish_decompress	jdapimin.c	373;"	f	typeref:typename:boolean
+jpeg_finish_decompress	jpeglib.h	924;"	d
+jpeg_finish_output	jdapistd.c	254;"	f	typeref:typename:boolean
+jpeg_finish_output	jpeglib.h	928;"	d
+jpeg_forward_dct	jpegint.h	109;"	s
+jpeg_forward_dct	jpeglib.h	1145;"	s
+jpeg_free_large	jmemansi.c	62;"	f	typeref:typename:void
+jpeg_free_large	jmemdos.c	189;"	f	typeref:typename:void
+jpeg_free_large	jmemmac.c	108;"	f	typeref:typename:void
+jpeg_free_large	jmemname.c	169;"	f	typeref:typename:void
+jpeg_free_large	jmemnobs.c	61;"	f	typeref:typename:void
+jpeg_free_large	jmemsys.h	28;"	d
+jpeg_free_small	jmemansi.c	42;"	f	typeref:typename:void
+jpeg_free_small	jmemdos.c	172;"	f	typeref:typename:void
+jpeg_free_small	jmemmac.c	88;"	f	typeref:typename:void
+jpeg_free_small	jmemname.c	149;"	f	typeref:typename:void
+jpeg_free_small	jmemnobs.c	41;"	f	typeref:typename:void
+jpeg_free_small	jmemsys.h	26;"	d
+jpeg_gen_optimal_table	jchuff.c	1253;"	f	typeref:typename:void
+jpeg_get_large	jmemansi.c	56;"	f	typeref:typename:void FAR *
+jpeg_get_large	jmemdos.c	183;"	f	typeref:typename:void FAR *
+jpeg_get_large	jmemmac.c	102;"	f	typeref:typename:void FAR *
+jpeg_get_large	jmemname.c	163;"	f	typeref:typename:void FAR *
+jpeg_get_large	jmemnobs.c	55;"	f	typeref:typename:void FAR *
+jpeg_get_large	jmemsys.h	27;"	d
+jpeg_get_small	jmemansi.c	36;"	f	typeref:typename:void *
+jpeg_get_small	jmemdos.c	166;"	f	typeref:typename:void *
+jpeg_get_small	jmemmac.c	82;"	f	typeref:typename:void *
+jpeg_get_small	jmemname.c	143;"	f	typeref:typename:void *
+jpeg_get_small	jmemnobs.c	35;"	f	typeref:typename:void *
+jpeg_get_small	jmemsys.h	25;"	d
+jpeg_getc	djpeg.c	355;"	f	typeref:typename:unsigned int
+jpeg_has_multiple_scans	jdapimin.c	353;"	f	typeref:typename:boolean
+jpeg_has_multiple_scans	jpeglib.h	926;"	d
+jpeg_height	jpeglib.h	320;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+jpeg_huff_decode	jdhuff.c	592;"	f	typeref:typename:int
+jpeg_idct_10x10	jdct.h	138;"	d
+jpeg_idct_10x10	jidctint.c	1266;"	f	typeref:typename:void
+jpeg_idct_10x5	jdct.h	148;"	d
+jpeg_idct_10x5	jidctint.c	3478;"	f	typeref:typename:void
+jpeg_idct_11x11	jdct.h	139;"	d
+jpeg_idct_11x11	jidctint.c	1461;"	f	typeref:typename:void
+jpeg_idct_12x12	jdct.h	140;"	d
+jpeg_idct_12x12	jidctint.c	1655;"	f	typeref:typename:void
+jpeg_idct_12x6	jdct.h	147;"	d
+jpeg_idct_12x6	jidctint.c	3300;"	f	typeref:typename:void
+jpeg_idct_13x13	jdct.h	141;"	d
+jpeg_idct_13x13	jidctint.c	1871;"	f	typeref:typename:void
+jpeg_idct_14x14	jdct.h	142;"	d
+jpeg_idct_14x14	jidctint.c	2099;"	f	typeref:typename:void
+jpeg_idct_14x7	jdct.h	146;"	d
+jpeg_idct_14x7	jidctint.c	3103;"	f	typeref:typename:void
+jpeg_idct_15x15	jdct.h	143;"	d
+jpeg_idct_15x15	jidctint.c	2325;"	f	typeref:typename:void
+jpeg_idct_16x16	jdct.h	144;"	d
+jpeg_idct_16x16	jidctint.c	2567;"	f	typeref:typename:void
+jpeg_idct_16x8	jdct.h	145;"	d
+jpeg_idct_16x8	jidctint.c	2828;"	f	typeref:typename:void
+jpeg_idct_1x1	jdct.h	136;"	d
+jpeg_idct_1x1	jidctint.c	1068;"	f	typeref:typename:void
+jpeg_idct_1x2	jdct.h	160;"	d
+jpeg_idct_1x2	jidctint.c	5147;"	f	typeref:typename:void
+jpeg_idct_2x1	jdct.h	152;"	d
+jpeg_idct_2x1	jidctint.c	4002;"	f	typeref:typename:void
+jpeg_idct_2x2	jdct.h	135;"	d
+jpeg_idct_2x2	jidctint.c	1013;"	f	typeref:typename:void
+jpeg_idct_2x4	jdct.h	159;"	d
+jpeg_idct_2x4	jidctint.c	5062;"	f	typeref:typename:void
+jpeg_idct_3x3	jdct.h	134;"	d
+jpeg_idct_3x3	jidctint.c	924;"	f	typeref:typename:void
+jpeg_idct_3x6	jdct.h	158;"	d
+jpeg_idct_3x6	jidctint.c	4956;"	f	typeref:typename:void
+jpeg_idct_4x2	jdct.h	151;"	d
+jpeg_idct_4x2	jidctint.c	3911;"	f	typeref:typename:void
+jpeg_idct_4x4	jdct.h	133;"	d
+jpeg_idct_4x4	jidctint.c	819;"	f	typeref:typename:void
+jpeg_idct_4x8	jdct.h	157;"	d
+jpeg_idct_4x8	jidctint.c	4771;"	f	typeref:typename:void
+jpeg_idct_5x10	jdct.h	156;"	d
+jpeg_idct_5x10	jidctint.c	4617;"	f	typeref:typename:void
+jpeg_idct_5x5	jdct.h	132;"	d
+jpeg_idct_5x5	jidctint.c	704;"	f	typeref:typename:void
+jpeg_idct_6x12	jdct.h	155;"	d
+jpeg_idct_6x12	jidctint.c	4451;"	f	typeref:typename:void
+jpeg_idct_6x3	jdct.h	150;"	d
+jpeg_idct_6x3	jidctint.c	3799;"	f	typeref:typename:void
+jpeg_idct_6x6	jdct.h	131;"	d
+jpeg_idct_6x6	jidctint.c	583;"	f	typeref:typename:void
+jpeg_idct_7x14	jdct.h	154;"	d
+jpeg_idct_7x14	jidctint.c	4266;"	f	typeref:typename:void
+jpeg_idct_7x7	jdct.h	130;"	d
+jpeg_idct_7x7	jidctint.c	434;"	f	typeref:typename:void
+jpeg_idct_8x16	jdct.h	153;"	d
+jpeg_idct_8x16	jidctint.c	4044;"	f	typeref:typename:void
+jpeg_idct_8x4	jdct.h	149;"	d
+jpeg_idct_8x4	jidctint.c	3641;"	f	typeref:typename:void
+jpeg_idct_9x9	jdct.h	137;"	d
+jpeg_idct_9x9	jidctint.c	1095;"	f	typeref:typename:void
+jpeg_idct_float	jdct.h	129;"	d
+jpeg_idct_ifast	jdct.h	128;"	d
+jpeg_idct_islow	jdct.h	127;"	d
+jpeg_input_complete	jdapimin.c	338;"	f	typeref:typename:boolean
+jpeg_input_complete	jpeglib.h	929;"	d
+jpeg_input_controller	jpegint.h	149;"	s
+jpeg_input_controller	jpeglib.h	1151;"	s
+jpeg_inverse_dct	jpegint.h	224;"	s
+jpeg_inverse_dct	jpeglib.h	1154;"	s
+jpeg_make_c_derived_tbl	jchuff.c	161;"	f	typeref:typename:void
+jpeg_make_d_derived_tbl	jdhuff.c	323;"	f	typeref:typename:void
+jpeg_marker_reader	jpegint.h	192;"	s
+jpeg_marker_reader	jpeglib.h	1152;"	s
+jpeg_marker_struct	jpeglib.h	209;"	s
+jpeg_marker_writer	jpegint.h	123;"	s
+jpeg_marker_writer	jpeglib.h	1142;"	s
+jpeg_mem_available	jmemansi.c	81;"	f	typeref:typename:long
+jpeg_mem_available	jmemdos.c	208;"	f	typeref:typename:long
+jpeg_mem_available	jmemmac.c	119;"	f	typeref:typename:long
+jpeg_mem_available	jmemname.c	188;"	f	typeref:typename:long
+jpeg_mem_available	jmemnobs.c	73;"	f	typeref:typename:long
+jpeg_mem_available	jmemsys.h	29;"	d
+jpeg_mem_dest	jdatadst.c	235;"	f	typeref:typename:void
+jpeg_mem_dest	jpeglib.h	898;"	d
+jpeg_mem_init	jmemansi.c	158;"	f	typeref:typename:long
+jpeg_mem_init	jmemdos.c	623;"	f	typeref:typename:long
+jpeg_mem_init	jmemmac.c	272;"	f	typeref:typename:long
+jpeg_mem_init	jmemname.c	266;"	f	typeref:typename:long
+jpeg_mem_init	jmemnobs.c	100;"	f	typeref:typename:long
+jpeg_mem_init	jmemsys.h	31;"	d
+jpeg_mem_src	jdatasrc.c	249;"	f	typeref:typename:void
+jpeg_mem_src	jpeglib.h	899;"	d
+jpeg_mem_term	jmemansi.c	164;"	f	typeref:typename:void
+jpeg_mem_term	jmemdos.c	630;"	f	typeref:typename:void
+jpeg_mem_term	jmemmac.c	286;"	f	typeref:typename:void
+jpeg_mem_term	jmemname.c	273;"	f	typeref:typename:void
+jpeg_mem_term	jmemnobs.c	106;"	f	typeref:typename:void
+jpeg_mem_term	jmemsys.h	32;"	d
+jpeg_memory_mgr	jpeglib.h	815;"	s
+jpeg_message_table	jpeglib.h	747;"	m	struct:jpeg_error_mgr	typeref:typename:const char * const *
+jpeg_natural_order	jpegint.h	328;"	d
+jpeg_natural_order	jutils.c	54;"	v	typeref:typename:const int[]
+jpeg_natural_order2	jpegint.h	334;"	d
+jpeg_natural_order2	jutils.c	112;"	v	typeref:typename:const int[]
+jpeg_natural_order3	jpegint.h	333;"	d
+jpeg_natural_order3	jutils.c	105;"	v	typeref:typename:const int[]
+jpeg_natural_order4	jpegint.h	332;"	d
+jpeg_natural_order4	jutils.c	98;"	v	typeref:typename:const int[]
+jpeg_natural_order5	jpegint.h	331;"	d
+jpeg_natural_order5	jutils.c	89;"	v	typeref:typename:const int[]
+jpeg_natural_order6	jpegint.h	330;"	d
+jpeg_natural_order6	jutils.c	79;"	v	typeref:typename:const int[]
+jpeg_natural_order7	jpegint.h	329;"	d
+jpeg_natural_order7	jutils.c	67;"	v	typeref:typename:const int[]
+jpeg_new_colormap	jdmaster.c	501;"	f	typeref:typename:void
+jpeg_new_colormap	jpeglib.h	930;"	d
+jpeg_open_backing_store	jmemansi.c	141;"	f	typeref:typename:void
+jpeg_open_backing_store	jmemdos.c	599;"	f	typeref:typename:void
+jpeg_open_backing_store	jmemmac.c	205;"	f	typeref:typename:void
+jpeg_open_backing_store	jmemname.c	247;"	f	typeref:typename:void
+jpeg_open_backing_store	jmemnobs.c	87;"	f	typeref:typename:void
+jpeg_open_backing_store	jmemsys.h	30;"	d
+jpeg_progress_mgr	jpeglib.h	760;"	s
+jpeg_quality_scaling	jcparam.c	123;"	f	typeref:typename:int
+jpeg_quality_scaling	jpeglib.h	907;"	d
+jpeg_read_coefficients	jdtrans.c	46;"	f	typeref:typename:jvirt_barray_ptr *
+jpeg_read_coefficients	jpeglib.h	936;"	d
+jpeg_read_header	jdapimin.c	245;"	f	typeref:typename:int
+jpeg_read_header	jpeglib.h	921;"	d
+jpeg_read_raw_data	jdapistd.c	186;"	f	typeref:typename:JDIMENSION
+jpeg_read_raw_data	jpeglib.h	925;"	d
+jpeg_read_scanlines	jdapistd.c	153;"	f	typeref:typename:JDIMENSION
+jpeg_read_scanlines	jpeglib.h	923;"	d
+jpeg_resync_to_restart	jdmarker.c	1343;"	f	typeref:typename:boolean
+jpeg_resync_to_restart	jpeglib.h	943;"	d
+jpeg_save_markers	jdmarker.c	1451;"	f	typeref:typename:void
+jpeg_save_markers	jpeglib.h	934;"	d
+jpeg_saved_marker_ptr	jpeglib.h	207;"	t	typeref:struct:jpeg_marker_struct FAR *
+jpeg_scan_info	jpeglib.h	203;"	t	typeref:struct:__anone14b59d80408
+jpeg_set_colorspace	jcparam.c	425;"	f	typeref:typename:void
+jpeg_set_colorspace	jpeglib.h	901;"	d
+jpeg_set_defaults	jcparam.c	285;"	f	typeref:typename:void
+jpeg_set_defaults	jpeglib.h	900;"	d
+jpeg_set_linear_quality	jcparam.c	106;"	f	typeref:typename:void
+jpeg_set_linear_quality	jpeglib.h	904;"	d
+jpeg_set_marker_processor	jdmarker.c	1500;"	f	typeref:typename:void
+jpeg_set_marker_processor	jpeglib.h	935;"	d
+jpeg_set_quality	jcparam.c	149;"	f	typeref:typename:void
+jpeg_set_quality	jpeglib.h	903;"	d
+jpeg_simple_progression	jcparam.c	598;"	f	typeref:typename:void
+jpeg_simple_progression	jpeglib.h	908;"	d
+jpeg_source_mgr	jpeglib.h	784;"	s
+jpeg_start_compress	jcapistd.c	39;"	f	typeref:typename:void
+jpeg_start_compress	jpeglib.h	912;"	d
+jpeg_start_decompress	jdapistd.c	39;"	f	typeref:typename:boolean
+jpeg_start_decompress	jpeglib.h	922;"	d
+jpeg_start_output	jdapistd.c	229;"	f	typeref:typename:boolean
+jpeg_start_output	jpeglib.h	927;"	d
+jpeg_std_error	jerror.c	232;"	f	typeref:struct:jpeg_error_mgr *
+jpeg_std_error	jpeglib.h	891;"	d
+jpeg_std_message_table	jerror.c	46;"	d	file:
+jpeg_std_message_table	jerror.c	51;"	v	typeref:typename:const char * const[]
+jpeg_stdio_dest	jdatadst.c	196;"	f	typeref:typename:void
+jpeg_stdio_dest	jpeglib.h	896;"	d
+jpeg_stdio_src	jdatasrc.c	210;"	f	typeref:typename:void
+jpeg_stdio_src	jpeglib.h	897;"	d
+jpeg_suppress_tables	jcapimin.c	127;"	f	typeref:typename:void
+jpeg_suppress_tables	jpeglib.h	909;"	d
+jpeg_transform_info	transupp.h	162;"	t	typeref:struct:__anon971f79580308
+jpeg_upsampler	jpegint.h	231;"	s
+jpeg_upsampler	jpeglib.h	1155;"	s
+jpeg_width	jpeglib.h	319;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+jpeg_write_coefficients	jctrans.c	39;"	f	typeref:typename:void
+jpeg_write_coefficients	jpeglib.h	937;"	d
+jpeg_write_m_byte	jcapimin.c	234;"	f	typeref:typename:void
+jpeg_write_m_byte	jpeglib.h	919;"	d
+jpeg_write_m_header	jcapimin.c	222;"	f	typeref:typename:void
+jpeg_write_m_header	jpeglib.h	918;"	d
+jpeg_write_marker	jcapimin.c	200;"	f	typeref:typename:void
+jpeg_write_marker	jpeglib.h	917;"	d
+jpeg_write_raw_data	jcapistd.c	121;"	f	typeref:typename:JDIMENSION
+jpeg_write_raw_data	jpeglib.h	916;"	d
+jpeg_write_scanlines	jcapistd.c	78;"	f	typeref:typename:JDIMENSION
+jpeg_write_scanlines	jpeglib.h	913;"	d
+jpeg_write_tables	jcapimin.c	262;"	f	typeref:typename:void
+jpeg_write_tables	jpeglib.h	920;"	d
+jpeg_zigzag_order	jdhuff.c	260;"	v	typeref:typename:const int[8][8]	file:
+jpeg_zigzag_order	jpegint.h	327;"	d
+jpeg_zigzag_order2	jdhuff.c	311;"	v	typeref:typename:const int[2][2]	file:
+jpeg_zigzag_order3	jdhuff.c	305;"	v	typeref:typename:const int[3][3]	file:
+jpeg_zigzag_order4	jdhuff.c	298;"	v	typeref:typename:const int[4][4]	file:
+jpeg_zigzag_order5	jdhuff.c	290;"	v	typeref:typename:const int[5][5]	file:
+jpeg_zigzag_order6	jdhuff.c	281;"	v	typeref:typename:const int[6][6]	file:
+jpeg_zigzag_order7	jdhuff.c	271;"	v	typeref:typename:const int[7][7]	file:
+jpegtran	CMakeLists.txt	49;"	t
+jpegtran$(EXEEXT)	Makefile.in	624;"	t
+jpegtran_DEPENDENCIES	Makefile.in	172;"	m
+jpegtran_LDADD	Makefile.am	89;"	m
+jpegtran_LDADD	Makefile.in	452;"	m
+jpegtran_OBJECTS	Makefile.in	171;"	m
+jpegtran_SOURCES	Makefile.am	88;"	m
+jpegtran_SOURCES	Makefile.in	451;"	m
+jround_up	jpegint.h	323;"	d
+jround_up	jutils.c	133;"	f	typeref:typename:long
+jt_read_integer	transupp.c	864;"	f	typeref:typename:boolean
+jtransform_adjust_parameters	transupp.c	1480;"	f	typeref:typename:jvirt_barray_ptr *
+jtransform_adjust_parameters	transupp.h	88;"	d
+jtransform_execute_transform	transupp.c	1576;"	f	typeref:typename:void
+jtransform_execute_transform	transupp.h	89;"	d
+jtransform_execute_transformation	transupp.h	196;"	d
+jtransform_parse_crop_spec	transupp.c	894;"	f	typeref:typename:boolean
+jtransform_parse_crop_spec	transupp.h	86;"	d
+jtransform_perfect_transform	transupp.c	1657;"	f	typeref:typename:boolean
+jtransform_perfect_transform	transupp.h	90;"	d
+jtransform_request_workspace	transupp.c	988;"	f	typeref:typename:boolean
+jtransform_request_workspace	transupp.h	87;"	d
+jvirt_barray_control	jmemmgr.c	167;"	s	file:
+jvirt_barray_control	jpegint.h	424;"	s
+jvirt_barray_control	jpeglib.h	1137;"	s
+jvirt_barray_ptr	jpeglib.h	812;"	t	typeref:struct:jvirt_barray_control *
+jvirt_sarray_control	jmemmgr.c	151;"	s	file:
+jvirt_sarray_control	jpegint.h	423;"	s
+jvirt_sarray_control	jpeglib.h	1136;"	s
+jvirt_sarray_ptr	jpeglib.h	811;"	t	typeref:struct:jvirt_sarray_control *
+jzero_far	jpegint.h	324;"	d
+jzero_far	jutils.c	161;"	f	typeref:typename:void
+keymatch	cdjpeg.c	122;"	f	typeref:typename:boolean
+keymatch	rdjpgcom.c	425;"	f	typeref:typename:int	file:
+keymatch	wrjpgcom.c	384;"	f	typeref:typename:int	file:
+larg_names	cmake\\dist.cmake	111;"	v
+large_list	jmemmgr.c	122;"	m	struct:__anon2a9612c50308	typeref:typename:large_pool_ptr[]	file:
+large_pool_hdr	jmemmgr.c	110;"	t	typeref:union:large_pool_struct	file:
+large_pool_ptr	jmemmgr.c	101;"	t	typeref:union:large_pool_struct FAR *	file:
+large_pool_struct	jmemmgr.c	103;"	u	file:
+largest_input_value	jquant1.c	260;"	f	typeref:typename:int
+last_addon_message	jpeglib.h	754;"	m	struct:jpeg_error_mgr	typeref:typename:int
+last_col_width	jpeglib.h	182;"	m	struct:__anone14b59d80308	typeref:typename:int
+last_dc_val	jcarith.c	34;"	m	struct:__anonc7832e7b0108	typeref:typename:int[]	file:
+last_dc_val	jchuff.c	58;"	m	struct:__anon0ed2490c0208	typeref:typename:int[]	file:
+last_dc_val	jdarith.c	32;"	m	struct:__anonb3c5035c0108	typeref:typename:int[]	file:
+last_dc_val	jdhuff.c	200;"	m	struct:__anon5bcc85cd0408	typeref:typename:int[]	file:
+last_jpeg_message	jpeglib.h	748;"	m	struct:jpeg_error_mgr	typeref:typename:int
+last_restart_interval	jcmarker.c	91;"	m	struct:__anonc2bbf6650208	typeref:typename:unsigned int	file:
+last_row_height	jpeglib.h	183;"	m	struct:__anone14b59d80308	typeref:typename:int
+last_rowsperchunk	jmemmgr.c	138;"	m	struct:__anon2a9612c50308	typeref:typename:JDIMENSION	file:
+latch_quant_tables	jdinput.c	487;"	f	typeref:typename:void
+ld-version-script	configure.ac	47;"	e
+lds	jmemdosa.asm	155;"	d
+lds	jmemdosa.asm	193;"	d
+lds	jmemdosa.asm	54;"	d
+length	jmemdos.c	322;"	m	struct:__anon29f79d850408	typeref:typename:long	file:
+length	jmemdos.c	467;"	m	union:__anon29f79d85050a	typeref:typename:long	file:
+length_limit_APPn	jdmarker.c	101;"	m	struct:__anon373867660208	typeref:typename:unsigned int[16]	file:
+length_limit_COM	jdmarker.c	100;"	m	struct:__anon373867660208	typeref:typename:unsigned int	file:
+lib_LTLIBRARIES	Makefile.am	65;"	m
+lib_LTLIBRARIES	Makefile.in	433;"	m
+libdir	Makefile.in	345;"	m
+libexecdir	Makefile.in	346;"	m
+libjpeg	CMakeLists.txt	7;"	p
+libjpeg	configure.ac	8;"	p
+libjpeg.la	Makefile.in	564;"	t
+libjpeg_la_LDFLAGS	Makefile.am	71;"	m
+libjpeg_la_LDFLAGS	Makefile.in	439;"	m
+libjpeg_la_LIBADD	Makefile.in	138;"	m
+libjpeg_la_LINK	Makefile.in	155;"	m
+libjpeg_la_OBJECTS	Makefile.in	150;"	m
+libjpeg_la_SOURCES	Makefile.am	68;"	m
+libjpeg_la_SOURCES	Makefile.in	436;"	m
+lim_Se	jpeglib.h	438;"	m	struct:jpeg_compress_struct	typeref:typename:int
+lim_Se	jpeglib.h	667;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+load_image	rdrle.c	241;"	f	typeref:typename:JDIMENSION
+localedir	Makefile.in	347;"	m
+localstatedir	Makefile.in	348;"	m
+look_nbits	jdhuff.c	46;"	m	struct:__anon5bcc85cd0108	typeref:typename:int[]	file:
+look_sym	jdhuff.c	47;"	m	struct:__anon5bcc85cd0108	typeref:typename:UINT8[]	file:
+loption_names	cmake\\dist.cmake	118;"	v
+lt_append	aclocal.m4	8417;"	d
+lt_car	aclocal.m4	8399;"	d
+lt_cdr	aclocal.m4	8400;"	d
+lt_combine	aclocal.m4	8429;"	d
+lt_decl_all_varnames	aclocal.m4	426;"	d
+lt_decl_dquote_varnames	aclocal.m4	409;"	d
+lt_decl_quote_varnames	aclocal.m4	403;"	d
+lt_decl_tag_varnames	aclocal.m4	385;"	d
+lt_decl_varnames_tagged	aclocal.m4	415;"	d
+lt_dict_add	aclocal.m4	8452;"	d
+lt_dict_add_subkey	aclocal.m4	8458;"	d
+lt_dict_fetch	aclocal.m4	8464;"	d
+lt_dict_filter	aclocal.m4	8480;"	d
+lt_if_append_uniq	aclocal.m4	8442;"	d
+lt_if_dict_fetch	aclocal.m4	8472;"	d
+lt_join	aclocal.m4	8384;"	d
+lt_unquote	aclocal.m4	8404;"	d
+main	ansi2knr.c	230;"	f
+main	cjpeg.c	519;"	f	typeref:typename:int
+main	ckconfig.c	286;"	f	typeref:typename:int
+main	djpeg.c	425;"	f	typeref:typename:int
+main	jpeglib.h	444;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_c_main_controller *
+main	jpeglib.h	679;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_d_main_controller *
+main	jpegtran.c	386;"	f	typeref:typename:int
+main	rdjpgcom.c	454;"	f	typeref:typename:int
+main	wrjpgcom.c	413;"	f	typeref:typename:int
+main_pass	jcmaster.c	23;"	e	enum:__anonc5b3fb8f0103	file:
+maintainer-clean	Makefile.in	954;"	t
+maintainer-clean-am	Makefile.in	959;"	t
+maintainer-clean-generic	Makefile.in	899;"	t
+make_funny_pointers	jdmainct.c	196;"	f	typeref:typename:void
+make_odither_array	jquant1.c	397;"	f	typeref:typename:ODITHER_MATRIX_PTR
+man1dir	Makefile.in	220;"	m
+man_MANS	Makefile.am	94;"	m
+man_MANS	Makefile.in	457;"	m
+mandir	Makefile.in	349;"	m
+marker	jpeglib.h	211;"	m	struct:jpeg_marker_struct	typeref:typename:UINT8
+marker	jpeglib.h	447;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_marker_writer *
+marker	jpeglib.h	683;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_marker_reader *
+marker_list	jpeglib.h	618;"	m	struct:jpeg_decompress_struct	typeref:typename:jpeg_saved_marker_ptr
+master	jpeglib.h	443;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_comp_master *
+master	jpeglib.h	678;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decomp_master *
+master_selection	jdmaster.c	272;"	f	typeref:typename:void
+max_alloc_chunk	jpeglib.h	861;"	m	struct:jpeg_memory_mgr	typeref:typename:long
+max_h_samp_factor	jpeglib.h	405;"	m	struct:jpeg_compress_struct	typeref:typename:int
+max_h_samp_factor	jpeglib.h	627;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+max_memory_to_use	jpeglib.h	858;"	m	struct:jpeg_memory_mgr	typeref:typename:long
+max_v_samp_factor	jpeglib.h	406;"	m	struct:jpeg_compress_struct	typeref:typename:int
+max_v_samp_factor	jpeglib.h	628;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+maxaccess	jmemmgr.c	155;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+maxaccess	jmemmgr.c	171;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+maxcode	jdhuff.c	30;"	m	struct:__anon5bcc85cd0108	typeref:typename:INT32[18]	file:
+maxcode	wrgif.c	54;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+maxmem	configure.ac	320;"	e
+mcu_ctr	jccoefct.c	39;"	m	struct:__anon9f2a5d370108	typeref:typename:JDIMENSION	file:
+mcu_ctr	jctrans.c	209;"	m	struct:__anon7d81d14b0108	typeref:typename:JDIMENSION	file:
+median_cut	jquant2.c	425;"	f	typeref:typename:int
+mem_buffer	jmemmgr.c	152;"	m	struct:jvirt_sarray_control	typeref:typename:JSAMPARRAY	file:
+mem_buffer	jmemmgr.c	168;"	m	struct:jvirt_barray_control	typeref:typename:JBLOCKARRAY	file:
+merged_1v_upsample	jdmerge.c	194;"	f	typeref:typename:void
+merged_2v_upsample	jdmerge.c	145;"	f	typeref:typename:void
+methods	jcsample.c	64;"	m	struct:__anon40fb42650108	typeref:typename:downsample1_ptr[]	file:
+methods	jdsample.c	47;"	m	struct:__anonb577b3660108	typeref:typename:upsample1_ptr[]	file:
+methods_struct	ckconfig.c	105;"	s	file:
+min_DCT_h_scaled_size	jpeglib.h	408;"	m	struct:jpeg_compress_struct	typeref:typename:int
+min_DCT_h_scaled_size	jpeglib.h	630;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+min_DCT_v_scaled_size	jpeglib.h	409;"	m	struct:jpeg_compress_struct	typeref:typename:int
+min_DCT_v_scaled_size	jpeglib.h	631;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+mkdir_p	Makefile.in	350;"	m
+mkinstalldirs	Makefile.in	104;"	m
+mostlyclean	Makefile.in	961;"	t
+mostlyclean-am	Makefile.in	963;"	t
+mostlyclean-compile	Makefile.in	636;"	t
+mostlyclean-generic	Makefile.in	890;"	t
+mostlyclean-libtool	Makefile.in	729;"	t
+mov	jmemdosa.asm	121;"	d
+mov	jmemdosa.asm	239;"	d
+mov	jmemdosa.asm	275;"	d
+mov	jmemdosa.asm	277;"	d
+mov	jmemdosa.asm	314;"	d
+mov	jmemdosa.asm	356;"	d
+mov	jmemdosa.asm	358;"	d
+msg_code	jpeglib.h	718;"	m	struct:jpeg_error_mgr	typeref:typename:int
+msg_parm	jpeglib.h	723;"	m	struct:jpeg_error_mgr	typeref:union:jpeg_error_mgr::__anone14b59d8090a
+multiplier_table	jddctmgr.c	68;"	t	typeref:union:__anon87ac0005020a	file:
+my_cconvert_ptr	jccolor.c	26;"	t	typeref:typename:my_color_converter *	file:
+my_cconvert_ptr	jdcolor.c	35;"	t	typeref:typename:my_color_deconverter *	file:
+my_coef_controller	jccoefct.c	56;"	t	typeref:struct:__anon9f2a5d370108	file:
+my_coef_controller	jctrans.c	218;"	t	typeref:struct:__anon7d81d14b0108	file:
+my_coef_controller	jdcoefct.c	61;"	t	typeref:struct:__anon13a6ce380108	file:
+my_coef_ptr	jccoefct.c	58;"	t	typeref:typename:my_coef_controller *	file:
+my_coef_ptr	jctrans.c	220;"	t	typeref:typename:my_coef_controller *	file:
+my_coef_ptr	jdcoefct.c	63;"	t	typeref:typename:my_coef_controller *	file:
+my_color_converter	jccolor.c	24;"	t	typeref:struct:__anon5aabe4420108	file:
+my_color_deconverter	jdcolor.c	33;"	t	typeref:struct:__anon46edb9230108	file:
+my_comp_master	jcmaster.c	37;"	t	typeref:struct:__anonc5b3fb8f0208	file:
+my_cquantize_ptr	jquant1.c	168;"	t	typeref:typename:my_cquantizer *	file:
+my_cquantize_ptr	jquant2.c	212;"	t	typeref:typename:my_cquantizer *	file:
+my_cquantizer	jquant1.c	166;"	t	typeref:struct:__anon8f5b6fba0108	file:
+my_cquantizer	jquant2.c	210;"	t	typeref:struct:__anon8f5b73fb0108	file:
+my_decomp_master	jdmaster.c	34;"	t	typeref:struct:__anon3a306c900108	file:
+my_dest_ptr	jdatadst.c	38;"	t	typeref:typename:my_destination_mgr *	file:
+my_destination_mgr	jdatadst.c	36;"	t	typeref:struct:__anonb29646c50108	file:
+my_downsample_ptr	jcsample.c	76;"	t	typeref:typename:my_downsampler *	file:
+my_downsampler	jcsample.c	74;"	t	typeref:struct:__anon40fb42650108	file:
+my_error_exit	example.c	263;"	f	typeref:typename:void
+my_error_mgr	example.c	250;"	s	file:
+my_error_ptr	example.c	256;"	t	typeref:struct:my_error_mgr *	file:
+my_fdct_controller	jcdctmgr.c	33;"	t	typeref:struct:__anon132f8f040108	file:
+my_fdct_ptr	jcdctmgr.c	35;"	t	typeref:typename:my_fdct_controller *	file:
+my_idct_controller	jddctmgr.c	53;"	t	typeref:struct:__anon87ac00050108	file:
+my_idct_ptr	jddctmgr.c	55;"	t	typeref:typename:my_idct_controller *	file:
+my_input_controller	jdinput.c	26;"	t	typeref:struct:__anon12c1b1d40108	file:
+my_inputctl_ptr	jdinput.c	28;"	t	typeref:typename:my_input_controller *	file:
+my_main_controller	jcmainct.c	49;"	t	typeref:struct:__anonadf2c1ff0108	file:
+my_main_controller	jdmainct.c	133;"	t	typeref:struct:__anon226f33000108	file:
+my_main_ptr	jcmainct.c	51;"	t	typeref:typename:my_main_controller *	file:
+my_main_ptr	jdmainct.c	135;"	t	typeref:typename:my_main_controller *	file:
+my_marker_ptr	jcmarker.c	94;"	t	typeref:typename:my_marker_writer *	file:
+my_marker_ptr	jdmarker.c	109;"	t	typeref:typename:my_marker_reader *	file:
+my_marker_reader	jdmarker.c	107;"	t	typeref:struct:__anon373867660208	file:
+my_marker_writer	jcmarker.c	92;"	t	typeref:struct:__anonc2bbf6650208	file:
+my_master_ptr	jcmaster.c	39;"	t	typeref:typename:my_comp_master *	file:
+my_master_ptr	jdmaster.c	36;"	t	typeref:typename:my_decomp_master *	file:
+my_mem_dest_ptr	jdatadst.c	55;"	t	typeref:typename:my_mem_destination_mgr *	file:
+my_mem_destination_mgr	jdatadst.c	53;"	t	typeref:struct:__anonb29646c50208	file:
+my_mem_ptr	jmemmgr.c	141;"	t	typeref:typename:my_memory_mgr *	file:
+my_memory_mgr	jmemmgr.c	139;"	t	typeref:struct:__anon2a9612c50308	file:
+my_post_controller	jdpostct.c	40;"	t	typeref:struct:__anon34a42d810108	file:
+my_post_ptr	jdpostct.c	42;"	t	typeref:typename:my_post_controller *	file:
+my_prep_controller	jcprepct.c	68;"	t	typeref:struct:__anon8625d7f10108	file:
+my_prep_ptr	jcprepct.c	70;"	t	typeref:typename:my_prep_controller *	file:
+my_size_t	ckconfig.c	90;"	t	typeref:typename:size_t	file:
+my_source_mgr	jdatasrc.c	32;"	t	typeref:struct:__anonb3a4e1a20108	file:
+my_src_ptr	jdatasrc.c	34;"	t	typeref:typename:my_source_mgr *	file:
+my_upsample_ptr	jdmerge.c	71;"	t	typeref:typename:my_upsampler *	file:
+my_upsample_ptr	jdsample.c	62;"	t	typeref:typename:my_upsampler *	file:
+my_upsampler	jdmerge.c	69;"	t	typeref:struct:__anon31c87b140108	file:
+my_upsampler	jdsample.c	60;"	t	typeref:struct:__anonb577b3660108	file:
+mytest	CMakeLists.txt	69;"	m
+n_bits	wrgif.c	53;"	m	struct:__anondd811ab50108	typeref:typename:int	file:
+natural_order	jpeglib.h	437;"	m	struct:jpeg_compress_struct	typeref:typename:const int *
+natural_order	jpeglib.h	666;"	m	struct:jpeg_decompress_struct	typeref:typename:const int *
+need_context_rows	jpegint.h	241;"	m	struct:jpeg_upsampler	typeref:typename:boolean
+need_context_rows	jpegint.h	99;"	m	struct:jpeg_downsampler	typeref:typename:boolean
+needs_zeroed	jquant2.c	204;"	m	struct:__anon8f5b73fb0108	typeref:typename:boolean	file:
+new_color_map_1_quant	jquant1.c	811;"	f	typeref:typename:void
+new_color_map_2_quant	jquant2.c	1231;"	f	typeref:typename:void
+newbuffer	jdatadst.c	50;"	m	struct:__anonb29646c50208	typeref:typename:unsigned char *	file:
+next	jmemmgr.c	105;"	m	struct:large_pool_struct::__anon2a9612c50208	typeref:typename:large_pool_ptr	file:
+next	jmemmgr.c	163;"	m	struct:jvirt_sarray_control	typeref:typename:jvirt_sarray_ptr	file:
+next	jmemmgr.c	179;"	m	struct:jvirt_barray_control	typeref:typename:jvirt_barray_ptr	file:
+next	jmemmgr.c	94;"	m	struct:small_pool_struct::__anon2a9612c50108	typeref:typename:small_pool_ptr	file:
+next	jpeglib.h	210;"	m	struct:jpeg_marker_struct	typeref:typename:jpeg_saved_marker_ptr
+next_buf_row	jcprepct.c	62;"	m	struct:__anon8625d7f10108	typeref:typename:int	file:
+next_buf_stop	jcprepct.c	66;"	m	struct:__anon8625d7f10108	typeref:typename:int	file:
+next_file_num	jmemdos.c	125;"	v	typeref:typename:int	file:
+next_file_num	jmemmac.c	71;"	v	file:
+next_file_num	jmemname.c	73;"	v	typeref:typename:int	file:
+next_input_byte	jdhuff.c	87;"	m	struct:__anon5bcc85cd0308	typeref:typename:const JOCTET *	file:
+next_input_byte	jpeglib.h	785;"	m	struct:jpeg_source_mgr	typeref:typename:const JOCTET *
+next_marker	jdmarker.c	1011;"	f	typeref:typename:boolean
+next_marker	rdjpgcom.c	142;"	f	typeref:typename:int	file:
+next_marker	wrjpgcom.c	187;"	f	typeref:typename:int	file:
+next_output_byte	jchuff.c	105;"	m	struct:__anon0ed2490c0308	typeref:typename:JOCTET *	file:
+next_output_byte	jchuff.c	124;"	m	struct:__anon0ed2490c0408	typeref:typename:JOCTET *	file:
+next_output_byte	jpeglib.h	773;"	m	struct:jpeg_destination_mgr	typeref:typename:JOCTET *
+next_restart_num	jcarith.c	38;"	m	struct:__anonc7832e7b0108	typeref:typename:int	file:
+next_restart_num	jchuff.c	88;"	m	struct:__anon0ed2490c0308	typeref:typename:int	file:
+next_restart_num	jpegint.h	207;"	m	struct:jpeg_marker_reader	typeref:typename:int
+next_row	jdpostct.c	39;"	m	struct:__anon34a42d810108	typeref:typename:JDIMENSION	file:
+next_row_out	jdsample.c	49;"	m	struct:__anonb577b3660108	typeref:typename:int	file:
+next_scanline	jpeglib.h	395;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+no_ems	jmemdosa.asm	322;"	l
+noinst_HEADERS	Makefile.am	100;"	m
+noinst_HEADERS	Makefile.in	463;"	m
+noop_upsample	jdsample.c	171;"	f	typeref:typename:void
+noreturn_t	jmorecfg.h	280;"	t	typeref:typename:void
+null_convert	jccolor.c	395;"	f	typeref:typename:void
+null_convert	jdcolor.c	453;"	f	typeref:typename:void
+null_method	jccolor.c	427;"	f	typeref:typename:void
+num_blocks	jpegint.h	107;"	t	typeref:typename:JMETHOD (void,forward_DCT_ptr,(j_compress_ptr cinfo,jpeg_component_info * compptr,JSAMPARRAY sample_data,JBLOCKROW coef_blocks,JDIMENSION start_row,JDIMENSION start_col,JDIMENSION))
+num_components	jpeglib.h	330;"	m	struct:jpeg_compress_struct	typeref:typename:int
+num_components	jpeglib.h	470;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+num_components	transupp.h	152;"	m	struct:__anon971f79580308	typeref:typename:int
+num_scans	jpeglib.h	350;"	m	struct:jpeg_compress_struct	typeref:typename:int
+num_warnings	jpeglib.h	735;"	m	struct:jpeg_error_mgr	typeref:typename:long
+odither	jquant1.c	161;"	m	struct:__anon8f5b6fba0108	typeref:typename:ODITHER_MATRIX_PTR[]	file:
+offset	jmemdos.c	317;"	m	union:__anon29f79d85030a	typeref:typename:long	file:
+oldincludedir	Makefile.in	351;"	m
+on_odd_row	jquant1.c	165;"	m	struct:__anon8f5b6fba0108	typeref:typename:boolean	file:
+on_odd_row	jquant2.c	208;"	m	struct:__anon8f5b73fb0108	typeref:typename:boolean	file:
+open_ems_store	jmemdos.c	554;"	f	typeref:typename:boolean
+open_err	jmemdosa.asm	61;"	l
+open_file_store	jmemdos.c	288;"	f	typeref:typename:boolean
+open_xms_store	jmemdos.c	414;"	f	typeref:typename:boolean
+optimize_coding	jpeglib.h	359;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+original_length	jpeglib.h	212;"	m	struct:jpeg_marker_struct	typeref:typename:unsigned int
+out_color_components	jpeglib.h	509;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+out_color_space	jpeglib.h	478;"	m	struct:jpeg_decompress_struct	typeref:typename:J_COLOR_SPACE
+out_of_memory	jmemmgr.c	218;"	f	typeref:typename:noreturn_t
+out_row_width	jdmerge.c	67;"	m	struct:__anon31c87b140108	typeref:typename:JDIMENSION	file:
+outbuffer	jdatadst.c	48;"	m	struct:__anonb29646c50208	typeref:typename:unsigned char **	file:
+outfile	jdatadst.c	34;"	m	struct:__anonb29646c50108	typeref:typename:FILE *	file:
+outfile	wrjpgcom.c	80;"	v	typeref:typename:FILE *	file:
+outfilename	cjpeg.c	138;"	v	typeref:typename:char *	file:
+outfilename	djpeg.c	87;"	v	typeref:typename:char *	file:
+outfilename	jpegtran.c	39;"	v	typeref:typename:char *	file:
+outptr	jidctflt.c	79;"	v	typeref:typename:JSAMPROW
+outptr	jidctfst.c	178;"	v	typeref:typename:JSAMPROW
+outptr	jidctint.c	183;"	v	typeref:typename:JSAMPROW
+output	wrgif.c	105;"	f	typeref:typename:void
+output_col	jpegint.h	222;"	t	typeref:typename:JMETHOD (void,inverse_DCT_method_ptr,(j_decompress_ptr cinfo,jpeg_component_info * compptr,JCOEFPTR coef_block,JSAMPARRAY output_buf,JDIMENSION))
+output_components	jpeglib.h	510;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+output_data	jcsample.c	56;"	t	typeref:typename:JMETHOD (void,downsample1_ptr,(j_compress_ptr cinfo,jpeg_component_info * compptr,JSAMPARRAY input_data,JSAMPARRAY))	file:
+output_data_ptr	jdsample.c	30;"	t	typeref:typename:JMETHOD (void,upsample1_ptr,(j_decompress_ptr cinfo,jpeg_component_info * compptr,JSAMPARRAY input_data,JSAMPARRAY *))	file:
+output_file	cdjpeg.h	62;"	m	struct:djpeg_dest_struct	typeref:typename:FILE *
+output_gamma	jpeglib.h	482;"	m	struct:jpeg_decompress_struct	typeref:typename:double
+output_height	jpeglib.h	508;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+output_height	transupp.h	155;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+output_iMCU_row	jpeglib.h	550;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+output_message	jerror.c	99;"	f	typeref:typename:void
+output_pass	jcmaster.c	25;"	e	enum:__anonc5b3fb8f0103	file:
+output_pass_setup	jdapistd.c	96;"	f	typeref:typename:boolean
+output_scan_number	jpeglib.h	549;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+output_scanline	jpeglib.h	537;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+output_value	jquant1.c	246;"	f	typeref:typename:int
+output_width	jpeglib.h	507;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+output_width	transupp.h	154;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+outsize	jdatadst.c	49;"	m	struct:__anonb29646c50208	typeref:typename:unsigned long *	file:
+packetbuf	wrgif.c	65;"	m	struct:__anondd811ab50108	typeref:typename:char[256]	file:
+pad_bytes	wrbmp.c	52;"	m	struct:__anondd28fc3e0108	typeref:typename:int	file:
+parse_arguments	cmake\\dist.cmake	99;"	m
+parse_switches	cjpeg.c	212;"	f	typeref:typename:int
+parse_switches	djpeg.c	163;"	f	typeref:typename:int
+parse_switches	jpegtran.c	121;"	f	typeref:typename:int
+pass2_fs_dither	jquant2.c	950;"	f	typeref:typename:void
+pass2_no_dither	jquant2.c	916;"	f	typeref:typename:void
+pass_counter	jpeglib.h	763;"	m	struct:jpeg_progress_mgr	typeref:typename:long
+pass_limit	jpeglib.h	764;"	m	struct:jpeg_progress_mgr	typeref:typename:long
+pass_mode	jcmainct.c	35;"	m	struct:__anonadf2c1ff0108	typeref:typename:J_BUF_MODE	file:
+pass_number	jcmaster.c	33;"	m	struct:__anonc5b3fb8f0208	typeref:typename:int	file:
+pass_number	jdmaster.c	25;"	m	struct:__anon3a306c900108	typeref:typename:int	file:
+pass_startup	jcmaster.c	747;"	f	typeref:typename:void
+pass_type	jcmaster.c	31;"	m	struct:__anonc5b3fb8f0208	typeref:typename:c_pass_type	file:
+pbm_getc	rdcolmap.c	121;"	f	typeref:typename:int
+pbm_getc	rdppm.c	85;"	f	typeref:typename:int
+pdf	Makefile.in	966;"	t
+pdf-am	Makefile.in	968;"	t
+pdfdir	Makefile.in	352;"	m
+per_scan_setup	jcmaster.c	566;"	f	typeref:typename:void
+per_scan_setup	jdinput.c	388;"	f	typeref:typename:void
+percent_done	cdjpeg.h	86;"	m	struct:cdjpeg_progress_mgr	typeref:typename:int
+perfect	transupp.h	134;"	m	struct:__anon971f79580308	typeref:typename:boolean
+pixel_size	rdtarga.c	64;"	m	struct:_tga_source_struct	typeref:typename:int	file:
+pixrow	rdppm.c	76;"	m	struct:__anon3c9c83190108	typeref:typename:JSAMPROW	file:
+pixrow	wrppm.c	74;"	m	struct:__anonde27ebac0108	typeref:typename:JSAMPROW	file:
+pkgdatadir	Makefile.in	71;"	m
+pkgincludedir	Makefile.in	72;"	m
+pkglibdir	Makefile.in	73;"	m
+pkglibexecdir	Makefile.in	74;"	m
+pop	jmemdosa.asm	129;"	d
+pop	jmemdosa.asm	132;"	d
+pop	jmemdosa.asm	167;"	d
+pop	jmemdosa.asm	170;"	d
+pop	jmemdosa.asm	205;"	d
+pop	jmemdosa.asm	208;"	d
+pop	jmemdosa.asm	244;"	d
+pop	jmemdosa.asm	246;"	d
+pop	jmemdosa.asm	249;"	d
+pop	jmemdosa.asm	285;"	d
+pop	jmemdosa.asm	287;"	d
+pop	jmemdosa.asm	290;"	d
+pop	jmemdosa.asm	313;"	d
+pop	jmemdosa.asm	325;"	d
+pop	jmemdosa.asm	328;"	d
+pop	jmemdosa.asm	366;"	d
+pop	jmemdosa.asm	368;"	d
+pop	jmemdosa.asm	371;"	d
+pop	jmemdosa.asm	63;"	d
+pop	jmemdosa.asm	66;"	d
+pop	jmemdosa.asm	95;"	d
+pop	jmemdosa.asm	98;"	d
+possibly_dupli_function	ckconfig.c	222;"	f	typeref:typename:int
+possibly_duplicate_function	ckconfig.c	217;"	f	typeref:typename:int
+post	jpeglib.h	681;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_d_post_controller *
+post_process_1pass	jdpostct.c	126;"	f	typeref:typename:void
+post_process_2pass	jdpostct.c	202;"	f	typeref:typename:void
+post_process_prepass	jdpostct.c	158;"	f	typeref:typename:void
+ppdirbackward	ansi2knr.c	392;"	f
+ppdirforward	ansi2knr.c	379;"	f
+ppm_dest_ptr	wrppm.c	79;"	t	typeref:typename:ppm_dest_struct *	file:
+ppm_dest_struct	wrppm.c	77;"	t	typeref:struct:__anonde27ebac0108	file:
+ppm_source_ptr	rdppm.c	81;"	t	typeref:typename:ppm_source_struct *	file:
+ppm_source_struct	rdppm.c	79;"	t	typeref:struct:__anon3c9c83190108	file:
+pre_process_context	jcprepct.c	197;"	f	typeref:typename:void
+pre_process_data	jcprepct.c	128;"	f	typeref:typename:void
+pre_zero	jmemmgr.c	160;"	m	struct:jvirt_sarray_control	typeref:typename:boolean	file:
+pre_zero	jmemmgr.c	176;"	m	struct:jvirt_barray_control	typeref:typename:boolean	file:
+prefix	Makefile.in	353;"	m
+preload_image	rdbmp.c	219;"	f	typeref:typename:JDIMENSION
+preload_image	rdtarga.c	300;"	f	typeref:typename:JDIMENSION
+prep	jpeglib.h	445;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_c_prep_controller *
+prepare_for_output_pass	jdmaster.c	424;"	f	typeref:typename:void
+prepare_for_pass	jcmaster.c	659;"	f	typeref:typename:void
+prepare_range_limit_table	jdmaster.c	232;"	f	typeref:typename:void
+prescan_quantize	jquant2.c	225;"	f	typeref:typename:void
+print_mem_stats	jmemmgr.c	187;"	f	typeref:typename:void
+print_text_marker	djpeg.c	370;"	f	typeref:typename:boolean
+process_APPn	jdmarker.c	97;"	m	struct:__anon373867660208	typeref:typename:jpeg_marker_parser_method[16]	file:
+process_COM	jdmarker.c	96;"	m	struct:__anon373867660208	typeref:typename:jpeg_marker_parser_method	file:
+process_COM	rdjpgcom.c	225;"	f	typeref:typename:void	file:
+process_SOFn	rdjpgcom.c	282;"	f	typeref:typename:void	file:
+process_data_buffer_main	jcmainct.c	170;"	f	typeref:typename:void
+process_data_context_main	jdmainct.c	386;"	f	typeref:typename:void
+process_data_crank_post	jdmainct.c	460;"	f	typeref:typename:void
+process_data_simple_main	jcmainct.c	114;"	f	typeref:typename:void
+process_data_simple_main	jdmainct.c	346;"	f	typeref:typename:void
+process_restart	jdarith.c	190;"	f	typeref:typename:void
+process_restart	jdhuff.c	652;"	f	typeref:typename:boolean
+progname	cjpeg.c	137;"	v	typeref:typename:const char *	file:
+progname	djpeg.c	86;"	v	typeref:typename:const char *	file:
+progname	jpegtran.c	38;"	v	typeref:typename:const char *	file:
+progname	rdjpgcom.c	405;"	v	typeref:typename:const char *	file:
+progname	wrjpgcom.c	347;"	v	typeref:typename:const char *	file:
+program_transform_name	Makefile.in	354;"	m
+progress_monitor	cdjpeg.c	68;"	f	typeref:typename:void
+progressive_mode	jpeglib.h	404;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+progressive_mode	jpeglib.h	587;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+ps	Makefile.in	970;"	t
+ps-am	Makefile.in	972;"	t
+psdir	Makefile.in	355;"	m
+ptr	jmemdos.c	318;"	m	union:__anon29f79d85030a	typeref:typename:void far *	file:
+pub	cdjpeg.h	82;"	m	struct:cdjpeg_progress_mgr	typeref:struct:jpeg_progress_mgr
+pub	example.c	251;"	m	struct:my_error_mgr	typeref:struct:jpeg_error_mgr	file:
+pub	jcarith.c	24;"	m	struct:__anonc7832e7b0108	typeref:struct:jpeg_entropy_encoder	file:
+pub	jccoefct.c	36;"	m	struct:__anon9f2a5d370108	typeref:struct:jpeg_c_coef_controller	file:
+pub	jccolor.c	20;"	m	struct:__anon5aabe4420108	typeref:struct:jpeg_color_converter	file:
+pub	jcdctmgr.c	24;"	m	struct:__anon132f8f040108	typeref:struct:jpeg_forward_dct	file:
+pub	jchuff.c	82;"	m	struct:__anon0ed2490c0308	typeref:struct:jpeg_entropy_encoder	file:
+pub	jcmainct.c	30;"	m	struct:__anonadf2c1ff0108	typeref:struct:jpeg_c_main_controller	file:
+pub	jcmarker.c	89;"	m	struct:__anonc2bbf6650208	typeref:struct:jpeg_marker_writer	file:
+pub	jcmaster.c	29;"	m	struct:__anonc5b3fb8f0208	typeref:struct:jpeg_comp_master	file:
+pub	jcprepct.c	54;"	m	struct:__anon8625d7f10108	typeref:struct:jpeg_c_prep_controller	file:
+pub	jcsample.c	61;"	m	struct:__anon40fb42650108	typeref:struct:jpeg_downsampler	file:
+pub	jctrans.c	206;"	m	struct:__anon7d81d14b0108	typeref:struct:jpeg_c_coef_controller	file:
+pub	jdarith.c	24;"	m	struct:__anonb3c5035c0108	typeref:struct:jpeg_entropy_decoder	file:
+pub	jdatadst.c	32;"	m	struct:__anonb29646c50108	typeref:struct:jpeg_destination_mgr	file:
+pub	jdatadst.c	46;"	m	struct:__anonb29646c50208	typeref:struct:jpeg_destination_mgr	file:
+pub	jdatasrc.c	27;"	m	struct:__anonb3a4e1a20108	typeref:struct:jpeg_source_mgr	file:
+pub	jdcoefct.c	30;"	m	struct:__anon13a6ce380108	typeref:struct:jpeg_d_coef_controller	file:
+pub	jdcolor.c	20;"	m	struct:__anon46edb9230108	typeref:struct:jpeg_color_deconverter	file:
+pub	jddctmgr.c	45;"	m	struct:__anon87ac00050108	typeref:struct:jpeg_inverse_dct	file:
+pub	jdhuff.c	223;"	m	struct:__anon5bcc85cd0508	typeref:struct:jpeg_entropy_decoder	file:
+pub	jdhuff.c	39;"	m	struct:__anon5bcc85cd0108	typeref:typename:JHUFF_TBL *	file:
+pub	jdinput.c	23;"	m	struct:__anon12c1b1d40108	typeref:struct:jpeg_input_controller	file:
+pub	jdmainct.c	116;"	m	struct:__anon226f33000108	typeref:struct:jpeg_d_main_controller	file:
+pub	jdmarker.c	93;"	m	struct:__anon373867660208	typeref:struct:jpeg_marker_reader	file:
+pub	jdmaster.c	23;"	m	struct:__anon3a306c900108	typeref:struct:jpeg_decomp_master	file:
+pub	jdmerge.c	46;"	m	struct:__anon31c87b140108	typeref:struct:jpeg_upsampler	file:
+pub	jdpostct.c	27;"	m	struct:__anon34a42d810108	typeref:struct:jpeg_d_post_controller	file:
+pub	jdsample.c	35;"	m	struct:__anonb577b3660108	typeref:struct:jpeg_upsampler	file:
+pub	jmemmgr.c	118;"	m	struct:__anon2a9612c50308	typeref:struct:jpeg_memory_mgr	file:
+pub	jquant1.c	144;"	m	struct:__anon8f5b6fba0108	typeref:struct:jpeg_color_quantizer	file:
+pub	jquant2.c	195;"	m	struct:__anon8f5b73fb0108	typeref:struct:jpeg_color_quantizer	file:
+pub	rdbmp.c	54;"	m	struct:_bmp_source_struct	typeref:struct:cjpeg_source_struct	file:
+pub	rdppm.c	73;"	m	struct:__anon3c9c83190108	typeref:struct:cjpeg_source_struct	file:
+pub	rdrle.c	65;"	m	struct:_rle_source_struct	typeref:struct:cjpeg_source_struct	file:
+pub	rdtarga.c	49;"	m	struct:_tga_source_struct	typeref:struct:cjpeg_source_struct	file:
+pub	wrbmp.c	45;"	m	struct:__anondd28fc3e0108	typeref:struct:djpeg_dest_struct	file:
+pub	wrgif.c	48;"	m	struct:__anondd811ab50108	typeref:struct:djpeg_dest_struct	file:
+pub	wrppm.c	70;"	m	struct:__anonde27ebac0108	typeref:struct:djpeg_dest_struct	file:
+pub	wrrle.c	54;"	m	struct:__anonde49c9220108	typeref:struct:djpeg_dest_struct	file:
+pub	wrtarga.c	44;"	m	struct:__anon1936d22e0108	typeref:struct:djpeg_dest_struct	file:
+push	jmemdosa.asm	114;"	d
+push	jmemdosa.asm	117;"	d
+push	jmemdosa.asm	119;"	d
+push	jmemdosa.asm	148;"	d
+push	jmemdosa.asm	151;"	d
+push	jmemdosa.asm	153;"	d
+push	jmemdosa.asm	186;"	d
+push	jmemdosa.asm	189;"	d
+push	jmemdosa.asm	191;"	d
+push	jmemdosa.asm	224;"	d
+push	jmemdosa.asm	227;"	d
+push	jmemdosa.asm	229;"	d
+push	jmemdosa.asm	267;"	d
+push	jmemdosa.asm	270;"	d
+push	jmemdosa.asm	272;"	d
+push	jmemdosa.asm	304;"	d
+push	jmemdosa.asm	307;"	d
+push	jmemdosa.asm	309;"	d
+push	jmemdosa.asm	348;"	d
+push	jmemdosa.asm	351;"	d
+push	jmemdosa.asm	353;"	d
+push	jmemdosa.asm	47;"	d
+push	jmemdosa.asm	50;"	d
+push	jmemdosa.asm	52;"	d
+push	jmemdosa.asm	82;"	d
+push	jmemdosa.asm	85;"	d
+push	jmemdosa.asm	87;"	d
+put_3bytes	wrgif.c	209;"	f	typeref:typename:void
+put_bits	jchuff.c	57;"	m	struct:__anon0ed2490c0208	typeref:typename:int	file:
+put_buffer	jchuff.c	56;"	m	struct:__anon0ed2490c0208	typeref:typename:INT32	file:
+put_demapped_gray	wrppm.c	154;"	f	typeref:typename:void
+put_demapped_gray	wrtarga.c	144;"	f	typeref:typename:void
+put_demapped_rgb	wrppm.c	129;"	f	typeref:typename:void
+put_gray_rows	wrbmp.c	106;"	f	typeref:typename:void
+put_gray_rows	wrtarga.c	120;"	f	typeref:typename:void
+put_pixel_rows	wrbmp.c	71;"	f	typeref:typename:void
+put_pixel_rows	wrgif.c	319;"	f	typeref:typename:void
+put_pixel_rows	wrppm.c	91;"	f	typeref:typename:void
+put_pixel_rows	wrtarga.c	99;"	f	typeref:typename:void
+put_word	wrgif.c	200;"	f	typeref:typename:void
+q_scale_factor	jpeglib.h	337;"	m	struct:jpeg_compress_struct	typeref:typename:int[]
+quant_table	jpeglib.h	189;"	m	struct:__anone14b59d80308	typeref:typename:JQUANT_TBL *
+quant_tbl_no	jpeglib.h	133;"	m	struct:__anone14b59d80308	typeref:typename:int
+quant_tbl_ptrs	jpeglib.h	336;"	m	struct:jpeg_compress_struct	typeref:typename:JQUANT_TBL * []
+quant_tbl_ptrs	jpeglib.h	570;"	m	struct:jpeg_decompress_struct	typeref:typename:JQUANT_TBL * []
+quantize3_ord_dither	jquant1.c	566;"	f	typeref:typename:void
+quantize_colors	jpeglib.h	491;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+quantize_fs_dither	jquant1.c	611;"	f	typeref:typename:void
+quantize_ord_dither	jquant1.c	516;"	f	typeref:typename:void
+quantizer_1pass	jdmaster.c	32;"	m	struct:__anon3a306c900108	typeref:struct:jpeg_color_quantizer *	file:
+quantizer_2pass	jdmaster.c	33;"	m	struct:__anon3a306c900108	typeref:struct:jpeg_color_quantizer *	file:
+quantptr	jidctflt.c	77;"	v	typeref:typename:FLOAT_MULT_TYPE *
+quantptr	jidctfst.c	176;"	v	typeref:typename:IFAST_MULT_TYPE *
+quantptr	jidctint.c	181;"	v	typeref:typename:ISLOW_MULT_TYPE *
+quantval	jpeglib.h	97;"	m	struct:__anone14b59d80108	typeref:typename:UINT16[]
+range_limit	jdcolor.c	28;"	m	struct:__anon46edb9230108	typeref:typename:JSAMPLE *	file:
+range_limit	jidctflt.c	80;"	v	typeref:typename:JSAMPLE *
+raw_data_in	jpeglib.h	357;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+raw_data_out	jpeglib.h	485;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+rdjpgcom	CMakeLists.txt	50;"	t
+rdjpgcom$(EXEEXT)	Makefile.in	628;"	t
+rdjpgcom_LDADD	Makefile.in	175;"	m
+rdjpgcom_OBJECTS	Makefile.in	174;"	m
+rdjpgcom_SOURCES	Makefile.am	90;"	m
+rdjpgcom_SOURCES	Makefile.in	453;"	m
+read_1_byte	rdjpgcom.c	77;"	f	typeref:typename:int	file:
+read_1_byte	wrjpgcom.c	92;"	f	typeref:typename:int	file:
+read_2_bytes	rdjpgcom.c	90;"	f	typeref:typename:unsigned int	file:
+read_2_bytes	wrjpgcom.c	105;"	f	typeref:typename:unsigned int	file:
+read_JPEG_file	example.c	284;"	f	typeref:typename:int
+read_backing_store	jmemansi.c	97;"	f	typeref:typename:void
+read_backing_store	jmemmac.c	154;"	f	typeref:typename:void
+read_backing_store	jmemname.c	204;"	f	typeref:typename:void
+read_byte	rdbmp.c	69;"	f	typeref:typename:int
+read_byte	rdtarga.c	88;"	f	typeref:typename:int
+read_color_map	cdjpeg.h	110;"	d
+read_color_map	rdcolmap.c	231;"	f	typeref:typename:void
+read_colormap	rdbmp.c	82;"	f	typeref:typename:void
+read_colormap	rdtarga.c	101;"	f	typeref:typename:void
+read_ems_store	jmemdos.c	491;"	f	typeref:typename:void
+read_err	jmemdosa.asm	165;"	l
+read_file_store	jmemdos.c	243;"	f	typeref:typename:void
+read_gif_map	rdcolmap.c	79;"	f	typeref:typename:void
+read_markers	jdmarker.c	1094;"	f	typeref:typename:int
+read_non_rle_pixel	rdtarga.c	123;"	f	typeref:typename:void
+read_ok	jmemdosa.asm	164;"	l
+read_pbm_integer	rdcolmap.c	138;"	f	typeref:typename:unsigned int
+read_pbm_integer	rdppm.c	102;"	f	typeref:typename:unsigned int
+read_ppm_map	rdcolmap.c	171;"	f	typeref:typename:void
+read_quant_tables	cdjpeg.h	105;"	d
+read_quant_tables	rdswitch.c	74;"	f	typeref:typename:boolean
+read_restart_marker	jdmarker.c	1264;"	f	typeref:typename:boolean
+read_restart_marker	jpegint.h	200;"	m	struct:jpeg_marker_reader	typeref:typename:jpeg_marker_parser_method
+read_rle_pixel	rdtarga.c	136;"	f	typeref:typename:void
+read_scan_integer	rdswitch.c	130;"	f	typeref:typename:boolean
+read_scan_script	cdjpeg.h	106;"	d
+read_scan_script	rdswitch.c	159;"	f	typeref:typename:boolean
+read_stdin	cdjpeg.c	149;"	f	typeref:typename:FILE *
+read_stdin	cdjpeg.h	114;"	d
+read_text_integer	rdswitch.c	39;"	f	typeref:typename:boolean
+read_xms_store	jmemdos.c	333;"	f	typeref:typename:void
+realize_virt_arrays	jmemmgr.c	584;"	f	typeref:typename:void
+rec_outbuf_height	jpeglib.h	514;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+reduce_script	jcmaster.c	487;"	f	typeref:typename:void
+request_virt_barray	jmemmgr.c	554;"	f	typeref:typename:jvirt_barray_ptr
+request_virt_sarray	jmemmgr.c	524;"	f	typeref:typename:jvirt_sarray_ptr
+requested_fmt	djpeg.c	74;"	v	typeref:typename:IMAGE_FORMATS	file:
+rescale	rdppm.c	78;"	m	struct:__anon3c9c83190108	typeref:typename:JSAMPLE *	file:
+reset_error_mgr	jerror.c	213;"	f	typeref:typename:void
+reset_input_controller	jdinput.c	620;"	f	typeref:typename:void
+reset_marker_reader	jdmarker.c	1393;"	f	typeref:typename:void
+restart_in_rows	jpeglib.h	371;"	m	struct:jpeg_compress_struct	typeref:typename:int
+restart_interval	jpeglib.h	370;"	m	struct:jpeg_compress_struct	typeref:typename:unsigned int
+restart_interval	jpeglib.h	594;"	m	struct:jpeg_decompress_struct	typeref:typename:unsigned int
+restarts_to_go	jcarith.c	37;"	m	struct:__anonc7832e7b0108	typeref:typename:unsigned int	file:
+restarts_to_go	jchuff.c	87;"	m	struct:__anon0ed2490c0308	typeref:typename:unsigned int	file:
+restarts_to_go	jdarith.c	35;"	m	struct:__anonb3c5035c0108	typeref:typename:unsigned int	file:
+restarts_to_go	jdhuff.c	233;"	m	struct:__anon5bcc85cd0508	typeref:typename:unsigned int	file:
+rgb1_gray_convert	jdcolor.c	379;"	f	typeref:typename:void
+rgb1_rgb_convert	jdcolor.c	341;"	f	typeref:typename:void
+rgb_convert	jccolor.c	362;"	f	typeref:typename:void
+rgb_convert	jdcolor.c	421;"	f	typeref:typename:void
+rgb_gray_convert	jccolor.c	199;"	f	typeref:typename:void
+rgb_gray_convert	jdcolor.c	301;"	f	typeref:typename:void
+rgb_rgb1_convert	jccolor.c	295;"	f	typeref:typename:void
+rgb_y_tab	jdcolor.c	32;"	m	struct:__anon46edb9230108	typeref:typename:INT32 *	file:
+rgb_ycc_convert	jccolor.c	143;"	f	typeref:typename:void
+rgb_ycc_start	jccolor.c	99;"	f	typeref:typename:void
+rgb_ycc_tab	jccolor.c	23;"	m	struct:__anon5aabe4420108	typeref:typename:INT32 *	file:
+rle_dest_ptr	wrrle.c	62;"	t	typeref:typename:rle_dest_struct *	file:
+rle_dest_struct	wrrle.c	60;"	t	typeref:struct:__anonde49c9220108	file:
+rle_kind	rdrle.c	52;"	t	typeref:enum:__anon3cbe608f0103	file:
+rle_put_pixel_rows	wrrle.c	153;"	f	typeref:typename:void
+rle_row	rdrle.c	71;"	m	struct:_rle_source_struct	typeref:typename:rle_pixel **	file:
+rle_row	wrrle.c	58;"	m	struct:__anonde49c9220108	typeref:typename:rle_pixel **	file:
+rle_source_ptr	rdrle.c	62;"	t	typeref:struct:_rle_source_struct *	file:
+rle_source_struct	rdrle.c	73;"	t	typeref:struct:_rle_source_struct	file:
+row	rdrle.c	69;"	m	struct:_rle_source_struct	typeref:typename:JDIMENSION	file:
+row_index	jquant1.c	160;"	m	struct:__anon8f5b6fba0108	typeref:typename:int	file:
+row_width	rdbmp.c	62;"	m	struct:_bmp_source_struct	typeref:typename:JDIMENSION	file:
+row_width	wrbmp.c	51;"	m	struct:__anondd28fc3e0108	typeref:typename:JDIMENSION	file:
+rowgroup_ctr	jcmainct.c	33;"	m	struct:__anonadf2c1ff0108	typeref:typename:JDIMENSION	file:
+rowgroup_ctr	jdmainct.c	122;"	m	struct:__anon226f33000108	typeref:typename:JDIMENSION	file:
+rowgroup_height	jcsample.c	67;"	m	struct:__anon40fb42650108	typeref:typename:int[]	file:
+rowgroup_height	jdsample.c	53;"	m	struct:__anonb577b3660108	typeref:typename:int[]	file:
+rowgroups_avail	jdmainct.c	131;"	m	struct:__anon226f33000108	typeref:typename:JDIMENSION	file:
+rows_in_array	jmemmgr.c	153;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+rows_in_array	jmemmgr.c	169;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+rows_in_mem	jmemmgr.c	156;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+rows_in_mem	jmemmgr.c	172;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+rows_to_go	jcprepct.c	61;"	m	struct:__anon8625d7f10108	typeref:typename:JDIMENSION	file:
+rows_to_go	jdmerge.c	68;"	m	struct:__anon31c87b140108	typeref:typename:JDIMENSION	file:
+rows_to_go	jdsample.c	50;"	m	struct:__anonb577b3660108	typeref:typename:JDIMENSION	file:
+rowsperchunk	jmemmgr.c	157;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+rowsperchunk	jmemmgr.c	173;"	m	struct:jvirt_barray_control	typeref:typename:JDIMENSION	file:
+s	jpeglib.h	722;"	m	union:jpeg_error_mgr::__anone14b59d8090a	typeref:typename:char[]
+sample_range_limit	jpeglib.h	642;"	m	struct:jpeg_decompress_struct	typeref:typename:JSAMPLE *
+samples_per_row	wrppm.c	76;"	m	struct:__anonde27ebac0108	typeref:typename:JDIMENSION	file:
+samplesperrow	jmemmgr.c	154;"	m	struct:jvirt_sarray_control	typeref:typename:JDIMENSION	file:
+savable_state	jchuff.c	59;"	t	typeref:struct:__anon0ed2490c0208	file:
+savable_state	jdhuff.c	201;"	t	typeref:struct:__anon5bcc85cd0408	file:
+save_marker	jdmarker.c	876;"	f	typeref:typename:boolean
+saved	jchuff.c	84;"	m	struct:__anon0ed2490c0308	typeref:typename:savable_state	file:
+saved	jdhuff.c	229;"	m	struct:__anon5bcc85cd0508	typeref:typename:savable_state	file:
+saw_Adobe_marker	jpeglib.h	606;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+saw_JFIF_marker	jpeglib.h	599;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+saw_SOF	jpegint.h	206;"	m	struct:jpeg_marker_reader	typeref:typename:boolean
+saw_SOI	jpegint.h	205;"	m	struct:jpeg_marker_reader	typeref:typename:boolean
+sbindir	Makefile.in	356;"	m
+sc	jcarith.c	28;"	m	struct:__anonc7832e7b0108	typeref:typename:INT32	file:
+scale_denom	jpeglib.h	317;"	m	struct:jpeg_compress_struct	typeref:typename:unsigned int
+scale_denom	jpeglib.h	480;"	m	struct:jpeg_decompress_struct	typeref:typename:unsigned int
+scale_num	jpeglib.h	317;"	m	struct:jpeg_compress_struct	typeref:typename:unsigned int
+scale_num	jpeglib.h	480;"	m	struct:jpeg_decompress_struct	typeref:typename:unsigned int
+scaleoption	jpegtran.c	40;"	v	typeref:typename:char *	file:
+scan_JPEG_header	rdjpgcom.c	340;"	f	typeref:typename:int	file:
+scan_JPEG_header	wrjpgcom.c	289;"	f	typeref:typename:int	file:
+scan_info	jpeglib.h	351;"	m	struct:jpeg_compress_struct	typeref:typename:const jpeg_scan_info *
+scan_number	jcmaster.c	36;"	m	struct:__anonc5b3fb8f0208	typeref:typename:int	file:
+scanstring	ansi2knr.c	436;"	f
+script_space	jpeglib.h	452;"	m	struct:jpeg_compress_struct	typeref:typename:jpeg_scan_info *
+script_space_size	jpeglib.h	453;"	m	struct:jpeg_compress_struct	typeref:typename:int
+seek_err	jmemdosa.asm	127;"	l
+select_colors	jquant2.c	540;"	f	typeref:typename:void
+select_file_name	jmemdos.c	128;"	f	typeref:typename:void
+select_file_name	jmemname.c	126;"	f	typeref:typename:void
+select_file_name	jmemname.c	95;"	f	typeref:typename:void
+select_file_type	cjpeg.c	81;"	f	typeref:typename:cjpeg_source_ptr
+select_ncolors	jquant1.c	187;"	f	typeref:typename:int
+select_scan_parameters	jcmaster.c	522;"	f	typeref:typename:void
+select_transform	jpegtran.c	98;"	f	typeref:typename:void
+self_destruct	jmemmgr.c	1003;"	f	typeref:typename:void
+sent_table	jpeglib.h	103;"	m	struct:__anone14b59d80108	typeref:typename:boolean
+sent_table	jpeglib.h	119;"	m	struct:__anone14b59d80208	typeref:typename:boolean
+sep_downsample	jcsample.c	123;"	f	typeref:typename:void
+sep_upsample	jdsample.c	90;"	f	typeref:typename:void
+set_bottom_pointers	jdmainct.c	267;"	f	typeref:typename:void
+set_quality_ratings	cdjpeg.h	107;"	d
+set_quality_ratings	rdswitch.c	267;"	f	typeref:typename:boolean
+set_quant_slots	cdjpeg.h	108;"	d
+set_quant_slots	rdswitch.c	299;"	f	typeref:typename:boolean
+set_sample_factors	cdjpeg.h	109;"	d
+set_sample_factors	rdswitch.c	334;"	f	typeref:typename:boolean
+set_wraparound_pointers	jdmainct.c	239;"	f	typeref:typename:void
+setjmp_buffer	example.c	253;"	m	struct:my_error_mgr	typeref:typename:jmp_buf	file:
+sharedstatedir	Makefile.in	357;"	m
+sig_cinfo	cdjpeg.c	32;"	v	typeref:typename:j_common_ptr	file:
+signal_catcher	cdjpeg.c	35;"	f	typeref:typename:void
+skip_input_data	jdatasrc.c	156;"	f	typeref:typename:void
+skip_variable	jdmarker.c	982;"	f	typeref:typename:boolean
+skip_variable	rdjpgcom.c	199;"	f	typeref:typename:void	file:
+skip_variable	wrjpgcom.c	264;"	f	typeref:typename:void	file:
+skipspace	ansi2knr.c	414;"	f
+small_list	jmemmgr.c	121;"	m	struct:__anon2a9612c50308	typeref:typename:small_pool_ptr[]	file:
+small_pool_hdr	jmemmgr.c	99;"	t	typeref:union:small_pool_struct	file:
+small_pool_ptr	jmemmgr.c	90;"	t	typeref:union:small_pool_struct *	file:
+small_pool_struct	jmemmgr.c	92;"	u	file:
+smoothing_factor	jpeglib.h	362;"	m	struct:jpeg_compress_struct	typeref:typename:int
+smoothing_ok	jdcoefct.c	407;"	f	typeref:typename:boolean
+source_row	rdbmp.c	61;"	m	struct:_bmp_source_struct	typeref:typename:JDIMENSION	file:
+spare_full	jdmerge.c	65;"	m	struct:__anon31c87b140108	typeref:typename:boolean	file:
+spare_row	jdmerge.c	64;"	m	struct:__anon31c87b140108	typeref:typename:JSAMPROW	file:
+src	jmemdos.c	324;"	m	struct:__anon29f79d850408	typeref:typename:XMSPTR	file:
+src	jpeglib.h	463;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_source_mgr *
+src_handle	jmemdos.c	323;"	m	struct:__anon29f79d850408	typeref:typename:XMSH	file:
+srcdir	Makefile.in	358;"	m
+stamp-h1	Makefile.in	518;"	t
+start_col	jdct.h	42;"	t	typeref:typename:JMETHOD (void,forward_DCT_method_ptr,(DCTELEM * data,JSAMPARRAY sample_data,JDIMENSION))
+start_col	jdct.h	45;"	t	typeref:typename:JMETHOD (void,float_DCT_method_ptr,(FAST_FLOAT * data,JSAMPARRAY sample_data,JDIMENSION))
+start_iMCU_row	jccoefct.c	73;"	f	typeref:typename:void
+start_iMCU_row	jctrans.c	224;"	f	typeref:typename:void
+start_iMCU_row	jdcoefct.c	80;"	f	typeref:typename:void
+start_input_bmp	rdbmp.c	276;"	f	typeref:typename:void
+start_input_pass	jdcoefct.c	108;"	f	typeref:typename:void
+start_input_pass	jdinput.c	521;"	f	typeref:typename:void
+start_input_ppm	rdppm.c	297;"	f	typeref:typename:void
+start_input_rle	rdrle.c	81;"	f	typeref:typename:void
+start_input_tga	rdtarga.c	333;"	f	typeref:typename:void
+start_of_file	jdatasrc.c	31;"	m	struct:__anonb3a4e1a20108	typeref:typename:boolean	file:
+start_output_bmp	wrbmp.c	142;"	f	typeref:typename:void
+start_output_gif	wrgif.c	302;"	f	typeref:typename:void
+start_output_pass	jdcoefct.c	120;"	f	typeref:typename:void
+start_output_ppm	wrppm.c	177;"	f	typeref:typename:void
+start_output_rle	wrrle.c	77;"	f	typeref:typename:void
+start_output_tga	wrtarga.c	167;"	f	typeref:typename:void
+start_pass	jcarith.c	841;"	f	typeref:typename:void
+start_pass	jdarith.c	643;"	f	typeref:typename:void
+start_pass	jddctmgr.c	90;"	f	typeref:typename:void
+start_pass_1_quant	jquant1.c	742;"	f	typeref:typename:void
+start_pass_2_quant	jquant2.c	1168;"	f	typeref:typename:void
+start_pass_coef	jccoefct.c	101;"	f	typeref:typename:void
+start_pass_coef	jctrans.c	252;"	f	typeref:typename:void
+start_pass_dcolor	jdcolor.c	581;"	f	typeref:typename:void
+start_pass_downsample	jcsample.c	84;"	f	typeref:typename:void
+start_pass_dpost	jdpostct.c	73;"	f	typeref:typename:void
+start_pass_fdctmgr	jcdctmgr.c	189;"	f	typeref:typename:void
+start_pass_huff	jchuff.c	1448;"	f	typeref:typename:void
+start_pass_huff_decoder	jdhuff.c	1322;"	f	typeref:typename:void
+start_pass_main	jcmainct.c	70;"	f	typeref:typename:void
+start_pass_main	jdmainct.c	308;"	f	typeref:typename:void
+start_pass_merged_upsample	jdmerge.c	127;"	f	typeref:typename:void
+start_pass_prep	jcprepct.c	78;"	f	typeref:typename:void
+start_pass_upsample	jdsample.c	70;"	f	typeref:typename:void
+start_progress_monitor	cdjpeg.c	89;"	f	typeref:typename:void
+start_progress_monitor	cdjpeg.h	112;"	d
+starting_row	jdpostct.c	38;"	m	struct:__anon34a42d810108	typeref:typename:JDIMENSION	file:
+std_chrominance_quant_tbl	jcparam.c	78;"	v	typeref:typename:const unsigned int[]	file:
+std_huff_tables	jcparam.c	199;"	f	typeref:typename:void
+std_luminance_quant_tbl	jcparam.c	68;"	v	typeref:typename:const unsigned int[]	file:
+strip_height	jdpostct.c	36;"	m	struct:__anon34a42d810108	typeref:typename:JDIMENSION	file:
+subdir	Makefile.in	93;"	m
+suspended	jcmainct.c	34;"	m	struct:__anonadf2c1ff0108	typeref:typename:boolean	file:
+sv_actual	jquant1.c	148;"	m	struct:__anon8f5b6fba0108	typeref:typename:int	file:
+sv_colormap	jquant1.c	147;"	m	struct:__anon8f5b6fba0108	typeref:typename:JSAMPARRAY	file:
+sv_colormap	jquant2.c	198;"	m	struct:__anon8f5b73fb0108	typeref:typename:JSAMPARRAY	file:
+sysconfdir	Makefile.in	359;"	m
+tags	Makefile.in	804;"	t
+tags-am	Makefile.in	807;"	t
+target	Makefile.in	360;"	m
+target_alias	Makefile.in	361;"	m
+target_cpu	Makefile.in	362;"	m
+target_os	Makefile.in	363;"	m
+target_triplet	Makefile.in	89;"	m
+target_vendor	Makefile.in	364;"	m
+tempSpec	jmemsys.h	161;"	m	struct:backing_store_struct	typeref:typename:FSSpec
+temp_file	jmemsys.h	160;"	m	struct:backing_store_struct	typeref:typename:short
+temp_file	jmemsys.h	165;"	m	struct:backing_store_struct	typeref:typename:FILE *
+temp_name	jmemsys.h	156;"	m	struct:backing_store_struct	typeref:typename:char[]
+temp_name	jmemsys.h	162;"	m	struct:backing_store_struct	typeref:typename:char[]
+temp_name	jmemsys.h	166;"	m	struct:backing_store_struct	typeref:typename:char[]
+term_destination	jdatadst.c	163;"	f	typeref:typename:void
+term_mem_destination	jdatadst.c	180;"	f	typeref:typename:void
+term_source	jdatasrc.c	197;"	f	typeref:typename:void
+test	Makefile.am	120;"	t
+test	Makefile.in	1011;"	t
+test1	ansi2knr.c	474;"	f
+test2function	ckconfig.c	116;"	f	typeref:typename:int
+test3function	ckconfig.c	163;"	f	typeref:typename:void
+test4function	ckconfig.c	187;"	f	typeref:typename:int
+testfunction	ckconfig.c	111;"	f	typeref:typename:int
+text_getc	rdswitch.c	22;"	f	typeref:typename:int
+tga_dest_ptr	wrtarga.c	50;"	t	typeref:typename:tga_dest_struct *	file:
+tga_dest_struct	wrtarga.c	48;"	t	typeref:struct:__anon1936d22e0108	file:
+tga_pixel	rdtarga.c	62;"	m	struct:_tga_source_struct	typeref:typename:U_CHAR[4]	file:
+tga_source_ptr	rdtarga.c	46;"	t	typeref:struct:_tga_source_struct *	file:
+tga_source_struct	rdtarga.c	73;"	t	typeref:struct:_tga_source_struct	file:
+this_row_group	jcprepct.c	65;"	m	struct:__anon8625d7f10108	typeref:typename:int	file:
+tmp0	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp0	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp0	jfdctint.c	160;"	v	typeref:typename:INT32
+tmp0	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp0	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp0	jidctint.c	177;"	v	typeref:typename:INT32
+tmp1	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp1	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp1	jfdctint.c	160;"	v	typeref:typename:INT32
+tmp1	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp1	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp1	jidctint.c	177;"	v	typeref:typename:INT32
+tmp10	jfdctflt.c	63;"	v	typeref:typename:FAST_FLOAT
+tmp10	jfdctfst.c	118;"	v	typeref:typename:DCTELEM
+tmp10	jfdctint.c	161;"	v	typeref:typename:INT32
+tmp10	jidctflt.c	74;"	v	typeref:typename:FAST_FLOAT
+tmp10	jidctfst.c	173;"	v	typeref:typename:DCTELEM
+tmp10	jidctint.c	178;"	v	typeref:typename:INT32
+tmp11	jfdctflt.c	63;"	v	typeref:typename:FAST_FLOAT
+tmp11	jfdctfst.c	118;"	v	typeref:typename:DCTELEM
+tmp11	jfdctint.c	161;"	v	typeref:typename:INT32
+tmp11	jidctflt.c	74;"	v	typeref:typename:FAST_FLOAT
+tmp11	jidctfst.c	173;"	v	typeref:typename:DCTELEM
+tmp11	jidctint.c	178;"	v	typeref:typename:INT32
+tmp12	jfdctflt.c	63;"	v	typeref:typename:FAST_FLOAT
+tmp12	jfdctfst.c	118;"	v	typeref:typename:DCTELEM
+tmp12	jfdctint.c	161;"	v	typeref:typename:INT32
+tmp12	jidctflt.c	74;"	v	typeref:typename:FAST_FLOAT
+tmp12	jidctfst.c	173;"	v	typeref:typename:DCTELEM
+tmp12	jidctint.c	178;"	v	typeref:typename:INT32
+tmp13	jfdctflt.c	63;"	v	typeref:typename:FAST_FLOAT
+tmp13	jfdctfst.c	118;"	v	typeref:typename:DCTELEM
+tmp13	jfdctint.c	161;"	v	typeref:typename:INT32
+tmp13	jidctflt.c	74;"	v	typeref:typename:FAST_FLOAT
+tmp13	jidctfst.c	173;"	v	typeref:typename:DCTELEM
+tmp13	jidctint.c	178;"	v	typeref:typename:INT32
+tmp2	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp2	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp2	jfdctint.c	160;"	v	typeref:typename:INT32
+tmp2	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp2	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp2	jidctint.c	177;"	v	typeref:typename:INT32
+tmp3	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp3	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp3	jfdctint.c	160;"	v	typeref:typename:INT32
+tmp3	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp3	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp3	jidctint.c	177;"	v	typeref:typename:INT32
+tmp4	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp4	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp4	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp4	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp5	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp5	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp5	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp5	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp6	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp6	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp6	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp6	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+tmp7	jfdctflt.c	62;"	v	typeref:typename:FAST_FLOAT
+tmp7	jfdctfst.c	117;"	v	typeref:typename:DCTELEM
+tmp7	jidctflt.c	73;"	v	typeref:typename:FAST_FLOAT
+tmp7	jidctfst.c	172;"	v	typeref:typename:DCTELEM
+top_build_prefix	Makefile.in	365;"	m
+top_builddir	Makefile.in	366;"	m
+top_srcdir	Makefile.in	367;"	m
+total_extra_passes	cdjpeg.h	84;"	m	struct:cdjpeg_progress_mgr	typeref:typename:int
+total_iMCU_rows	jpeglib.h	411;"	m	struct:jpeg_compress_struct	typeref:typename:JDIMENSION
+total_iMCU_rows	jpeglib.h	633;"	m	struct:jpeg_decompress_struct	typeref:typename:JDIMENSION
+total_passes	jcmaster.c	34;"	m	struct:__anonc5b3fb8f0208	typeref:typename:int	file:
+total_passes	jpeglib.h	766;"	m	struct:jpeg_progress_mgr	typeref:typename:int
+total_space_allocated	jmemmgr.c	133;"	m	struct:__anon2a9612c50308	typeref:typename:long	file:
+trace_level	jpeglib.h	727;"	m	struct:jpeg_error_mgr	typeref:typename:int
+trace_message	ckconfig.c	107;"	m	struct:methods_struct	typeref:typename:int (*)(char * msgtext)	file:
+transdecode_master_selection	jdtrans.c	98;"	f	typeref:typename:void
+transencode_coef_controller	jctrans.c	360;"	f	typeref:typename:void
+transencode_master_selection	jctrans.c	166;"	f	typeref:typename:void
+transform	Makefile.in	80;"	m
+transform	transupp.h	133;"	m	struct:__anon971f79580308	typeref:typename:JXFORM_CODE
+transformoption	jpegtran.c	42;"	v	typeref:typename:jpeg_transform_info	file:
+transpose_critical_parameters	transupp.c	1272;"	f	typeref:typename:void
+trim	transupp.h	135;"	m	struct:__anon971f79580308	typeref:typename:boolean
+trim_bottom_edge	transupp.c	959;"	f	typeref:typename:void
+trim_right_edge	transupp.c	948;"	f	typeref:typename:void
+two_pass_quantize	jpeglib.h	494;"	m	struct:jpeg_decompress_struct	typeref:typename:boolean
+un_char	ckconfig.c	131;"	v	typeref:typename:unsigned char
+un_short	ckconfig.c	143;"	v	typeref:typename:unsigned short
+undef_struct_ptr	ckconfig.c	205;"	t	typeref:struct:undefined_structure *	file:
+uninstall	Makefile.in	874;"	t
+uninstall-am	Makefile.in	974;"	t
+uninstall-binPROGRAMS	Makefile.in	596;"	t
+uninstall-includeHEADERS	Makefile.in	796;"	t
+uninstall-libLTLIBRARIES	Makefile.in	544;"	t
+uninstall-local	Makefile.am	116;"	t
+uninstall-local	Makefile.in	1007;"	t
+uninstall-man	Makefile.in	977;"	t
+uninstall-man1	Makefile.in	771;"	t
+unread_marker	jpeglib.h	673;"	m	struct:jpeg_decompress_struct	typeref:typename:int
+update_box	jquant2.c	314;"	f	typeref:typename:void
+upsample	jpeglib.h	686;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_upsampler *
+usage	cjpeg.c	142;"	f	typeref:typename:void
+usage	djpeg.c	91;"	f	typeref:typename:void
+usage	jpegtran.c	46;"	f	typeref:typename:void
+usage	rdjpgcom.c	409;"	f	typeref:typename:void	file:
+usage	wrjpgcom.c	351;"	f	typeref:typename:void	file:
+use_merged_upsample	jdmaster.c	45;"	f	typeref:typename:boolean
+using_merged_upsample	jdmaster.c	27;"	m	struct:__anon3a306c900108	typeref:typename:boolean	file:
+v_expand	jcsample.c	73;"	m	struct:__anon40fb42650108	typeref:typename:UINT8[]	file:
+v_expand	jdsample.c	59;"	m	struct:__anonb577b3660108	typeref:typename:UINT8[]	file:
+v_samp_factor	jpeglib.h	132;"	m	struct:__anone14b59d80308	typeref:typename:int
+validate_script	jcmaster.c	352;"	f	typeref:typename:void
+valoffset	jdhuff.c	32;"	m	struct:__anon5bcc85cd0108	typeref:typename:INT32[17]	file:
+virt_barray_list	jmemmgr.c	130;"	m	struct:__anon2a9612c50308	typeref:typename:jvirt_barray_ptr	file:
+virt_sarray_list	jmemmgr.c	129;"	m	struct:__anon2a9612c50308	typeref:typename:jvirt_sarray_ptr	file:
+visual	rdrle.c	67;"	m	struct:_rle_source_struct	typeref:typename:rle_kind	file:
+void_func	ckconfig.c	157;"	t	typeref:typename:void (*)(int a,int b)	file:
+void_func	ckconfig.c	159;"	t	typeref:typename:void (*)()	file:
+void_ptr	ckconfig.c	155;"	t	typeref:typename:void *	file:
+volume	jquant2.c	265;"	m	struct:__anon8f5b73fb0208	typeref:typename:INT32	file:
+whichptr	jdmainct.c	129;"	m	struct:__anon226f33000108	typeref:typename:int	file:
+whole_image	jccoefct.c	55;"	m	struct:__anon9f2a5d370108	typeref:typename:jvirt_barray_ptr[]	file:
+whole_image	jcmainct.c	47;"	m	struct:__anonadf2c1ff0108	typeref:typename:jvirt_sarray_ptr[]	file:
+whole_image	jctrans.c	214;"	m	struct:__anon7d81d14b0108	typeref:typename:jvirt_barray_ptr *	file:
+whole_image	jdcoefct.c	53;"	m	struct:__anon13a6ce380108	typeref:typename:jvirt_barray_ptr[]	file:
+whole_image	jdpostct.c	34;"	m	struct:__anon34a42d810108	typeref:typename:jvirt_sarray_ptr	file:
+whole_image	rdbmp.c	60;"	m	struct:_bmp_source_struct	typeref:typename:jvirt_sarray_ptr	file:
+whole_image	rdtarga.c	55;"	m	struct:_tga_source_struct	typeref:typename:jvirt_sarray_ptr	file:
+whole_image	wrbmp.c	49;"	m	struct:__anondd28fc3e0108	typeref:typename:jvirt_sarray_ptr	file:
+width_in_blocks	jpeglib.h	148;"	m	struct:__anone14b59d80308	typeref:typename:JDIMENSION
+working_state	jchuff.c	128;"	t	typeref:struct:__anon0ed2490c0408	file:
+workspace	jidctflt.c	82;"	v	typeref:typename:FAST_FLOAT[]
+workspace	jidctfst.c	181;"	v	typeref:typename:int[]
+workspace	jidctint.c	186;"	v	typeref:typename:int[]
+workspace_coef_arrays	transupp.h	153;"	m	struct:__anon971f79580308	typeref:typename:jvirt_barray_ptr *
+write_1_byte	wrjpgcom.c	122;"	f	typeref:typename:void	file:
+write_2_bytes	wrjpgcom.c	128;"	f	typeref:typename:void	file:
+write_Adobe_marker	jpeglib.h	385;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+write_JFIF_header	jpeglib.h	375;"	m	struct:jpeg_compress_struct	typeref:typename:boolean
+write_JPEG_file	example.c	72;"	f	typeref:typename:void
+write_backing_store	jmemansi.c	110;"	f	typeref:typename:void
+write_backing_store	jmemmac.c	172;"	f	typeref:typename:void
+write_backing_store	jmemname.c	217;"	f	typeref:typename:void
+write_bmp_header	wrbmp.c	157;"	f	typeref:typename:void
+write_colormap	wrbmp.c	292;"	f	typeref:typename:void
+write_ems_store	jmemdos.c	516;"	f	typeref:typename:void
+write_err	jmemdosa.asm	203;"	l
+write_file_header	jcmarker.c	519;"	f	typeref:typename:void
+write_file_store	jmemdos.c	259;"	f	typeref:typename:void
+write_file_trailer	jcmarker.c	657;"	f	typeref:typename:void
+write_frame_header	jcmarker.c	545;"	f	typeref:typename:void
+write_header	wrtarga.c	54;"	f	typeref:typename:void
+write_marker	wrjpgcom.c	135;"	f	typeref:typename:void	file:
+write_marker_byte	jcmarker.c	500;"	f	typeref:typename:void
+write_marker_header	jcmarker.c	488;"	f	typeref:typename:void
+write_ok	jmemdosa.asm	202;"	l
+write_os2_header	wrbmp.c	230;"	f	typeref:typename:void
+write_scan_header	jcmarker.c	613;"	f	typeref:typename:void
+write_stdout	cdjpeg.c	167;"	f	typeref:typename:FILE *
+write_stdout	cdjpeg.h	115;"	d
+write_tables_only	jcmarker.c	671;"	f	typeref:typename:void
+write_xms_store	jmemdos.c	366;"	f	typeref:typename:void
+writeblanks	ansi2knr.c	450;"	f
+wrjpgcom	CMakeLists.txt	51;"	t
+wrjpgcom$(EXEEXT)	Makefile.in	632;"	t
+wrjpgcom_LDADD	Makefile.in	178;"	m
+wrjpgcom_OBJECTS	Makefile.in	177;"	m
+wrjpgcom_SOURCES	Makefile.am	91;"	m
+wrjpgcom_SOURCES	Makefile.in	454;"	m
+wsptr	jidctflt.c	78;"	v	typeref:typename:FAST_FLOAT *
+wsptr	jidctfst.c	177;"	v	typeref:typename:int *
+wsptr	jidctint.c	182;"	v	typeref:typename:int *
+x_crop_offset	transupp.h	156;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+xbuffer	jdmainct.c	127;"	m	struct:__anon226f33000108	typeref:typename:JSAMPIMAGE[2]	file:
+xms_driver	jmemdos.c	314;"	v	typeref:typename:XMSDRIVER	file:
+xms_handle	jmemsys.h	126;"	m	union:__anon2b0c88e3010a	typeref:typename:XMSH
+xmsavail	jmemdosa.asm	237;"	l
+xmsavail_done	jmemdosa.asm	241;"	l
+xor	jmemdosa.asm	234;"	d
+y_crop_offset	transupp.h	157;"	m	struct:__anon971f79580308	typeref:typename:JDIMENSION
+ycc_rgb_convert	jdcolor.c	227;"	f	typeref:typename:void
+ycck_cmyk_convert	jdcolor.c	531;"	f	typeref:typename:void
+z1	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z1	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z1	jfdctint.c	162;"	v	typeref:typename:INT32
+z1	jidctint.c	179;"	v	typeref:typename:INT32
+z10	jidctflt.c	75;"	v	typeref:typename:FAST_FLOAT
+z10	jidctfst.c	174;"	v	typeref:typename:DCTELEM
+z11	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z11	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z11	jidctflt.c	75;"	v	typeref:typename:FAST_FLOAT
+z11	jidctfst.c	174;"	v	typeref:typename:DCTELEM
+z12	jidctflt.c	75;"	v	typeref:typename:FAST_FLOAT
+z12	jidctfst.c	174;"	v	typeref:typename:DCTELEM
+z13	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z13	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z13	jidctflt.c	75;"	v	typeref:typename:FAST_FLOAT
+z13	jidctfst.c	174;"	v	typeref:typename:DCTELEM
+z2	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z2	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z2	jidctint.c	179;"	v	typeref:typename:INT32
+z3	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z3	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z3	jidctint.c	179;"	v	typeref:typename:INT32
+z4	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z4	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z5	jfdctflt.c	64;"	v	typeref:typename:FAST_FLOAT
+z5	jfdctfst.c	119;"	v	typeref:typename:DCTELEM
+z5	jidctflt.c	75;"	v	typeref:typename:FAST_FLOAT
+z5	jidctfst.c	174;"	v	typeref:typename:DCTELEM
+zc	jcarith.c	29;"	m	struct:__anonc7832e7b0108	typeref:typename:INT32	file:
